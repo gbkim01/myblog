@@ -70,7 +70,7 @@ url_list&lt;/code&gt;&lt;/pre&gt;
 &lt;div id=&#34;climate-watch-data--&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;climate watch data의 페이지 구성&lt;/h3&gt;
 &lt;center&gt;
-&lt;img src = &#34;https://user-images.githubusercontent.com/30010992/66125840-f7ab8380-e622-11e9-9c26-25fd4639d0e7.jpg&#34; width=80%&gt;
+&lt;img src = &#34;https://user-images.githubusercontent.com/30010992/66132557-36940600-e630-11e9-9982-e39c42dc0967.jpg&#34; width=80%&gt;
 &lt;/center&gt;
 &lt;p&gt;그러나 이번에 스크래핑한 &lt;a href=&#34;https://www.climatewatchdata.org/ndcs/country/IND/sectoral-information&#34;&gt;www.climatewatchdata.org&lt;/a&gt;는 웹페이지가 매우 독특한 구성으로 되어있어 위의 경우처럼 간단한 반복문으로는 url을 취합하기 어려웠다. 그림처럼 개별 섹션(Sectoral Mitication Targets) 및 섹터(Energy | Renewable Energy) 별로 해당되는 목록을 취합하기 위해서는 섹터 및 섹션별 url을 따로 만들어야 했는데 다음과 같은 복잡한 과정을 거쳐야 했기 때문이다.&lt;/p&gt;
 &lt;ol style=&#34;list-style-type: decimal&#34;&gt;
