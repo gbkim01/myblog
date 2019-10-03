@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rselenium | 日常茶飯事</title>
+    <link>/myblog/tags/rselenium/</link>
+      <atom:link href="/myblog/tags/rselenium/index.xml" rel="self" type="application/rss+xml" />
+    <description>Rselenium</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019</copyright><lastBuildDate>Sun, 29 Sep 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/myblog/img/icon-192.png</url>
+      <title>Rselenium</title>
+      <link>/myblog/tags/rselenium/</link>
+    </image>
+    
+    <item>
+      <title>URL 리스트 취합</title>
+      <link>/myblog/post/web-scraping-with-r-www-climatewatchdata-org/</link>
+      <pubDate>Sun, 29 Sep 2019 00:00:00 +0000</pubDate>
+      <guid>/myblog/post/web-scraping-with-r-www-climatewatchdata-org/</guid>
+      <description>
+
+
+&lt;p&gt;웹 스크래핑은 타겟이 되는 인터넷 페이지의 url을 확인하는 것으로 시작한다. 한두 개의 웹페이지라면 모르겠지만 스크래핑 대상물이 여러 페이지에 흩어져 있다면 인터넷 주소를 취합하는 간단한 작업도 초보자에겐 큰 장애물이 된다. 그러나 문법이 조금 익숙한 사용자라면 반복문을 사용하여 좀 더 간편하게 필요한 url 리스트를 구성할 수 있다. 통상의 웹페이지 주소는 main URl에 인덱스가 붙는 형식으로 구성되어 있기 때문이다. 예컨데 이렇게 말이다.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;main &amp;lt;- &amp;quot;www.main_url.co.kr/search=&amp;quot;
+search &amp;lt;- c(&amp;quot;apple&amp;quot;, &amp;quot;orange&amp;quot;, &amp;quot;pineapple&amp;quot;)
+index &amp;lt;- &amp;quot;&amp;amp;indexpage=&amp;quot;
+
+url_list &amp;lt;- NULL
+
+for (i in 1:3){
+  for (j in 1:3) {
+    url &amp;lt;- paste0(main, search[i], index, j)
+    url_list &amp;lt;- append(url_list, url)
+  }
+}
+
+url_list&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] &amp;quot;www.main_url.co.kr/search=apple&amp;amp;indexpage=1&amp;quot;    
+## [2] &amp;quot;www.main_url.co.kr/search=apple&amp;amp;indexpage=2&amp;quot;    
+## [3] &amp;quot;www.main_url.co.kr/search=apple&amp;amp;indexpage=3&amp;quot;    
+## [4] &amp;quot;www.main_url.co.kr/search=orange&amp;amp;indexpage=1&amp;quot;   
+## [5] &amp;quot;www.main_url.co.kr/search=orange&amp;amp;indexpage=2&amp;quot;   
+## [6] &amp;quot;www.main_url.co.kr/search=orange&amp;amp;indexpage=3&amp;quot;   
+## [7] &amp;quot;www.main_url.co.kr/search=pineapple&amp;amp;indexpage=1&amp;quot;
+## [8] &amp;quot;www.main_url.co.kr/search=pineapple&amp;amp;indexpage=2&amp;quot;
+## [9] &amp;quot;www.main_url.co.kr/search=pineapple&amp;amp;indexpage=3&amp;quot;&lt;/code&gt;&lt;/pre&gt;
+&lt;div id=&#34;climate-watch-data--&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;climate watch data의 페이지 구성&lt;/h3&gt;
+&lt;center&gt;
+&lt;img src = &#34;https://user-images.githubusercontent.com/30010992/66125840-f7ab8380-e622-11e9-9c26-25fd4639d0e7.jpg&#34; width=80%&gt;
+&lt;/center&gt;
+&lt;p&gt;그러나 이번에 스크래핑한 &lt;a href=&#34;https://www.climatewatchdata.org/ndcs/country/IND/sectoral-information&#34;&gt;www.climatewatchdata.org&lt;/a&gt;는 웹페이지가 매우 독특한 구성으로 되어있어 위의 경우처럼 간단한 반복문으로는 url을 취합하기 어려웠다. 그림처럼 개별 섹션(Sectoral Mitication Targets) 및 섹터(Energy | Renewable Energy) 별로 해당되는 목록을 취합하기 위해서는 섹터 및 섹션별 url을 따로 만들어야 했는데 다음과 같은 복잡한 과정을 거쳐야 했기 때문이다.&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;먼저 url &lt;em&gt;&lt;a href=&#34;https://www.climatewatchdata.org/ndcs/country/IND/sectoral-information&#34; class=&#34;uri&#34;&gt;https://www.climatewatchdata.org/ndcs/country/IND/sectoral-information&lt;/a&gt;&lt;/em&gt;로 들어가 총 5개의 섹션 리스트를 가져온다.&lt;/li&gt;
+&lt;li&gt;각각의 섹션리스트를 모두 소문자로 변경하여 각 섹션별 주소를 구성한다. (ex: &lt;em&gt;&lt;a href=&#34;https://www.climatewatchdata.org/ndcs/country/IND/sectoral-information?section=sectoral_mitigation_targets&#34; class=&#34;uri&#34;&gt;https://www.climatewatchdata.org/ndcs/country/IND/sectoral-information?section=sectoral_mitigation_targets&lt;/a&gt;&lt;/em&gt;)&lt;/li&gt;
+&lt;li&gt;각 섹션별로 모든 섹터 리스트(ex, Energy | Renewable Energy, Energy | Renewable Energy:Biofuels….)를 가져온다.&lt;/li&gt;
+&lt;li&gt;모든 섹터 리스트를 기호 &lt;strong&gt;“|”&lt;/strong&gt; 를 기준으로 쪼갠 다음 &lt;strong&gt;“|”&lt;/strong&gt; 뒤에 위치하고 있는 문자를 소문자로 변경한다.&lt;/li&gt;
+&lt;li&gt;위 4에서 만든 섹션을 가지고 각 섹션별 전체 주소리스트를 구성한다.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;위의 5단계를 거쳐 최종적으로 만들어진 &lt;em&gt;&lt;a href=&#34;https://www.climatewatchdata.org/ndcs/country/IND/sectoral-information?section=sectoral_mitigation_targets&amp;amp;sector=renewable_energy&#34; class=&#34;uri&#34;&gt;https://www.climatewatchdata.org/ndcs/country/IND/sectoral-information?section=sectoral_mitigation_targets&amp;amp;sector=renewable_energy&lt;/a&gt;&lt;/em&gt;의 주소는 &lt;strong&gt;sectoral_mitication&lt;/strong&gt; 섹션의 &lt;strong&gt;renewable_energy&lt;/strong&gt;섹터의 목록을 스크래핑하는 기본 url이 된다.&lt;/p&gt;
+&lt;p&gt;이상의 5가지 단계를 실행하기 위해 다음의 코드를 작성하였다.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;########### Section 취합 #############
+### 1. 대문 page 이동
+remDr$navigate(&amp;quot;https://www.climatewatchdata.org/ndcs/country/IND/sectoral-information?section=none&amp;amp;sector=none&amp;quot;) 
+## 대문 page source 읽기
+html_page &amp;lt;- remDr$getPageSource()[[1]]
+
+### 2. section 주소  : section_link 주소
+section &amp;lt;- read_html(html_page) %&amp;gt;% html_nodes(&amp;quot;div.accordion-styles__title__2PD3i&amp;quot;) %&amp;gt;% html_text() 
+section_adr &amp;lt;- str_replace_all(str_to_lower(section), &amp;quot; &amp;quot;, &amp;quot;_&amp;quot;) ##대문자 to 소문자, 공백을 &amp;quot;_&amp;quot;로 대체
+
+
+########### 주소 취합 #############
+main &amp;lt;- &amp;quot;https://www.climatewatchdata.org/ndcs/country/IND/sectoral-information?section=&amp;quot;
+section_sector &amp;lt;- NULL
+link_list &amp;lt;- NULL
+
+for (i in 1:length(section_adr)) {
+  
+  section_link &amp;lt;- paste0(main, section_adr[i], &amp;quot;&amp;amp;sector=none&amp;quot;)
+  
+  ### 3. sector 주소  : sector_link 주소
+  remDr$navigate(section_link)
+  Sys.sleep(3) # 3초 딜레이
+  
+  section_page &amp;lt;- remDr$getPageSource()[[1]]
+  sector &amp;lt;- read_html(section_page) %&amp;gt;% html_nodes(&amp;quot;div.ndcs-country-accordion-styles__subAccordion__1zDx7&amp;quot;) %&amp;gt;% html_nodes(&amp;quot;div.accordion-styles__title__2PD3i&amp;quot;) %&amp;gt;% html_text() 
+  
+  link_list &amp;lt;- cbind(i, section[i], section_adr[i], sector)
+  section_sector &amp;lt;- rbind(section_sector, link_list)
+}
+
+section_sector &amp;lt;- data.frame(section_sector)
+names(section_sector) &amp;lt;- c(&amp;quot;index&amp;quot;, &amp;quot;section&amp;quot;, &amp;quot;section_adr&amp;quot;, &amp;quot;sector&amp;quot;)
+section_sector$sector_adr &amp;lt;- str_to_lower(section_sector$sector)
+section_sector$sector_adr &amp;lt;- str_split_fixed(section_sector$sector_adr, &amp;quot;[|]&amp;quot;, 2)[,2]
+section_sector$sector_adr &amp;lt;- str_trim(section_sector$sector_adr)
+section_sector$sector_adr &amp;lt;- str_replace_all(section_sector$sector_adr, &amp;quot;[-:/ ]&amp;quot;, &amp;quot;_&amp;quot;)
+section_sector$sector_adr &amp;lt;- str_replace_all(section_sector$sector_adr, &amp;quot;__&amp;quot;, &amp;quot;_&amp;quot;)
+
+### 주소 만들기
+link_pool &amp;lt;- NULL
+for (i in 1:dim(section_sector)[1]) {
+  link &amp;lt;- paste0(main, section_sector$section_adr[i], &amp;quot;&amp;amp;sector=&amp;quot;, section_sector$sector_adr[i])
+  link_pool &amp;lt;- append(link_pool, link)
+}
+
+section_sector &amp;lt;- cbind(section_sector, link_pool)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;참고로 해당 웹페이지가 java로 구성되었는지 &lt;strong&gt;rvest&lt;/strong&gt;로는 html 태그를 확인할 수 없었다. 차선책으로 &lt;strong&gt;Rselenium&lt;/strong&gt;을 사용하였으며 끊김없는 안정적인 스크래핑을 위해 중간중간 &lt;em&gt;Sys.sleep(3)&lt;/em&gt;의 코드를 추가하였다.&lt;/p&gt;
+&lt;p&gt;이 외에 데이터를 취합하는 내용을 포함한 전체 코드는 &lt;a href=&#34;https://github.com/gbkim01/web_scraping_with_R/blob/master/1_climate_watch_data_org.R&#34;&gt;Github&lt;/a&gt;에 올려두었다.&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

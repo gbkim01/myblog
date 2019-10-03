@@ -5,10 +5,10 @@
 
 widget = "blank"  # See https://sourcethemes.com/academic/docs/page-builder/
 headless = true  # This file represents a page section.
-active = true  # Activate this widget? true/false
+active = false  # Activate this widget? true/false
 weight = 15  # Order that this section will appear.
 
-title = "Demos"
+title = "日常茶飯事"
 subtitle = ""
 
 [design]
@@ -22,7 +22,7 @@ subtitle = ""
   #   Any HTML color name or Hex value is valid.
 
   # Background color.
-  # color = "navy"
+   color = "navy"
   
   # Background gradient.
   # gradient_start = "DeepSkyBlue"
@@ -30,10 +30,7 @@ subtitle = ""
   
   # Background image.
   image = "headers/bubbles-wide.jpg"  # Name of image in `static/img/`.
-  image_darken = 0.6  # Darken the image? Range 0-1 where 0 is transparent and 1 is opaque.
-  image_size = "cover"  #  Options are `cover` (default), `contain`, or `actual` size.
-  image_position = "center"  # Options include `left`, `center` (default), or `right`.
-  image_parallax = true  # Use a fun parallax-like fixed background effect? true/false
+  image_darken = 0.5  # Darken the image? Range 0-1 where 0 is transparent and 1 is opaque.
 
   # Text color (true=light or false=dark).
   text_color_light = true
@@ -50,16 +47,12 @@ subtitle = ""
  css_class = ""
 +++
 
-Welcome to the **personal demo** of Academic. Other demos available include:
+### 시덥잖은 일들로 시시덕거린다.
 
-- [**Project Demo** (Academic's actual site)](https://sourcethemes.com/academic/)
+권태가 가시지 않아 뭐라도 할까 싶어 개인 블로그를 만들었다. 마감은 닥쳐오고 발등의 불은 눈썹 까지 옮겨 붙었건만, 모든 업무와 책무는 뒤로 미루고 미적거리고 있다. 시험을 앞둔 학생이 책상 정리에 열을 올리는 것처럼, 만사 제친 소일거리에 도끼자루가 썩는다.  
 
-**Over 100,000 [Amazing Websites](https://sourcethemes.com/academic/#expo) have Already Been Built with Academic**
+---
 
-**[Join](https://sourcethemes.com/academic/docs/install/) the Most Empowered Hugo Community**
+코딩과는 무관한 문과생이 R과 파이썬을 흘낏한, 사사롭고도 무용한 결과물을 올리는 공간으로 이 블로그를 사용코자 한다. 덤으로 개인사 소소한 사담도 올리고... 
 
-{{% alert note %}}
-This homepage section is an example of adding [elements](https://sourcethemes.com/academic/docs/writing-markdown-latex/) to the [*Blank* widget](https://sourcethemes.com/academic/docs/widgets/).
 
-Backgrounds can be applied to any section. Here, the *background* option is set give an *image parallax* effect.
-{{% /alert %}}

@@ -5,7 +5,7 @@
     <link>/myblog/categories/</link>
       <atom:link href="/myblog/categories/index.xml" rel="self" type="application/rss+xml" />
     <description>Categories</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019</copyright><lastBuildDate>Wed, 20 Apr 2016 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019</copyright><lastBuildDate>Tue, 01 Oct 2019 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/myblog/img/icon-192.png</url>
       <title>Categories</title>
@@ -13,18 +13,18 @@
     </image>
     
     <item>
-      <title>Demo</title>
-      <link>/myblog/categories/demo/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>/myblog/categories/demo/</guid>
+      <title>R</title>
+      <link>/myblog/categories/r/</link>
+      <pubDate>Tue, 01 Oct 2019 00:00:00 +0000</pubDate>
+      <guid>/myblog/categories/r/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>R</title>
-      <link>/myblog/categories/r/</link>
-      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
-      <guid>/myblog/categories/r/</guid>
+      <title>일상다반사</title>
+      <link>/myblog/categories/%EC%9D%BC%EC%83%81%EB%8B%A4%EB%B0%98%EC%82%AC/</link>
+      <pubDate>Sat, 28 Sep 2019 00:00:00 +0000</pubDate>
+      <guid>/myblog/categories/%EC%9D%BC%EC%83%81%EB%8B%A4%EB%B0%98%EC%82%AC/</guid>
       <description></description>
     </item>
     

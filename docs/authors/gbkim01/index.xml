@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>日常茶飯事</title>
+    <link>/myblog/authors/gbkim01/</link>
+      <atom:link href="/myblog/authors/gbkim01/index.xml" rel="self" type="application/rss+xml" />
+    <description>日常茶飯事</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019</copyright>
+    <image>
+      <url>/myblog/img/icon-192.png</url>
+      <title>日常茶飯事</title>
+      <link>/myblog/authors/gbkim01/</link>
+    </image>
+    
+  </channel>
+</rss>

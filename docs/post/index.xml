@@ -5,7 +5,7 @@
     <link>/myblog/post/</link>
       <atom:link href="/myblog/post/index.xml" rel="self" type="application/rss+xml" />
     <description>Posts</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019</copyright><lastBuildDate>Fri, 12 Jul 2019 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019</copyright><lastBuildDate>Tue, 01 Oct 2019 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/myblog/img/icon-192.png</url>
       <title>Posts</title>
@@ -13,497 +13,144 @@
     </image>
     
     <item>
-      <title>Writing technical content in Academic</title>
-      <link>/myblog/post/writing-technical-content/</link>
-      <pubDate>Fri, 12 Jul 2019 00:00:00 +0000</pubDate>
-      <guid>/myblog/post/writing-technical-content/</guid>
-      <description>&lt;p&gt;Academic is designed to give technical content creators a seamless experience. You can focus on the content and Academic handles the rest.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Highlight your code snippets, take notes on math classes, and draw diagrams from textual representation.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;On this page, you&#39;ll find some examples of the types of technical content that can be rendered with Academic.&lt;/p&gt;
-
-&lt;h2 id=&#34;examples&#34;&gt;Examples&lt;/h2&gt;
-
-&lt;h3 id=&#34;code&#34;&gt;Code&lt;/h3&gt;
-
-&lt;p&gt;Academic supports a Markdown extension for highlighting code syntax. You can enable this feature by toggling the &lt;code&gt;highlight&lt;/code&gt; option in your &lt;code&gt;config/_default/params.toml&lt;/code&gt; file.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;```python
-import pandas as pd
-data = pd.read_csv(&amp;quot;data.csv&amp;quot;)
-data.head()
-```
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;renders as&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import pandas as pd
-data = pd.read_csv(&amp;quot;data.csv&amp;quot;)
-data.head()
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3 id=&#34;math&#34;&gt;Math&lt;/h3&gt;
-
-&lt;p&gt;Academic supports a Markdown extension for $\LaTeX$ math. You can enable this feature by toggling the &lt;code&gt;math&lt;/code&gt; option in your &lt;code&gt;config/_default/params.toml&lt;/code&gt; file and adding &lt;code&gt;markup: mmark&lt;/code&gt; to your page front matter.&lt;/p&gt;
-
-&lt;p&gt;To render &lt;em&gt;inline&lt;/em&gt; or &lt;em&gt;block&lt;/em&gt; math, wrap your LaTeX math with &lt;code&gt;$$...$$&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;Example &lt;strong&gt;math block&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-tex&#34;&gt;$$\gamma_{n} = \frac{ 
-\left | \left (\mathbf x_{n} - \mathbf x_{n-1} \right )^T 
-\left [\nabla F (\mathbf x_{n}) - \nabla F (\mathbf x_{n-1}) \right ] \right |}
-{\left \|\nabla F(\mathbf{x}_{n}) - \nabla F(\mathbf{x}_{n-1}) \right \|^2}$$
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;renders as&lt;/p&gt;
-
-&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[\gamma_{n} = \frac{ \left | \left (\mathbf x_{n} - \mathbf x_{n-1} \right )^T \left [\nabla F (\mathbf x_{n}) - \nabla F (\mathbf x_{n-1}) \right ] \right |}{\left \|\nabla F(\mathbf{x}_{n}) - \nabla F(\mathbf{x}_{n-1}) \right \|^2}\]&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;Example &lt;strong&gt;inline math&lt;/strong&gt; &lt;code&gt;$$\left \|\nabla F(\mathbf{x}_{n}) - \nabla F(\mathbf{x}_{n-1}) \right \|^2$$&lt;/code&gt; renders as &lt;span  class=&#34;math&#34;&gt;\(\left \|\nabla F(\mathbf{x}_{n}) - \nabla F(\mathbf{x}_{n-1}) \right \|^2\)&lt;/span&gt; .&lt;/p&gt;
-
-&lt;p&gt;Example &lt;strong&gt;multi-line math&lt;/strong&gt; using the &lt;code&gt;\\&lt;/code&gt; math linebreak:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-tex&#34;&gt;$$f(k;p_0^*) = \begin{cases} p_0^* &amp;amp; \text{if }k=1, \\
-1-p_0^* &amp;amp; \text {if }k=0.\end{cases}$$
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;renders as&lt;/p&gt;
-
-&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[f(k;p_0^*) = \begin{cases} p_0^* &amp; \text{if }k=1, \\
-1-p_0^* &amp; \text {if }k=0.\end{cases}\]&lt;/span&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;diagrams&#34;&gt;Diagrams&lt;/h3&gt;
-
-&lt;p&gt;Academic supports a Markdown extension for diagrams. You can enable this feature by toggling the &lt;code&gt;diagram&lt;/code&gt; option in your &lt;code&gt;config/_default/params.toml&lt;/code&gt; file or by adding &lt;code&gt;diagram: true&lt;/code&gt; to your page front matter.&lt;/p&gt;
-
-&lt;p&gt;An example &lt;strong&gt;flowchart&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;```mermaid
-graph TD;
-  A--&amp;gt;B;
-  A--&amp;gt;C;
-  B--&amp;gt;D;
-  C--&amp;gt;D;
-```
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;renders as&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-mermaid&#34;&gt;graph TD;
-  A--&amp;gt;B;
-  A--&amp;gt;C;
-  B--&amp;gt;D;
-  C--&amp;gt;D;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;An example &lt;strong&gt;sequence diagram&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;```mermaid
-sequenceDiagram
-  participant Alice
-  participant Bob
-  Alice-&amp;gt;John: Hello John, how are you?
-  loop Healthcheck
-      John-&amp;gt;John: Fight against hypochondria
-  end
-  Note right of John: Rational thoughts &amp;lt;br/&amp;gt;prevail...
-  John--&amp;gt;Alice: Great!
-  John-&amp;gt;Bob: How about you?
-  Bob--&amp;gt;John: Jolly good!
-```
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;renders as&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-mermaid&#34;&gt;sequenceDiagram
-  participant Alice
-  participant Bob
-  Alice-&amp;gt;John: Hello John, how are you?
-  loop Healthcheck
-      John-&amp;gt;John: Fight against hypochondria
-  end
-  Note right of John: Rational thoughts &amp;lt;br/&amp;gt;prevail...
-  John--&amp;gt;Alice: Great!
-  John-&amp;gt;Bob: How about you?
-  Bob--&amp;gt;John: Jolly good!
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;An example &lt;strong&gt;Gantt diagram&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;```mermaid
-gantt
-  dateFormat  YYYY-MM-DD
-  section Section
-  A task           :a1, 2014-01-01, 30d
-  Another task     :after a1  , 20d
-  section Another
-  Task in sec      :2014-01-12  , 12d
-  another task      : 24d
-```
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;renders as&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-mermaid&#34;&gt;gantt
-  dateFormat  YYYY-MM-DD
-  section Section
-  A task           :a1, 2014-01-01, 30d
-  Another task     :after a1  , 20d
-  section Another
-  Task in sec      :2014-01-12  , 12d
-  another task      : 24d
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3 id=&#34;todo-lists&#34;&gt;Todo lists&lt;/h3&gt;
-
-&lt;p&gt;You can even write your todo lists in Academic too:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;- [x] Write math example
-- [x] Write diagram example
-- [ ] Do something else
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;renders as&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;input type=&#34;checkbox&#34; checked=&#34;&#34; disabled=&#34;&#34;&gt; Write math example&lt;/li&gt;
-&lt;li&gt;&lt;input type=&#34;checkbox&#34; checked=&#34;&#34; disabled=&#34;&#34;&gt; Write diagram example&lt;/li&gt;
-&lt;li&gt;&lt;input type=&#34;checkbox&#34; disabled=&#34;&#34;&gt; Do something else&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;tables&#34;&gt;Tables&lt;/h3&gt;
-
-&lt;p&gt;Represent your data in tables:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;| First Header  | Second Header |
-| ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;renders as&lt;/p&gt;
-
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;First Header&lt;/th&gt;
-&lt;th&gt;Second Header&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;Content Cell&lt;/td&gt;
-&lt;td&gt;Content Cell&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;Content Cell&lt;/td&gt;
-&lt;td&gt;Content Cell&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;h3 id=&#34;asides&#34;&gt;Asides&lt;/h3&gt;
-
-&lt;p&gt;Academic supports a Markdown extension for asides, also referred to as &lt;em&gt;notices&lt;/em&gt; or &lt;em&gt;hints&lt;/em&gt;. By prefixing a paragraph with &lt;code&gt;A&amp;gt;&lt;/code&gt;, it will render as an aside. You can enable this feature by adding &lt;code&gt;markup: mmark&lt;/code&gt; to your page front matter, or alternatively using the &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/#alerts&#34;&gt;&lt;em&gt;Alert&lt;/em&gt; shortcode&lt;/a&gt;.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;A&amp;gt; A Markdown aside is useful for displaying notices, hints, or definitions to your readers.
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;renders as&lt;/p&gt;
-
-&lt;aside&gt;
-&lt;p&gt;A Markdown aside is useful for displaying notices, hints, or definitions to your readers.&lt;/p&gt;
-&lt;/aside&gt;
-
-&lt;h3 id=&#34;did-you-find-this-page-helpful-consider-sharing-it-&#34;&gt;Did you find this page helpful? Consider sharing it 🙌&lt;/h3&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Display Jupyter Notebooks with Academic</title>
-      <link>/myblog/post/jupyter/</link>
-      <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
-      <guid>/myblog/post/jupyter/</guid>
+      <title>데이터셋의 짝수행과 홀수행 구분</title>
+      <link>/myblog/post/%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%94%84%EB%A0%88%EC%9E%84%EC%97%90%EC%84%9C-%EC%A7%9D%EC%88%98%ED%96%89%EA%B3%BC-%ED%99%80%EC%88%98%ED%96%89-%EC%84%A0%EB%B3%84%ED%95%98%EA%B8%B0/</link>
+      <pubDate>Tue, 01 Oct 2019 00:00:00 +0000</pubDate>
+      <guid>/myblog/post/%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%94%84%EB%A0%88%EC%9E%84%EC%97%90%EC%84%9C-%EC%A7%9D%EC%88%98%ED%96%89%EA%B3%BC-%ED%99%80%EC%88%98%ED%96%89-%EC%84%A0%EB%B3%84%ED%95%98%EA%B8%B0/</guid>
       <description>
 
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;from IPython.core.display import Image
-Image(&#39;https://www.python.org/static/community_logos/python-logo-master-v3-TM-flattened.png&#39;)
-&lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;img src=&#34;./index_1_0.png&#34; alt=&#34;png&#34; /&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;print(&amp;quot;Welcome to Academic!&amp;quot;)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;pre&gt;&lt;code&gt;Welcome to Academic!
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;install-python-and-jupyterlab&#34;&gt;Install Python and JupyterLab&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.anaconda.com/distribution/#download-section&#34; target=&#34;_blank&#34;&gt;Install Anaconda&lt;/a&gt; which includes Python 3 and JupyterLab.&lt;/p&gt;
-
-&lt;p&gt;Alternatively, install JupyterLab with &lt;code&gt;pip3 install jupyterlab&lt;/code&gt;.&lt;/p&gt;
-
-&lt;h2 id=&#34;create-or-upload-a-jupyter-notebook&#34;&gt;Create or upload a Jupyter notebook&lt;/h2&gt;
-
-&lt;p&gt;Run the following commands in your Terminal, substituting &lt;code&gt;&amp;lt;MY-WEBSITE-FOLDER&amp;gt;&lt;/code&gt; and &lt;code&gt;&amp;lt;SHORT-POST-TITLE&amp;gt;&lt;/code&gt; with the file path to your Academic website folder and a short title for your blog post (use hyphens instead of spaces), respectively:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;mkdir -p &amp;lt;MY-WEBSITE-FOLDER&amp;gt;/content/post/&amp;lt;SHORT-POST-TITLE&amp;gt;/
-cd &amp;lt;MY-WEBSITE-FOLDER&amp;gt;/content/post/&amp;lt;SHORT-POST-TITLE&amp;gt;/
-jupyter lab index.ipynb
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;The &lt;code&gt;jupyter&lt;/code&gt; command above will launch the JupyterLab editor, allowing us to add Academic metadata and write the content.&lt;/p&gt;
-
-&lt;h2 id=&#34;edit-your-post-metadata&#34;&gt;Edit your post metadata&lt;/h2&gt;
-
-&lt;p&gt;The first cell of your Jupter notebook will contain your post metadata (&lt;a href=&#34;https://sourcethemes.com/academic/docs/front-matter/&#34; target=&#34;_blank&#34;&gt;front matter&lt;/a&gt;).&lt;/p&gt;
-
-&lt;p&gt;In Jupter, choose &lt;em&gt;Markdown&lt;/em&gt; as the type of the first cell and wrap your Academic metadata in three dashes, indicating that it is YAML front matter:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;---
-title: My post&#39;s title
-date: 2019-09-01
-
-# Put any other Academic metadata here...
----
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Edit the metadata of your post, using the &lt;a href=&#34;https://sourcethemes.com/academic/docs/managing-content&#34; target=&#34;_blank&#34;&gt;documentation&lt;/a&gt; as a guide to the available options.&lt;/p&gt;
-
-&lt;p&gt;To set a &lt;a href=&#34;https://sourcethemes.com/academic/docs/managing-content/#featured-image&#34; target=&#34;_blank&#34;&gt;featured image&lt;/a&gt;, place an image named &lt;code&gt;featured&lt;/code&gt; into your post&amp;rsquo;s folder.&lt;/p&gt;
-
-&lt;p&gt;For other tips, such as using math, see the guide on &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34;&gt;writing content with Academic&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&#34;convert-notebook-to-markdown&#34;&gt;Convert notebook to Markdown&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;jupyter nbconvert index.ipynb --to markdown --NbConvertApp.output_files_dir=.
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;example&#34;&gt;Example&lt;/h2&gt;
-
-&lt;p&gt;This post was created with Jupyter. The orginal files can be found at &lt;a href=&#34;https://github.com/gcushen/hugo-academic/tree/master/exampleSite/content/post/jupyter&#34; target=&#34;_blank&#34;&gt;https://github.com/gcushen/hugo-academic/tree/master/exampleSite/content/post/jupyter&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://youtu.be/w7Q_eKN5r-I?t=136&#34;&gt;유투브&lt;/a&gt;에서 말하길, &lt;strong&gt;파이썬&lt;/strong&gt;을 이용하면 모듈과 자료를 불러들이는 과정을 포함하여 단 세 줄의 코드로 데이터셋에서 짝수행을 뽑을수 있다고 한다. &lt;strong&gt;R&lt;/strong&gt;에서도 할 수 있겠다 싶어 머리를 굴려봤다.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(dplyr)
+data &amp;lt;- read.csv(&amp;quot;filename&amp;quot;)
+data_even &amp;lt;- filter(data, seq_len(nrow(data))%% 2==0) # 짝수행
+data_odd &amp;lt;- filter(data, seq_len(nrow(data))%% 2==1) # 홀수행&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;위의 코드를 단계별로 설명하면,&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;strong&gt;seq_len()&lt;/strong&gt; 함수를 이용하여 데이터 테이블의 마지막 행 까지 인덱스를 부여&lt;/li&gt;
+&lt;li&gt;각각의 인덱스를 2로 나눈 나머지가 0인 행과 1인 행을 각각 필터링&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;위 두 단계를 거쳐 짝수행과 홀수행을 구분하였다. 파이썬 만큼 깔끔하지는 않지만 어쨌든 패키지를 불러와서 짝수행을 뽑는 것 까지 3~4줄의 &lt;strong&gt;R&lt;/strong&gt;코드면 된다.&lt;/p&gt;
+&lt;p&gt;이 방법을 이용해서 &lt;a href=&#34;http://www.ypec.re.kr/modedg/contentsView.do?ucont_id=CTX000007&amp;amp;srch_menu_nix=t7W3a9w7&#34;&gt;&lt;strong&gt;청소년정책분석평가센터&lt;/strong&gt;&lt;/a&gt;가 매년 공개하는 청소년정책성과(청소년의 삶의질, 청소년참여활동수준) 점수를 하나의 테이블로 간단히 정리하였다. 연도별 17개 시도의 성과정보를 스크래핑 하는 코드는 &lt;a href=&#34;https://github.com/gbkim01/web_scraping_with_R/blob/master/2_%EC%97%B0%EB%8F%84%EB%B3%84%EC%B2%AD%EC%86%8C%EB%85%84%EC%A0%95%EC%B1%85%EC%84%B1%EA%B3%BC.R&#34;&gt;&lt;strong&gt;Github&lt;/strong&gt;&lt;/a&gt;에 올렸다.&lt;/p&gt;
 </description>
     </item>
     
     <item>
-      <title>A Plain Markdown Post</title>
-      <link>/myblog/post/2016-12-30-hello-markdown/</link>
-      <pubDate>Fri, 30 Dec 2016 21:49:57 -0700</pubDate>
-      <guid>/myblog/post/2016-12-30-hello-markdown/</guid>
-      <description>&lt;p&gt;This is a post written in plain Markdown (&lt;code&gt;*.md&lt;/code&gt;) instead of R Markdown (&lt;code&gt;*.Rmd&lt;/code&gt;). The major differences are:&lt;/p&gt;
+      <title>URL 리스트 취합</title>
+      <link>/myblog/post/web-scraping-with-r-www-climatewatchdata-org/</link>
+      <pubDate>Sun, 29 Sep 2019 00:00:00 +0000</pubDate>
+      <guid>/myblog/post/web-scraping-with-r-www-climatewatchdata-org/</guid>
+      <description>
 
-&lt;ol&gt;
-&lt;li&gt;You cannot run any R code in a plain Markdown document, whereas in an R Markdown document, you can embed R code chunks (&lt;code&gt;```{r}&lt;/code&gt;);&lt;/li&gt;
-&lt;li&gt;A plain Markdown post is rendered through &lt;a href=&#34;https://gohugo.io/overview/configuration/&#34; target=&#34;_blank&#34;&gt;Blackfriday&lt;/a&gt;, and an R Markdown document is compiled by &lt;a href=&#34;http://rmarkdown.rstudio.com&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;rmarkdown&lt;/strong&gt;&lt;/a&gt; and &lt;a href=&#34;http://pandoc.org&#34; target=&#34;_blank&#34;&gt;Pandoc&lt;/a&gt;.&lt;/li&gt;
+
+&lt;p&gt;웹 스크래핑은 타겟이 되는 인터넷 페이지의 url을 확인하는 것으로 시작한다. 한두 개의 웹페이지라면 모르겠지만 스크래핑 대상물이 여러 페이지에 흩어져 있다면 인터넷 주소를 취합하는 간단한 작업도 초보자에겐 큰 장애물이 된다. 그러나 문법이 조금 익숙한 사용자라면 반복문을 사용하여 좀 더 간편하게 필요한 url 리스트를 구성할 수 있다. 통상의 웹페이지 주소는 main URl에 인덱스가 붙는 형식으로 구성되어 있기 때문이다. 예컨데 이렇게 말이다.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;main &amp;lt;- &amp;quot;www.main_url.co.kr/search=&amp;quot;
+search &amp;lt;- c(&amp;quot;apple&amp;quot;, &amp;quot;orange&amp;quot;, &amp;quot;pineapple&amp;quot;)
+index &amp;lt;- &amp;quot;&amp;amp;indexpage=&amp;quot;
+
+url_list &amp;lt;- NULL
+
+for (i in 1:3){
+  for (j in 1:3) {
+    url &amp;lt;- paste0(main, search[i], index, j)
+    url_list &amp;lt;- append(url_list, url)
+  }
+}
+
+url_list&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] &amp;quot;www.main_url.co.kr/search=apple&amp;amp;indexpage=1&amp;quot;    
+## [2] &amp;quot;www.main_url.co.kr/search=apple&amp;amp;indexpage=2&amp;quot;    
+## [3] &amp;quot;www.main_url.co.kr/search=apple&amp;amp;indexpage=3&amp;quot;    
+## [4] &amp;quot;www.main_url.co.kr/search=orange&amp;amp;indexpage=1&amp;quot;   
+## [5] &amp;quot;www.main_url.co.kr/search=orange&amp;amp;indexpage=2&amp;quot;   
+## [6] &amp;quot;www.main_url.co.kr/search=orange&amp;amp;indexpage=3&amp;quot;   
+## [7] &amp;quot;www.main_url.co.kr/search=pineapple&amp;amp;indexpage=1&amp;quot;
+## [8] &amp;quot;www.main_url.co.kr/search=pineapple&amp;amp;indexpage=2&amp;quot;
+## [9] &amp;quot;www.main_url.co.kr/search=pineapple&amp;amp;indexpage=3&amp;quot;&lt;/code&gt;&lt;/pre&gt;
+&lt;div id=&#34;climate-watch-data--&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;climate watch data의 페이지 구성&lt;/h3&gt;
+&lt;center&gt;
+&lt;img src = &#34;https://user-images.githubusercontent.com/30010992/66125840-f7ab8380-e622-11e9-9c26-25fd4639d0e7.jpg&#34; width=80%&gt;
+&lt;/center&gt;
+&lt;p&gt;그러나 이번에 스크래핑한 &lt;a href=&#34;https://www.climatewatchdata.org/ndcs/country/IND/sectoral-information&#34;&gt;www.climatewatchdata.org&lt;/a&gt;는 웹페이지가 매우 독특한 구성으로 되어있어 위의 경우처럼 간단한 반복문으로는 url을 취합하기 어려웠다. 그림처럼 개별 섹션(Sectoral Mitication Targets) 및 섹터(Energy | Renewable Energy) 별로 해당되는 목록을 취합하기 위해서는 섹터 및 섹션별 url을 따로 만들어야 했는데 다음과 같은 복잡한 과정을 거쳐야 했기 때문이다.&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;먼저 url &lt;em&gt;&lt;a href=&#34;https://www.climatewatchdata.org/ndcs/country/IND/sectoral-information&#34; class=&#34;uri&#34;&gt;https://www.climatewatchdata.org/ndcs/country/IND/sectoral-information&lt;/a&gt;&lt;/em&gt;로 들어가 총 5개의 섹션 리스트를 가져온다.&lt;/li&gt;
+&lt;li&gt;각각의 섹션리스트를 모두 소문자로 변경하여 각 섹션별 주소를 구성한다. (ex: &lt;em&gt;&lt;a href=&#34;https://www.climatewatchdata.org/ndcs/country/IND/sectoral-information?section=sectoral_mitigation_targets&#34; class=&#34;uri&#34;&gt;https://www.climatewatchdata.org/ndcs/country/IND/sectoral-information?section=sectoral_mitigation_targets&lt;/a&gt;&lt;/em&gt;)&lt;/li&gt;
+&lt;li&gt;각 섹션별로 모든 섹터 리스트(ex, Energy | Renewable Energy, Energy | Renewable Energy:Biofuels….)를 가져온다.&lt;/li&gt;
+&lt;li&gt;모든 섹터 리스트를 기호 &lt;strong&gt;“|”&lt;/strong&gt; 를 기준으로 쪼갠 다음 &lt;strong&gt;“|”&lt;/strong&gt; 뒤에 위치하고 있는 문자를 소문자로 변경한다.&lt;/li&gt;
+&lt;li&gt;위 4에서 만든 섹션을 가지고 각 섹션별 전체 주소리스트를 구성한다.&lt;/li&gt;
 &lt;/ol&gt;
+&lt;p&gt;위의 5단계를 거쳐 최종적으로 만들어진 &lt;em&gt;&lt;a href=&#34;https://www.climatewatchdata.org/ndcs/country/IND/sectoral-information?section=sectoral_mitigation_targets&amp;amp;sector=renewable_energy&#34; class=&#34;uri&#34;&gt;https://www.climatewatchdata.org/ndcs/country/IND/sectoral-information?section=sectoral_mitigation_targets&amp;amp;sector=renewable_energy&lt;/a&gt;&lt;/em&gt;의 주소는 &lt;strong&gt;sectoral_mitication&lt;/strong&gt; 섹션의 &lt;strong&gt;renewable_energy&lt;/strong&gt;섹터의 목록을 스크래핑하는 기본 url이 된다.&lt;/p&gt;
+&lt;p&gt;이상의 5가지 단계를 실행하기 위해 다음의 코드를 작성하였다.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;########### Section 취합 #############
+### 1. 대문 page 이동
+remDr$navigate(&amp;quot;https://www.climatewatchdata.org/ndcs/country/IND/sectoral-information?section=none&amp;amp;sector=none&amp;quot;) 
+## 대문 page source 읽기
+html_page &amp;lt;- remDr$getPageSource()[[1]]
 
-&lt;p&gt;There are many differences in syntax between Blackfriday&amp;rsquo;s Markdown and Pandoc&amp;rsquo;s Markdown. For example, you can write a task list with Blackfriday but not with Pandoc:&lt;/p&gt;
+### 2. section 주소  : section_link 주소
+section &amp;lt;- read_html(html_page) %&amp;gt;% html_nodes(&amp;quot;div.accordion-styles__title__2PD3i&amp;quot;) %&amp;gt;% html_text() 
+section_adr &amp;lt;- str_replace_all(str_to_lower(section), &amp;quot; &amp;quot;, &amp;quot;_&amp;quot;) ##대문자 to 소문자, 공백을 &amp;quot;_&amp;quot;로 대체
 
-&lt;ul class=&#34;task-list&#34;&gt;
-&lt;li&gt;&lt;label&gt;&lt;input type=&#34;checkbox&#34; checked disabled class=&#34;task-list-item&#34;&gt; Write an R package.&lt;/label&gt;&lt;/li&gt;
-&lt;li&gt;&lt;label&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; Write a book.&lt;/label&gt;&lt;/li&gt;
-&lt;li&gt;&lt;label&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; &amp;hellip;&lt;/label&gt;&lt;/li&gt;
-&lt;li&gt;&lt;label&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; Profit!&lt;/label&gt;&lt;/li&gt;
-&lt;/ul&gt;
 
-&lt;p&gt;Similarly, Blackfriday does not support LaTeX math and Pandoc does. I have added the MathJax support to this theme (&lt;a href=&#34;https://github.com/yihui/hugo-lithium&#34; target=&#34;_blank&#34;&gt;hugo-lithium&lt;/a&gt;) but there is a caveat for plain Markdown posts: you have to include math expressions in a pair of backticks (inline: &lt;code&gt;`$ $`&lt;/code&gt;; display style: &lt;code&gt;`$$ $$`&lt;/code&gt;), e.g., &lt;code&gt;$S_n = \sum_{i=1}^n X_i$&lt;/code&gt;.&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:This-is-because&#34;&gt;&lt;a href=&#34;#fn:This-is-because&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; For R Markdown posts, you do not need the backticks, because Pandoc can identify and process math expressions.&lt;/p&gt;
+########### 주소 취합 #############
+main &amp;lt;- &amp;quot;https://www.climatewatchdata.org/ndcs/country/IND/sectoral-information?section=&amp;quot;
+section_sector &amp;lt;- NULL
+link_list &amp;lt;- NULL
 
-&lt;p&gt;When creating a new post, you have to decide whether the post format is Markdown or R Markdown, and this can be done via the &lt;code&gt;ext&lt;/code&gt; argument of the function &lt;code&gt;blogdown::new_post()&lt;/code&gt;, e.g.&lt;/p&gt;
+for (i in 1:length(section_adr)) {
+  
+  section_link &amp;lt;- paste0(main, section_adr[i], &amp;quot;&amp;amp;sector=none&amp;quot;)
+  
+  ### 3. sector 주소  : sector_link 주소
+  remDr$navigate(section_link)
+  Sys.sleep(3) # 3초 딜레이
+  
+  section_page &amp;lt;- remDr$getPageSource()[[1]]
+  sector &amp;lt;- read_html(section_page) %&amp;gt;% html_nodes(&amp;quot;div.ndcs-country-accordion-styles__subAccordion__1zDx7&amp;quot;) %&amp;gt;% html_nodes(&amp;quot;div.accordion-styles__title__2PD3i&amp;quot;) %&amp;gt;% html_text() 
+  
+  link_list &amp;lt;- cbind(i, section[i], section_adr[i], sector)
+  section_sector &amp;lt;- rbind(section_sector, link_list)
+}
 
-&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;blogdown::new_post(&amp;quot;Post Title&amp;quot;, ext = &#39;.Rmd&#39;)
-&lt;/code&gt;&lt;/pre&gt;
-&lt;div class=&#34;footnotes&#34;&gt;
+section_sector &amp;lt;- data.frame(section_sector)
+names(section_sector) &amp;lt;- c(&amp;quot;index&amp;quot;, &amp;quot;section&amp;quot;, &amp;quot;section_adr&amp;quot;, &amp;quot;sector&amp;quot;)
+section_sector$sector_adr &amp;lt;- str_to_lower(section_sector$sector)
+section_sector$sector_adr &amp;lt;- str_split_fixed(section_sector$sector_adr, &amp;quot;[|]&amp;quot;, 2)[,2]
+section_sector$sector_adr &amp;lt;- str_trim(section_sector$sector_adr)
+section_sector$sector_adr &amp;lt;- str_replace_all(section_sector$sector_adr, &amp;quot;[-:/ ]&amp;quot;, &amp;quot;_&amp;quot;)
+section_sector$sector_adr &amp;lt;- str_replace_all(section_sector$sector_adr, &amp;quot;__&amp;quot;, &amp;quot;_&amp;quot;)
+
+### 주소 만들기
+link_pool &amp;lt;- NULL
+for (i in 1:dim(section_sector)[1]) {
+  link &amp;lt;- paste0(main, section_sector$section_adr[i], &amp;quot;&amp;amp;sector=&amp;quot;, section_sector$sector_adr[i])
+  link_pool &amp;lt;- append(link_pool, link)
+}
+
+section_sector &amp;lt;- cbind(section_sector, link_pool)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;참고로 해당 웹페이지가 java로 구성되었는지 &lt;strong&gt;rvest&lt;/strong&gt;로는 html 태그를 확인할 수 없었다. 차선책으로 &lt;strong&gt;Rselenium&lt;/strong&gt;을 사용하였으며 끊김없는 안정적인 스크래핑을 위해 중간중간 &lt;em&gt;Sys.sleep(3)&lt;/em&gt;의 코드를 추가하였다.&lt;/p&gt;
+&lt;p&gt;이 외에 데이터를 취합하는 내용을 포함한 전체 코드는 &lt;a href=&#34;https://github.com/gbkim01/web_scraping_with_R/blob/master/1_climate_watch_data_org.R&#34;&gt;Github&lt;/a&gt;에 올려두었다.&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>블로그에 첫 글을 남긴다.</title>
+      <link>/myblog/post/%EB%B8%94%EB%A1%9C%EA%B7%B8%EC%97%90-%EC%B2%AB-%EA%B8%80%EC%9D%84-%EB%82%A8%EA%B8%B4%EB%8B%A4/</link>
+      <pubDate>Sat, 28 Sep 2019 00:00:00 +0000</pubDate>
+      <guid>/myblog/post/%EB%B8%94%EB%A1%9C%EA%B7%B8%EC%97%90-%EC%B2%AB-%EA%B8%80%EC%9D%84-%EB%82%A8%EA%B8%B4%EB%8B%A4/</guid>
+      <description>&lt;p&gt;spss나 stata 정도 돌려서 회귀분석이나 해본게 전부인 문과생인데 최근 몇달 동안 R과 파이썬을 들여다보고 있다. 사실은 다른 할 일들은 좀체 하기 싫어서 그냥 외도하는 것이지만&amp;hellip; 이제는 더는 미룰수 없는 일 때문에 마음은 죄여 오는데, 그러면 그럴수록 한 눈 팔게된다.&lt;/p&gt;
+
+&lt;p&gt;주변에 물어볼 사람도 없이 유투브 동영상 보며 흉내내기에 그친 결과물이지만 다른 사람들한테 점검 받고 수정받으면 재밌겠다 싶어 &lt;strong&gt;Github&lt;/strong&gt;과 &lt;strong&gt;blogdown&lt;/strong&gt;으로 블로그를 만들었다. blogdown의 설치 및 운용은 &lt;strong&gt;mrchypark&lt;/strong&gt;님의 유투브 강좌인 &lt;a href=&#34;https://www.youtube.com/watch?v=zeYn0maX1nQ&amp;amp;t=2723s&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;R코홀릭1&lt;/strong&gt;&lt;/a&gt;과  &lt;a href=&#34;https://www.youtube.com/watch?v=9WZWD1VxBL8&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;R코홀릭2&lt;/strong&gt;&lt;/a&gt;를 참고하였다.&lt;/p&gt;
+
+&lt;p&gt;친절하고도 상세한 설명에도 기본테마에 댓글기능 추가하니 반나절이 다 갔다. 고작해야 간단한 블로그 하나 만드는 일에도 쩔쩔매는 서툰 실력이지만 시간이 잘 가니 오히려 기쁜 마음이 앞선다.&lt;/p&gt;
+
+&lt;p&gt;여기까지만 하고 꾸미기와 기능의 추가는 차후에 진행할 계획이다.&lt;/p&gt;
 
 &lt;hr /&gt;
 
-&lt;ol&gt;
-&lt;li id=&#34;fn:This-is-because&#34;&gt;This is because we have to protect the math expressions from being interpreted as Markdown. You may not need the backticks if your math expression does not contain any special Markdown syntax such as underscores or asterisks, but it is always a safer choice to use backticks. When you happen to have a pair of literal dollar signs inside the same element, you can escape one dollar sign, e.g., &lt;code&gt;\$50 and $100&lt;/code&gt; renders &amp;ldquo;\$50 and $100&amp;rdquo;. &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:This-is-because&#34;&gt;&lt;sup&gt;^&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Academic: the website builder for Hugo</title>
-      <link>/myblog/post/getting-started/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>/myblog/post/getting-started/</guid>
-      <description>
-
-&lt;p&gt;&lt;strong&gt;Create a free website with Academic using Markdown, Jupyter, or RStudio. Choose a beautiful color theme and build anything with the Page Builder - over 40 &lt;em&gt;widgets&lt;/em&gt;, &lt;em&gt;themes&lt;/em&gt;, and &lt;em&gt;language packs&lt;/em&gt; included!&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://academic-demo.netlify.com/&#34; target=&#34;_blank&#34;&gt;Check out the latest &lt;strong&gt;demo&lt;/strong&gt;&lt;/a&gt; of what you&amp;rsquo;ll get in less than 10 minutes, or &lt;a href=&#34;https://sourcethemes.com/academic/#expo&#34; target=&#34;_blank&#34;&gt;view the &lt;strong&gt;showcase&lt;/strong&gt;&lt;/a&gt; of personal, project, and business sites.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;👉 &lt;a href=&#34;#install&#34;&gt;&lt;strong&gt;Get Started&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;📚 &lt;a href=&#34;https://sourcethemes.com/academic/docs/&#34; target=&#34;_blank&#34;&gt;View the &lt;strong&gt;documentation&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;💬 &lt;a href=&#34;https://discourse.gohugo.io&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;Ask a question&lt;/strong&gt; on the forum&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;👥 &lt;a href=&#34;https://spectrum.chat/academic&#34; target=&#34;_blank&#34;&gt;Chat with the &lt;strong&gt;community&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;🐦 Twitter: &lt;a href=&#34;https://twitter.com/source_themes&#34; target=&#34;_blank&#34;&gt;@source_themes&lt;/a&gt; &lt;a href=&#34;https://twitter.com/GeorgeCushen&#34; target=&#34;_blank&#34;&gt;@GeorgeCushen&lt;/a&gt; &lt;a href=&#34;https://twitter.com/search?q=%23MadeWithAcademic&amp;amp;src=typd&#34; target=&#34;_blank&#34;&gt;#MadeWithAcademic&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;💡 &lt;a href=&#34;https://github.com/gcushen/hugo-academic/issues&#34; target=&#34;_blank&#34;&gt;Request a &lt;strong&gt;feature&lt;/strong&gt; or report a &lt;strong&gt;bug&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;⬆️ &lt;strong&gt;Updating?&lt;/strong&gt; View the &lt;a href=&#34;https://sourcethemes.com/academic/docs/update/&#34; target=&#34;_blank&#34;&gt;Update Guide&lt;/a&gt; and &lt;a href=&#34;https://sourcethemes.com/academic/updates/&#34; target=&#34;_blank&#34;&gt;Release Notes&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;❤️ &lt;strong&gt;Support development&lt;/strong&gt; of Academic:
-
-&lt;ul&gt;
-&lt;li&gt;☕️ &lt;a href=&#34;https://paypal.me/cushen&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;Donate a coffee&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;💵 &lt;a href=&#34;https://www.patreon.com/cushen&#34; target=&#34;_blank&#34;&gt;Become a backer on &lt;strong&gt;Patreon&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;🖼️ &lt;a href=&#34;https://www.redbubble.com/people/neutreno/works/34387919-academic&#34; target=&#34;_blank&#34;&gt;Decorate your laptop or journal with an Academic &lt;strong&gt;sticker&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;👕 &lt;a href=&#34;https://academic.threadless.com/&#34; target=&#34;_blank&#34;&gt;Wear the &lt;strong&gt;T-shirt&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;👩‍💻 &lt;a href=&#34;https://sourcethemes.com/academic/docs/contribute/&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;Contribute&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure&gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://raw.githubusercontent.com/gcushen/hugo-academic/master/academic.png&#34; data-caption=&#34;Academic is mobile first with a responsive design to ensure that your site looks stunning on every device.&#34;&gt;
-&lt;img src=&#34;https://raw.githubusercontent.com/gcushen/hugo-academic/master/academic.png&#34; alt=&#34;&#34; &gt;&lt;/a&gt;
-
-
-  
-  
-  &lt;figcaption&gt;
-    Academic is mobile first with a responsive design to ensure that your site looks stunning on every device.
-  &lt;/figcaption&gt;
-
-
-&lt;/figure&gt;
-
-
-&lt;p&gt;&lt;strong&gt;Key features:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Page builder&lt;/strong&gt; - Create &lt;em&gt;anything&lt;/em&gt; with &lt;a href=&#34;https://sourcethemes.com/academic/docs/page-builder/&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;widgets&lt;/strong&gt;&lt;/a&gt; and &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;elements&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Edit any type of content&lt;/strong&gt; - Blog posts, publications, talks, slides, projects, and more!&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Create content&lt;/strong&gt; in &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;Markdown&lt;/strong&gt;&lt;/a&gt;, &lt;a href=&#34;https://sourcethemes.com/academic/docs/jupyter/&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;Jupyter&lt;/strong&gt;&lt;/a&gt;, or &lt;a href=&#34;https://sourcethemes.com/academic/docs/install/#install-with-rstudio&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;RStudio&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Plugin System&lt;/strong&gt; - Fully customizable &lt;a href=&#34;https://sourcethemes.com/academic/themes/&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;color&lt;/strong&gt; and &lt;strong&gt;font themes&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Display Code and Math&lt;/strong&gt; - Code highlighting and &lt;a href=&#34;https://en.wikibooks.org/wiki/LaTeX/Mathematics&#34; target=&#34;_blank&#34;&gt;LaTeX math&lt;/a&gt; supported&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Integrations&lt;/strong&gt; - &lt;a href=&#34;https://analytics.google.com&#34; target=&#34;_blank&#34;&gt;Google Analytics&lt;/a&gt;, &lt;a href=&#34;https://disqus.com&#34; target=&#34;_blank&#34;&gt;Disqus commenting&lt;/a&gt;, Maps, Contact Forms, and more!&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Beautiful Site&lt;/strong&gt; - Simple and refreshing one page design&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Industry-Leading SEO&lt;/strong&gt; - Help get your website found on search engines and social media&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Media Galleries&lt;/strong&gt; - Display your images and videos with captions in a customizable gallery&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Mobile Friendly&lt;/strong&gt; - Look amazing on every screen with a mobile friendly version of your site&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Multi-language&lt;/strong&gt; - 15+ language packs including English, 中文, and Português&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Multi-user&lt;/strong&gt; - Each author gets their own profile page&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Privacy Pack&lt;/strong&gt; - Assists with GDPR&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Stand Out&lt;/strong&gt; - Bring your site to life with animation, parallax backgrounds, and scroll effects&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;One-Click Deployment&lt;/strong&gt; - No servers. No databases. Only files.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;themes&#34;&gt;Themes&lt;/h2&gt;
-
-&lt;p&gt;Academic comes with &lt;strong&gt;automatic day (light) and night (dark) mode&lt;/strong&gt; built-in. Alternatively, visitors can  choose their preferred mode - click the sun/moon icon in the top right of the &lt;a href=&#34;https://academic-demo.netlify.com/&#34; target=&#34;_blank&#34;&gt;Demo&lt;/a&gt; to see it in action! Day/night mode can also be disabled by the site admin in &lt;code&gt;params.toml&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://sourcethemes.com/academic/themes/&#34; target=&#34;_blank&#34;&gt;Choose a stunning &lt;strong&gt;theme&lt;/strong&gt; and &lt;strong&gt;font&lt;/strong&gt;&lt;/a&gt; for your site. Themes are fully &lt;a href=&#34;https://sourcethemes.com/academic/docs/customization/#custom-theme&#34; target=&#34;_blank&#34;&gt;customizable&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&#34;ecosystem&#34;&gt;Ecosystem&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://github.com/sourcethemes/academic-admin&#34; target=&#34;_blank&#34;&gt;Academic Admin&lt;/a&gt;:&lt;/strong&gt; An admin tool to import publications from BibTeX or import assets for an offline site&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://github.com/sourcethemes/academic-scripts&#34; target=&#34;_blank&#34;&gt;Academic Scripts&lt;/a&gt;:&lt;/strong&gt; Scripts to help migrate content to new versions of Academic&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;install&#34;&gt;Install&lt;/h2&gt;
-
-&lt;p&gt;You can choose from one of the following four methods to install:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://sourcethemes.com/academic/docs/install/#install-with-web-browser&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;one-click install using your web browser (recommended)&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://sourcethemes.com/academic/docs/install/#install-with-git&#34; target=&#34;_blank&#34;&gt;install on your computer using &lt;strong&gt;Git&lt;/strong&gt; with the Command Prompt/Terminal app&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://sourcethemes.com/academic/docs/install/#install-with-zip&#34; target=&#34;_blank&#34;&gt;install on your computer by downloading the &lt;strong&gt;ZIP files&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://sourcethemes.com/academic/docs/install/#install-with-rstudio&#34; target=&#34;_blank&#34;&gt;install on your computer with &lt;strong&gt;RStudio&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Then &lt;a href=&#34;https://sourcethemes.com/academic/docs/get-started/&#34; target=&#34;_blank&#34;&gt;personalize and deploy your new site&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&#34;updating&#34;&gt;Updating&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://sourcethemes.com/academic/docs/update/&#34; target=&#34;_blank&#34;&gt;View the Update Guide&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Feel free to &lt;em&gt;star&lt;/em&gt; the project on &lt;a href=&#34;https://github.com/gcushen/hugo-academic/&#34; target=&#34;_blank&#34;&gt;Github&lt;/a&gt; to help keep track of &lt;a href=&#34;https://sourcethemes.com/academic/updates&#34; target=&#34;_blank&#34;&gt;updates&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&#34;license&#34;&gt;License&lt;/h2&gt;
-
-&lt;p&gt;Copyright 2016-present &lt;a href=&#34;https://georgecushen.com&#34; target=&#34;_blank&#34;&gt;George Cushen&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Released under the &lt;a href=&#34;https://github.com/gcushen/hugo-academic/blob/master/LICENSE.md&#34; target=&#34;_blank&#34;&gt;MIT&lt;/a&gt; license.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Hello R Markdown</title>
-      <link>/myblog/post/2015-07-23-r-rmarkdown/</link>
-      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
-      <guid>/myblog/post/2015-07-23-r-rmarkdown/</guid>
-      <description>
-
-
-&lt;div id=&#34;r-markdown&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;R Markdown&lt;/h1&gt;
-&lt;p&gt;This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see &lt;a href=&#34;http://rmarkdown.rstudio.com&#34; class=&#34;uri&#34;&gt;http://rmarkdown.rstudio.com&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;You can embed an R code chunk like this:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;summary(cars)
-##      speed           dist       
-##  Min.   : 4.0   Min.   :  2.00  
-##  1st Qu.:12.0   1st Qu.: 26.00  
-##  Median :15.0   Median : 36.00  
-##  Mean   :15.4   Mean   : 42.98  
-##  3rd Qu.:19.0   3rd Qu.: 56.00  
-##  Max.   :25.0   Max.   :120.00
-fit &amp;lt;- lm(dist ~ speed, data = cars)
-fit
-## 
-## Call:
-## lm(formula = dist ~ speed, data = cars)
-## 
-## Coefficients:
-## (Intercept)        speed  
-##     -17.579        3.932&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;div id=&#34;including-plots&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;Including Plots&lt;/h1&gt;
-&lt;p&gt;You can also embed plots. See Figure &lt;a href=&#34;#fig:pie&#34;&gt;1&lt;/a&gt; for example:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;par(mar = c(0, 1, 0, 1))
-pie(
-  c(280, 60, 20),
-  c(&amp;#39;Sky&amp;#39;, &amp;#39;Sunny side of pyramid&amp;#39;, &amp;#39;Shady side of pyramid&amp;#39;),
-  col = c(&amp;#39;#0292D8&amp;#39;, &amp;#39;#F7EA39&amp;#39;, &amp;#39;#C4B632&amp;#39;),
-  init.angle = -50, border = NA
-)&lt;/code&gt;&lt;/pre&gt;
-&lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:pie&#34;&gt;&lt;/span&gt;
-&lt;img src=&#34;/myblog/myblog/post/2015-07-23-r-rmarkdown_files/figure-html/pie-1.png&#34; alt=&#34;A fancy pie chart.&#34; width=&#34;672&#34; /&gt;
-&lt;p class=&#34;caption&#34;&gt;
-Figure 1: A fancy pie chart.
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Lorem Ipsum</title>
-      <link>/myblog/post/2015-01-01-lorem-ipsum/</link>
-      <pubDate>Thu, 01 Jan 2015 13:09:13 -0600</pubDate>
-      <guid>/myblog/post/2015-01-01-lorem-ipsum/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Lorem ipsum&lt;/strong&gt; dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore &lt;em&gt;magna aliqua&lt;/em&gt;. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+&lt;p&gt;블로그 운영 외에도 &lt;strong&gt;mrchypark&lt;/strong&gt;님이 운영하는 &lt;a href=&#34;https://github.com/mrchypark&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;github&lt;/strong&gt;&lt;/a&gt;에는 흥미로운 주제를 가진 레포지터리가 많다. 여유를 가지고 차분히 살펴볼 요량이다.&lt;/p&gt;
 </description>
     </item>
     

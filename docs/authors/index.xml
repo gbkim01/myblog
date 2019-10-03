@@ -13,14 +13,11 @@
     </image>
     
     <item>
-      <title></title>
+      <title>admin</title>
       <link>/myblog/authors/admin/</link>
       <pubDate>Sun, 07 Apr 2019 00:00:00 +0000</pubDate>
       <guid>/myblog/authors/admin/</guid>
-      <description>&lt;p&gt;Nelson Bighetti is a professor of artificial intelligence at the Stanford AI Lab. His research interests include distributed robotics, mobile computing and programmable matter. He leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.&lt;/p&gt;
-
-&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.&lt;/p&gt;
-</description>
+      <description></description>
     </item>
     
     <item>
@@ -29,6 +26,23 @@
       <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
       <guid>/myblog/authors/robert-ford/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/myblog/authors/gbkim01/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/myblog/authors/gbkim01/</guid>
+      <description>
+
+&lt;h3 id=&#34;시덥잖은-일들로-시시덕거린다&#34;&gt;시덥잖은 일들로 시시덕거린다.&lt;/h3&gt;
+
+&lt;p&gt;권태가 가시지 않아 뭐라도 할까 싶어 개인 블로그를 만들었다. 마감은 닥쳐오고 발등의 불은 눈썹 까지 옮겨 붙었건만, 모든 업무와 책무는 뒤로 미루고 미적거리고 있다. 시험을 앞둔 학생이 책상 정리에 열을 올리는 것처럼, 만사 제친 소일거리에 도끼자루가 썩는다.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;코딩과는 무관한 문과생이 R과 파이썬을 흘낏한, 사사롭고도 무용한 결과물을 올리는 공간으로 이 블로그를 사용코자 한다. 덤으로 개인사 소소한 사담도 올리고&amp;hellip;&lt;/p&gt;
+</description>
     </item>
     
   </channel>

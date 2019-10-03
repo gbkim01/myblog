@@ -33,22 +33,87 @@
   </url>
   
   <url>
+    <loc>/myblog/categories/</loc>
+    <lastmod>2019-10-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/myblog/post/</loc>
-    <lastmod>2019-09-05T00:00:00+00:00</lastmod>
+    <lastmod>2019-10-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/myblog/post/writing-technical-content/</loc>
-    <lastmod>2019-07-12T00:00:00+00:00</lastmod>
+    <loc>/myblog/categories/r/</loc>
+    <lastmod>2019-10-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/myblog/authors/admin/</loc>
-    <lastmod>2019-09-05T00:00:00+00:00</lastmod>
+    <loc>/myblog/tags/r%EB%AC%B8%EB%B2%95/</loc>
+    <lastmod>2019-10-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/myblog/tags/</loc>
+    <lastmod>2019-10-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/myblog/tags/web-scraping/</loc>
+    <lastmod>2019-10-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/myblog/post/%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%94%84%EB%A0%88%EC%9E%84%EC%97%90%EC%84%9C-%EC%A7%9D%EC%88%98%ED%96%89%EA%B3%BC-%ED%99%80%EC%88%98%ED%96%89-%EC%84%A0%EB%B3%84%ED%95%98%EA%B8%B0/</loc>
+    <lastmod>2019-10-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/myblog/tags/rselenium/</loc>
+    <lastmod>2019-09-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/myblog/tags/rvest/</loc>
+    <lastmod>2019-09-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/myblog/post/web-scraping-with-r-www-climatewatchdata-org/</loc>
+    <lastmod>2019-09-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/myblog/tags/blogdown/</loc>
+    <lastmod>2019-09-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/myblog/tags/daily/</loc>
+    <lastmod>2019-09-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/myblog/tags/newpost/</loc>
+    <lastmod>2019-09-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/myblog/post/%EB%B8%94%EB%A1%9C%EA%B7%B8%EC%97%90-%EC%B2%AB-%EA%B8%80%EC%9D%84-%EB%82%A8%EA%B8%B4%EB%8B%A4/</loc>
+    <lastmod>2019-09-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/myblog/categories/%EC%9D%BC%EC%83%81%EB%8B%A4%EB%B0%98%EC%82%AC/</loc>
+    <lastmod>2019-09-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/myblog/publication_types/3/</loc>
+    <lastmod>2019-04-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/myblog/authors/admin/</loc>
     <lastmod>2019-04-07T00:00:00+00:00</lastmod>
   </url>
   
@@ -59,7 +124,7 @@
   
   <url>
     <loc>/myblog/authors/</loc>
-    <lastmod>2019-09-05T00:00:00+00:00</lastmod>
+    <lastmod>2019-04-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -75,16 +140,6 @@
   <url>
     <loc>/myblog/tags/source-themes/</loc>
     <lastmod>2019-04-07T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/myblog/tags/</loc>
-    <lastmod>2019-04-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/myblog/post/jupyter/</loc>
-    <lastmod>2019-09-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -105,11 +160,6 @@
   <url>
     <loc>/myblog/terms/</loc>
     <lastmod>2018-06-28T00:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/myblog/post/2016-12-30-hello-markdown/</loc>
-    <lastmod>2016-12-30T21:49:57-07:00</lastmod>
   </url>
   
   <url>
@@ -143,26 +193,6 @@
   </url>
   
   <url>
-    <loc>/myblog/tags/academic/</loc>
-    <lastmod>2019-04-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/myblog/post/getting-started/</loc>
-    <lastmod>2019-04-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/myblog/categories/</loc>
-    <lastmod>2019-04-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/myblog/categories/demo/</loc>
-    <lastmod>2019-04-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/myblog/publication_types/2/</loc>
     <lastmod>2015-09-01T00:00:00+00:00</lastmod>
   </url>
@@ -178,36 +208,6 @@
   </url>
   
   <url>
-    <loc>/myblog/post/2015-07-23-r-rmarkdown/</loc>
-    <lastmod>2015-07-23T21:13:14-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/myblog/tags/plot/</loc>
-    <lastmod>2015-07-23T21:13:14-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/myblog/categories/r/</loc>
-    <lastmod>2015-07-23T21:13:14-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/myblog/tags/r-markdown/</loc>
-    <lastmod>2015-07-23T21:13:14-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/myblog/tags/regression/</loc>
-    <lastmod>2015-07-23T21:13:14-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/myblog/post/2015-01-01-lorem-ipsum/</loc>
-    <lastmod>2015-01-01T13:09:13-06:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/myblog/publication_types/1/</loc>
     <lastmod>2013-07-01T00:00:00+00:00</lastmod>
   </url>
@@ -215,6 +215,10 @@
   <url>
     <loc>/myblog/publication/conference-paper/</loc>
     <lastmod>2013-07-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/myblog/authors/gbkim01/</loc>
   </url>
   
   <url>

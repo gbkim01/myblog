@@ -5,12 +5,68 @@
     <link>/myblog/tags/</link>
       <atom:link href="/myblog/tags/index.xml" rel="self" type="application/rss+xml" />
     <description>Tags</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019</copyright><lastBuildDate>Sun, 07 Apr 2019 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019</copyright><lastBuildDate>Tue, 01 Oct 2019 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/myblog/img/icon-192.png</url>
       <title>Tags</title>
       <link>/myblog/tags/</link>
     </image>
+    
+    <item>
+      <title>R문법</title>
+      <link>/myblog/tags/r%EB%AC%B8%EB%B2%95/</link>
+      <pubDate>Tue, 01 Oct 2019 00:00:00 +0000</pubDate>
+      <guid>/myblog/tags/r%EB%AC%B8%EB%B2%95/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>web scraping</title>
+      <link>/myblog/tags/web-scraping/</link>
+      <pubDate>Tue, 01 Oct 2019 00:00:00 +0000</pubDate>
+      <guid>/myblog/tags/web-scraping/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rselenium</title>
+      <link>/myblog/tags/rselenium/</link>
+      <pubDate>Sun, 29 Sep 2019 00:00:00 +0000</pubDate>
+      <guid>/myblog/tags/rselenium/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>rvest</title>
+      <link>/myblog/tags/rvest/</link>
+      <pubDate>Sun, 29 Sep 2019 00:00:00 +0000</pubDate>
+      <guid>/myblog/tags/rvest/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>blogdown</title>
+      <link>/myblog/tags/blogdown/</link>
+      <pubDate>Sat, 28 Sep 2019 00:00:00 +0000</pubDate>
+      <guid>/myblog/tags/blogdown/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>daily</title>
+      <link>/myblog/tags/daily/</link>
+      <pubDate>Sat, 28 Sep 2019 00:00:00 +0000</pubDate>
+      <guid>/myblog/tags/daily/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>newpost</title>
+      <link>/myblog/tags/newpost/</link>
+      <pubDate>Sat, 28 Sep 2019 00:00:00 +0000</pubDate>
+      <guid>/myblog/tags/newpost/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Source Themes</title>
@@ -33,38 +89,6 @@
       <link>/myblog/tags/demo/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
       <guid>/myblog/tags/demo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Academic</title>
-      <link>/myblog/tags/academic/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>/myblog/tags/academic/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>plot</title>
-      <link>/myblog/tags/plot/</link>
-      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
-      <guid>/myblog/tags/plot/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>R Markdown</title>
-      <link>/myblog/tags/r-markdown/</link>
-      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
-      <guid>/myblog/tags/r-markdown/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>regression</title>
-      <link>/myblog/tags/regression/</link>
-      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
-      <guid>/myblog/tags/regression/</guid>
       <description></description>
     </item>
     
