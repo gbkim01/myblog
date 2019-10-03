@@ -2,29 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories | 日常茶飯事</title>
-    <link>/categories/</link>
-      <atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+    <link>/myblog/categories/</link>
+      <atom:link href="/myblog/categories/index.xml" rel="self" type="application/rss+xml" />
     <description>Categories</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019</copyright><lastBuildDate>Wed, 20 Apr 2016 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/img/icon-192.png</url>
+      <url>/myblog/img/icon-192.png</url>
       <title>Categories</title>
-      <link>/categories/</link>
+      <link>/myblog/categories/</link>
     </image>
     
     <item>
       <title>Demo</title>
-      <link>/categories/demo/</link>
+      <link>/myblog/categories/demo/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>/categories/demo/</guid>
+      <guid>/myblog/categories/demo/</guid>
       <description></description>
     </item>
     
     <item>
       <title>R</title>
-      <link>/categories/r/</link>
+      <link>/myblog/categories/r/</link>
       <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
-      <guid>/categories/r/</guid>
+      <guid>/myblog/categories/r/</guid>
       <description></description>
     </item>
     

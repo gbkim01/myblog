@@ -3,7 +3,7 @@ title = "日常茶飯事"
 
 # The URL of your site.
 # End your URL with a `/` trailing slash, e.g. `https://example.com/`.
-baseurl = "/"
+baseurl = "https://gbkim01.github.io/myblog/"
 
 # Enter a copyright notice to display in the site footer.
 copyright = "&copy; 2019"
