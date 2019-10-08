@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>영화 | 日常茶飯事</title>
+    <link>/myblog/categories/%EC%98%81%ED%99%94/</link>
+      <atom:link href="/myblog/categories/%EC%98%81%ED%99%94/index.xml" rel="self" type="application/rss+xml" />
+    <description>영화</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019</copyright><lastBuildDate>Wed, 09 Oct 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/myblog/img/icon-192.png</url>
+      <title>영화</title>
+      <link>/myblog/categories/%EC%98%81%ED%99%94/</link>
+    </image>
+    
+    <item>
+      <title>조커, 혼돈의 광태자</title>
+      <link>/myblog/post/%EC%A1%B0%EC%BB%A4-%ED%98%BC%EB%8F%88%EC%9D%98-%EA%B4%91%ED%83%9C%EC%9E%90/</link>
+      <pubDate>Wed, 09 Oct 2019 00:00:00 +0000</pubDate>
+      <guid>/myblog/post/%EC%A1%B0%EC%BB%A4-%ED%98%BC%EB%8F%88%EC%9D%98-%EA%B4%91%ED%83%9C%EC%9E%90/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -5,12 +5,20 @@
     <link>/myblog/post/</link>
       <atom:link href="/myblog/post/index.xml" rel="self" type="application/rss+xml" />
     <description>Posts</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019</copyright><lastBuildDate>Fri, 04 Oct 2019 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019</copyright><lastBuildDate>Wed, 09 Oct 2019 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/myblog/img/icon-192.png</url>
       <title>Posts</title>
       <link>/myblog/post/</link>
     </image>
+    
+    <item>
+      <title>조커, 혼돈의 광태자</title>
+      <link>/myblog/post/%EC%A1%B0%EC%BB%A4-%ED%98%BC%EB%8F%88%EC%9D%98-%EA%B4%91%ED%83%9C%EC%9E%90/</link>
+      <pubDate>Wed, 09 Oct 2019 00:00:00 +0000</pubDate>
+      <guid>/myblog/post/%EC%A1%B0%EC%BB%A4-%ED%98%BC%EB%8F%88%EC%9D%98-%EA%B4%91%ED%83%9C%EC%9E%90/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>데이터 프레임에서 짝수행과 홀수행 선별하는 다른 방법</title>
@@ -189,7 +197,7 @@ section_sector &amp;lt;- cbind(section_sector, link_pool)&lt;/code&gt;&lt;/pre&g
 
 &lt;p&gt;친절하고도 상세한 설명에도 기본테마에 댓글기능 추가하니 반나절이 다 갔다. 고작해야 간단한 블로그 하나 만드는 일에도 쩔쩔매는 서툰 실력이지만 시간이 잘 가니 오히려 기쁜 마음이 앞선다.&lt;/p&gt;
 
-&lt;p&gt;여기까지만 하고 꾸미기와 기능의 추가는 차후에 진행할 계획이다.&lt;/p&gt;
+&lt;p&gt;여기까지만 하고 꾸미기와 기능의 추가는 차후에 진행할 생각이다.&lt;/p&gt;
 
 &lt;hr /&gt;
 

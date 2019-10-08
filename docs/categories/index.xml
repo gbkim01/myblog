@@ -5,12 +5,20 @@
     <link>/myblog/categories/</link>
       <atom:link href="/myblog/categories/index.xml" rel="self" type="application/rss+xml" />
     <description>Categories</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019</copyright><lastBuildDate>Fri, 04 Oct 2019 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019</copyright><lastBuildDate>Wed, 09 Oct 2019 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/myblog/img/icon-192.png</url>
       <title>Categories</title>
       <link>/myblog/categories/</link>
     </image>
+    
+    <item>
+      <title>영화</title>
+      <link>/myblog/categories/%EC%98%81%ED%99%94/</link>
+      <pubDate>Wed, 09 Oct 2019 00:00:00 +0000</pubDate>
+      <guid>/myblog/categories/%EC%98%81%ED%99%94/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>R</title>
