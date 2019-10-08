@@ -5,20 +5,12 @@
     <link>/myblog/post/</link>
       <atom:link href="/myblog/post/index.xml" rel="self" type="application/rss+xml" />
     <description>Posts</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019</copyright><lastBuildDate>Wed, 09 Oct 2019 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019</copyright><lastBuildDate>Fri, 04 Oct 2019 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/myblog/img/icon-192.png</url>
       <title>Posts</title>
       <link>/myblog/post/</link>
     </image>
-    
-    <item>
-      <title>조커, 혼돈의 광태자</title>
-      <link>/myblog/post/%EC%A1%B0%EC%BB%A4-%ED%98%BC%EB%8F%88%EC%9D%98-%EA%B4%91%ED%83%9C%EC%9E%90/</link>
-      <pubDate>Wed, 09 Oct 2019 00:00:00 +0000</pubDate>
-      <guid>/myblog/post/%EC%A1%B0%EC%BB%A4-%ED%98%BC%EB%8F%88%EC%9D%98-%EA%B4%91%ED%83%9C%EC%9E%90/</guid>
-      <description></description>
-    </item>
     
     <item>
       <title>데이터 프레임에서 짝수행과 홀수행 선별하는 다른 방법</title>

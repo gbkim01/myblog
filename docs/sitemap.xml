@@ -34,37 +34,12 @@
   
   <url>
     <loc>/myblog/categories/</loc>
-    <lastmod>2019-10-09T06:40:42+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/myblog/tags/daily/</loc>
-    <lastmod>2019-10-09T06:40:42+09:00</lastmod>
+    <lastmod>2019-10-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/myblog/post/</loc>
-    <lastmod>2019-10-09T06:40:42+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/myblog/tags/</loc>
-    <lastmod>2019-10-09T06:40:42+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/myblog/tags/%EC%98%81%ED%99%94/</loc>
-    <lastmod>2019-10-09T06:40:42+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/myblog/categories/%EC%98%81%ED%99%94/</loc>
-    <lastmod>2019-10-09T06:40:42+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/myblog/post/%EC%A1%B0%EC%BB%A4-%ED%98%BC%EB%8F%88%EC%9D%98-%EA%B4%91%ED%83%9C%EC%9E%90/</loc>
-    <lastmod>2019-10-09T06:40:42+09:00</lastmod>
+    <lastmod>2019-10-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -74,6 +49,11 @@
   
   <url>
     <loc>/myblog/tags/r%EB%AC%B8%EB%B2%95/</loc>
+    <lastmod>2019-10-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/myblog/tags/</loc>
     <lastmod>2019-10-04T00:00:00+00:00</lastmod>
   </url>
   
@@ -109,6 +89,11 @@
   
   <url>
     <loc>/myblog/tags/blogdown/</loc>
+    <lastmod>2019-09-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/myblog/tags/daily/</loc>
     <lastmod>2019-09-28T00:00:00+00:00</lastmod>
   </url>
   
