@@ -2,93 +2,93 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags | 日常茶飯事</title>
-    <link>/myblog/tags/</link>
-      <atom:link href="/myblog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <link>/tags/</link>
+      <atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     <description>Tags</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019</copyright><lastBuildDate>Fri, 04 Oct 2019 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/myblog/img/icon-192.png</url>
+      <url>/img/icon-192.png</url>
       <title>Tags</title>
-      <link>/myblog/tags/</link>
+      <link>/tags/</link>
     </image>
     
     <item>
       <title>R문법</title>
-      <link>/myblog/tags/r%EB%AC%B8%EB%B2%95/</link>
+      <link>/tags/r%EB%AC%B8%EB%B2%95/</link>
       <pubDate>Fri, 04 Oct 2019 00:00:00 +0000</pubDate>
-      <guid>/myblog/tags/r%EB%AC%B8%EB%B2%95/</guid>
+      <guid>/tags/r%EB%AC%B8%EB%B2%95/</guid>
       <description></description>
     </item>
     
     <item>
       <title>web scraping</title>
-      <link>/myblog/tags/web-scraping/</link>
+      <link>/tags/web-scraping/</link>
       <pubDate>Tue, 01 Oct 2019 00:00:00 +0000</pubDate>
-      <guid>/myblog/tags/web-scraping/</guid>
+      <guid>/tags/web-scraping/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Rselenium</title>
-      <link>/myblog/tags/rselenium/</link>
+      <link>/tags/rselenium/</link>
       <pubDate>Sun, 29 Sep 2019 00:00:00 +0000</pubDate>
-      <guid>/myblog/tags/rselenium/</guid>
+      <guid>/tags/rselenium/</guid>
       <description></description>
     </item>
     
     <item>
       <title>rvest</title>
-      <link>/myblog/tags/rvest/</link>
+      <link>/tags/rvest/</link>
       <pubDate>Sun, 29 Sep 2019 00:00:00 +0000</pubDate>
-      <guid>/myblog/tags/rvest/</guid>
+      <guid>/tags/rvest/</guid>
       <description></description>
     </item>
     
     <item>
       <title>blogdown</title>
-      <link>/myblog/tags/blogdown/</link>
+      <link>/tags/blogdown/</link>
       <pubDate>Sat, 28 Sep 2019 00:00:00 +0000</pubDate>
-      <guid>/myblog/tags/blogdown/</guid>
+      <guid>/tags/blogdown/</guid>
       <description></description>
     </item>
     
     <item>
       <title>daily</title>
-      <link>/myblog/tags/daily/</link>
+      <link>/tags/daily/</link>
       <pubDate>Sat, 28 Sep 2019 00:00:00 +0000</pubDate>
-      <guid>/myblog/tags/daily/</guid>
+      <guid>/tags/daily/</guid>
       <description></description>
     </item>
     
     <item>
       <title>newpost</title>
-      <link>/myblog/tags/newpost/</link>
+      <link>/tags/newpost/</link>
       <pubDate>Sat, 28 Sep 2019 00:00:00 +0000</pubDate>
-      <guid>/myblog/tags/newpost/</guid>
+      <guid>/tags/newpost/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Source Themes</title>
-      <link>/myblog/tags/source-themes/</link>
+      <link>/tags/source-themes/</link>
       <pubDate>Sun, 07 Apr 2019 00:00:00 +0000</pubDate>
-      <guid>/myblog/tags/source-themes/</guid>
+      <guid>/tags/source-themes/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Deep Learning</title>
-      <link>/myblog/tags/deep-learning/</link>
+      <link>/tags/deep-learning/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>/myblog/tags/deep-learning/</guid>
+      <guid>/tags/deep-learning/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Demo</title>
-      <link>/myblog/tags/demo/</link>
+      <link>/tags/demo/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>/myblog/tags/demo/</guid>
+      <guid>/tags/demo/</guid>
       <description></description>
     </item>
     
