@@ -2,29 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories | 日常茶飯事</title>
-    <link>https://gbkim01.github.io/myblog/categories/</link>
-      <atom:link href="https://gbkim01.github.io/myblog/categories/index.xml" rel="self" type="application/rss+xml" />
+    <link>/myblog/categories/</link>
+      <atom:link href="/myblog/categories/index.xml" rel="self" type="application/rss+xml" />
     <description>Categories</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019</copyright><lastBuildDate>Fri, 04 Oct 2019 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://gbkim01.github.io/myblog/img/icon-192.png</url>
+      <url>/myblog/img/icon-192.png</url>
       <title>Categories</title>
-      <link>https://gbkim01.github.io/myblog/categories/</link>
+      <link>/myblog/categories/</link>
     </image>
     
     <item>
       <title>R</title>
-      <link>https://gbkim01.github.io/myblog/categories/r/</link>
+      <link>/myblog/categories/r/</link>
       <pubDate>Fri, 04 Oct 2019 00:00:00 +0000</pubDate>
-      <guid>https://gbkim01.github.io/myblog/categories/r/</guid>
+      <guid>/myblog/categories/r/</guid>
       <description></description>
     </item>
     
     <item>
       <title>일상다반사</title>
-      <link>https://gbkim01.github.io/myblog/categories/%EC%9D%BC%EC%83%81%EB%8B%A4%EB%B0%98%EC%82%AC/</link>
+      <link>/myblog/categories/%EC%9D%BC%EC%83%81%EB%8B%A4%EB%B0%98%EC%82%AC/</link>
       <pubDate>Sat, 28 Sep 2019 00:00:00 +0000</pubDate>
-      <guid>https://gbkim01.github.io/myblog/categories/%EC%9D%BC%EC%83%81%EB%8B%A4%EB%B0%98%EC%82%AC/</guid>
+      <guid>/myblog/categories/%EC%9D%BC%EC%83%81%EB%8B%A4%EB%B0%98%EC%82%AC/</guid>
       <description></description>
     </item>
     

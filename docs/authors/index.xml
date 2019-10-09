@@ -2,37 +2,37 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Authors | 日常茶飯事</title>
-    <link>https://gbkim01.github.io/myblog/authors/</link>
-      <atom:link href="https://gbkim01.github.io/myblog/authors/index.xml" rel="self" type="application/rss+xml" />
+    <link>/myblog/authors/</link>
+      <atom:link href="/myblog/authors/index.xml" rel="self" type="application/rss+xml" />
     <description>Authors</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019</copyright><lastBuildDate>Sun, 07 Apr 2019 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://gbkim01.github.io/myblog/img/icon-192.png</url>
+      <url>/myblog/img/icon-192.png</url>
       <title>Authors</title>
-      <link>https://gbkim01.github.io/myblog/authors/</link>
+      <link>/myblog/authors/</link>
     </image>
     
     <item>
       <title>admin</title>
-      <link>https://gbkim01.github.io/myblog/authors/admin/</link>
+      <link>/myblog/authors/admin/</link>
       <pubDate>Sun, 07 Apr 2019 00:00:00 +0000</pubDate>
-      <guid>https://gbkim01.github.io/myblog/authors/admin/</guid>
+      <guid>/myblog/authors/admin/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Robert Ford</title>
-      <link>https://gbkim01.github.io/myblog/authors/robert-ford/</link>
+      <link>/myblog/authors/robert-ford/</link>
       <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
-      <guid>https://gbkim01.github.io/myblog/authors/robert-ford/</guid>
+      <guid>/myblog/authors/robert-ford/</guid>
       <description></description>
     </item>
     
     <item>
       <title></title>
-      <link>https://gbkim01.github.io/myblog/authors/gbkim01/</link>
+      <link>/myblog/authors/gbkim01/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://gbkim01.github.io/myblog/authors/gbkim01/</guid>
+      <guid>/myblog/authors/gbkim01/</guid>
       <description>
 
 &lt;h3 id=&#34;시덥잖은-일들로-시시덕거린다&#34;&gt;시덥잖은 일들로 시시덕거린다.&lt;/h3&gt;
