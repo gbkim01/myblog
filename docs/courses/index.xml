@@ -2,14 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Courses | 日常茶飯事</title>
-    <link>/myblog/courses/</link>
-      <atom:link href="/myblog/courses/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://gbkim01.github.io/myblog/courses/</link>
+      <atom:link href="https://gbkim01.github.io/myblog/courses/index.xml" rel="self" type="application/rss+xml" />
     <description>Courses</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019</copyright>
     <image>
-      <url>/myblog/img/icon-192.png</url>
+      <url>https://gbkim01.github.io/myblog/img/icon-192.png</url>
       <title>Courses</title>
-      <link>/myblog/courses/</link>
+      <link>https://gbkim01.github.io/myblog/courses/</link>
     </image>
     
   </channel>
