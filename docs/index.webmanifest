@@ -2,8 +2,8 @@
   "name": "日常茶飯事",
   "short_name": "日常茶飯事",
   "lang": "en-us",
-  "theme_color": "rgb(0, 136, 204)",
-  "background_color": "rgb(0, 136, 204)",
+  "theme_color": "#795548",
+  "background_color": "#795548",
   "icons": [{
     "src": "img/icon-192.png",
     "sizes": "192x192",

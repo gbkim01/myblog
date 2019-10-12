@@ -2,7 +2,7 @@
 # About widget.
 widget = "about"  # See https://sourcethemes.com/academic/docs/page-builder/
 headless = true  # This file represents a page section.
-active = true  # Activate this widget? true/false
+active = false  # Activate this widget? true/false
 weight = 20  # Order that this section will appear in.
 
 title = "**日常茶飯事**"
@@ -19,7 +19,7 @@ author = "gbkim01"
 #   Any HTML color name or Hex value is valid.
 
 # Background color.
- color = "navy"
+ color = "hsla(16, 24%, 85%, 1)"
   
 # Background gradient.
 gradient_start = "DeepSkyBlue"

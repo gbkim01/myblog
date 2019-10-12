@@ -5,15 +5,15 @@
 
 widget = "blank"  # See https://sourcethemes.com/academic/docs/page-builder/
 headless = true  # This file represents a page section.
-active = false  # Activate this widget? true/false
+active = true  # Activate this widget? true/false
 weight = 15  # Order that this section will appear.
 
-title = "日常茶飯事"
-subtitle = ""
+title = "**日常茶飯事**"
+subtitle = "**무기력증 극복을 위한 비생산적 소일거리**"
 
 [design]
   # Choose how many columns the section has. Valid values: 1 or 2.
-  columns = "1"
+  columns = "2"
 
 [design.background]
   # Apply a background color, gradient, or image.
@@ -22,15 +22,15 @@ subtitle = ""
   #   Any HTML color name or Hex value is valid.
 
   # Background color.
-   color = "navy"
+   color = "grey"
   
   # Background gradient.
   # gradient_start = "DeepSkyBlue"
   # gradient_end = "SkyBlue"
   
   # Background image.
-  image = "headers/bubbles-wide.jpg"  # Name of image in `static/img/`.
-  image_darken = 0.5  # Darken the image? Range 0-1 where 0 is transparent and 1 is opaque.
+  image = "headers/bubbles-wide_2.jpg"  # Name of image in `static/img/`.
+  image_darken = 1  # Darken the image? Range 0-1 where 0 is transparent and 1 is opaque.
 
   # Text color (true=light or false=dark).
   text_color_light = true
@@ -47,9 +47,9 @@ subtitle = ""
  css_class = ""
 +++
 
-### 시덥잖은 일들로 시시덕거린다.
+### 권태가 가시지 않는다.
 
-권태가 가시지 않아 뭐라도 할까 싶어 블로그를 만들었다. 마감은 다가오고 발등의 불은 눈썹 까지 옮겨 붙었건만, 모든 책무는 뒤로 미룬 채 불어터진 라면가닥처럼 바닥에 눌러 붙어 있다. 시험을 앞둔 학생이 책상 정리에 열을 올리는 것처럼, 만사 제친 소일거리에 도끼자루가 썩는다.   
+마감은 다가오고 발등의 불은 눈썹 까지 옮겨 붙었건만, 모든 책무는 뒤로 미룬 채 불어터진 라면가닥처럼 방바닥에 눌러 붙어 있다. 뭐라도 해야지 싶어 그저 재미삼아 블로그를 만들었다. 시험을 앞둔 학생이 책상 정리에 열을 올리는 것처럼, 만사 제친 소일거리에 도끼자루가 썩는다.   
 
 ---
 
