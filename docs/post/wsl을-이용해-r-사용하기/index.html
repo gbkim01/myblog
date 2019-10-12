@@ -28,7 +28,7 @@
   
     
   
-  <meta name="description" content="Using R on WSL(Windows Subsystem for Linux) 최근 몇일 동안은 WSL에 R을 올려 이것저것 설정하면서 시간을 보냈다. WSL에 Rstudio-server를 설치하면 윈도우 브라우저를 통">
+  <meta name="description" content="Using R on WSL(Windows Subsystem for Linux) WSL에 Rstudio-server를 설치하면 윈도우 브라우저를 통해 리눅스 버전의 R을 사용할 수 있는데, 이를 위한 기본적인 설정 방법과 의">
 
   
   <link rel="alternate" hreflang="en-us" href="../../post/wsl%EC%9D%84-%EC%9D%B4%EC%9A%A9%ED%95%B4-r-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/">
@@ -39,7 +39,7 @@
   
   
   
-  <meta name="theme-color" content="#328cc1">
+  <meta name="theme-color" content="#2962ff">
   
 
   
@@ -77,13 +77,13 @@
   
   
   
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cutive+Mono%7CLora:400,700%7CRoboto:400,700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
   
 
   
   
   
-  <link rel="stylesheet" href="../../css/academic.min.010ecb62da047d1d3abb4979474ec399.css">
+  <link rel="stylesheet" href="../../css/academic.min.6c78ef1126635db5466c030c1ef8ec89.css">
 
   
 
@@ -116,7 +116,7 @@
   <meta property="og:site_name" content="日常茶飯事">
   <meta property="og:url" content="/post/wsl%EC%9D%84-%EC%9D%B4%EC%9A%A9%ED%95%B4-r-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/">
   <meta property="og:title" content="WSl을 이용해 R 사용하기 | 日常茶飯事">
-  <meta property="og:description" content="Using R on WSL(Windows Subsystem for Linux) 최근 몇일 동안은 WSL에 R을 올려 이것저것 설정하면서 시간을 보냈다. WSL에 Rstudio-server를 설치하면 윈도우 브라우저를 통"><meta property="og:image" content="/img/icon-192.png">
+  <meta property="og:description" content="Using R on WSL(Windows Subsystem for Linux) WSL에 Rstudio-server를 설치하면 윈도우 브라우저를 통해 리눅스 버전의 R을 사용할 수 있는데, 이를 위한 기본적인 설정 방법과 의"><meta property="og:image" content="/img/icon-192.png">
   <meta property="twitter:image" content="/img/icon-192.png"><meta property="og:locale" content="en-us">
   
     
@@ -163,7 +163,7 @@
       "url": "/img/icon-512.png"
     }
   },
-  "description": "Using R on WSL(Windows Subsystem for Linux) 최근 몇일 동안은 WSL에 R을 올려 이것저것 설정하면서 시간을 보냈다. WSL에 Rstudio-server를 설치하면 윈도우 브라우저를 통"
+  "description": "Using R on WSL(Windows Subsystem for Linux) WSL에 Rstudio-server를 설치하면 윈도우 브라우저를 통해 리눅스 버전의 R을 사용할 수 있는데, 이를 위한 기본적인 설정 방법과 의"
 }
 </script>
 
@@ -440,11 +440,11 @@
 
 <h2 id="using-r-on-wsl-windows-subsystem-for-linux"><strong>Using R on WSL(Windows Subsystem for Linux)</strong></h2>
 
-<p>최근 몇일 동안은 WSL에 R을 올려 이것저것 설정하면서 시간을 보냈다. WSL에 <strong>Rstudio-server</strong>를 설치하면 윈도우 브라우저를 통해 리눅스 버전의 R을 사용할 수 있는데, 이를 위한 기본적인 설정 방법과 의존성 문제 해결방법 등을 정리해서 올린다. WSL은 우분투 18.04 LTS 버전을 기준으로 한다.</p>
+<p>WSL에 <strong>Rstudio-server</strong>를 설치하면 윈도우 브라우저를 통해 리눅스 버전의 R을 사용할 수 있는데, 이를 위한 기본적인 설정 방법과 의존성 문제 해결방법 등을 정리해서 올린다. WSL은 우분투 18.04 LTS 버전을 기준으로 한다.</p>
 
 <h3 id="1-microsoft-r-open-설치">1. Microsoft R Open 설치</h3>
 
-<p>우분투는 기본저장소를 통해 R 패키지를 제공하고 있다. 사용자는 우분투 터미널 창에 <code>sudo apt install r-base r-base-core</code> 명령문을 실행시키면 간단하게 R을 설치할 수 있다. 하지만 기본 R이 아닌 MS사가 제공하는 <strong>MRO(Microsoft R Open)</strong> 버전의 R을 설치하는 것을 택했다. 기본 R이 최신버전인 R_3.6이 아니라 R_3.4 이기도 하고, 들리는 말로는 MRO가 멀티 쓰레드 연산에 이점이 있다고 하니 기왕이면 MRO를 설치하자.</p>
+<p>우분투는 기본저장소를 통해 R 패키지를 제공하고 있다. 사용자는 우분투 터미널 창에 <code>sudo apt install r-base r-base-core</code> 명령문을 실행시켜 간단하게 R을 설치할 수 있다. 그러나 이번에는 기본 R이 아닌 MS사가 제공하는 <strong>MRO(Microsoft R Open)</strong> 버전의 R을 설치하는 것을 택했다. 기본 R이 최신버전인 R_3.6이 아니라 R_3.4 이기도 하고, 들리는 말로는 MRO가 멀티 쓰레드 연산에 이점이 있다고 하니 기왕이면 MRO를 설치하자.</p>
 
 <p>먼저 <a href="https://mran.microsoft.com/download" target="_blank">MRO링크</a>를 방문하여 우분투용 설치파일을 윈도우 다운로드 폴더에 다운받는다. 현재 MRO 최신버전은 3.5.3이다. 그리고 우분투 bash terminal에 다음의 코드를 실행시킨다.</p>
 

@@ -114,11 +114,11 @@
 
 &lt;h2 id=&#34;using-r-on-wsl-windows-subsystem-for-linux&#34;&gt;&lt;strong&gt;Using R on WSL(Windows Subsystem for Linux)&lt;/strong&gt;&lt;/h2&gt;
 
-&lt;p&gt;최근 몇일 동안은 WSL에 R을 올려 이것저것 설정하면서 시간을 보냈다. WSL에 &lt;strong&gt;Rstudio-server&lt;/strong&gt;를 설치하면 윈도우 브라우저를 통해 리눅스 버전의 R을 사용할 수 있는데, 이를 위한 기본적인 설정 방법과 의존성 문제 해결방법 등을 정리해서 올린다. WSL은 우분투 18.04 LTS 버전을 기준으로 한다.&lt;/p&gt;
+&lt;p&gt;WSL에 &lt;strong&gt;Rstudio-server&lt;/strong&gt;를 설치하면 윈도우 브라우저를 통해 리눅스 버전의 R을 사용할 수 있는데, 이를 위한 기본적인 설정 방법과 의존성 문제 해결방법 등을 정리해서 올린다. WSL은 우분투 18.04 LTS 버전을 기준으로 한다.&lt;/p&gt;
 
 &lt;h3 id=&#34;1-microsoft-r-open-설치&#34;&gt;1. Microsoft R Open 설치&lt;/h3&gt;
 
-&lt;p&gt;우분투는 기본저장소를 통해 R 패키지를 제공하고 있다. 사용자는 우분투 터미널 창에 &lt;code&gt;sudo apt install r-base r-base-core&lt;/code&gt; 명령문을 실행시키면 간단하게 R을 설치할 수 있다. 하지만 기본 R이 아닌 MS사가 제공하는 &lt;strong&gt;MRO(Microsoft R Open)&lt;/strong&gt; 버전의 R을 설치하는 것을 택했다. 기본 R이 최신버전인 R_3.6이 아니라 R_3.4 이기도 하고, 들리는 말로는 MRO가 멀티 쓰레드 연산에 이점이 있다고 하니 기왕이면 MRO를 설치하자.&lt;/p&gt;
+&lt;p&gt;우분투는 기본저장소를 통해 R 패키지를 제공하고 있다. 사용자는 우분투 터미널 창에 &lt;code&gt;sudo apt install r-base r-base-core&lt;/code&gt; 명령문을 실행시켜 간단하게 R을 설치할 수 있다. 그러나 이번에는 기본 R이 아닌 MS사가 제공하는 &lt;strong&gt;MRO(Microsoft R Open)&lt;/strong&gt; 버전의 R을 설치하는 것을 택했다. 기본 R이 최신버전인 R_3.6이 아니라 R_3.4 이기도 하고, 들리는 말로는 MRO가 멀티 쓰레드 연산에 이점이 있다고 하니 기왕이면 MRO를 설치하자.&lt;/p&gt;
 
 &lt;p&gt;먼저 &lt;a href=&#34;https://mran.microsoft.com/download&#34; target=&#34;_blank&#34;&gt;MRO링크&lt;/a&gt;를 방문하여 우분투용 설치파일을 윈도우 다운로드 폴더에 다운받는다. 현재 MRO 최신버전은 3.5.3이다. 그리고 우분투 bash terminal에 다음의 코드를 실행시킨다.&lt;/p&gt;
 
