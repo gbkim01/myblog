@@ -190,16 +190,23 @@ $ sudo apt install r-cran-rjava
 
 &lt;p&gt;다음으로 WSL의 한글 언어팩 설치 및 로케일에 대한 설정을 해야 한다. 이 과정이 없으면  &lt;code&gt;c(&amp;quot;UTF-8&amp;quot;, &amp;quot;CP949&amp;quot;, &amp;quot;EUC-KR&amp;quot;)&lt;/code&gt;관련 기본 인코딩 문제가 발생하며 &lt;strong&gt;KoNLP&lt;/strong&gt; 설치가 불가능하다.&lt;/p&gt;
 
-&lt;p&gt;다음의 코드를 우분투 터미널에 실행시켜 언어팩을 설치하고 로케일 설정을 한다.&lt;/p&gt;
+&lt;p&gt;다음의 코드를 우분투 터미널에 실행시켜 언어팩을 설치하고 로케일 설정을 변경한다.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;sudo apt-get install language-pack-ko
 sudo locale-gen ko_KR.UTF-8
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;언어팩을 설치하면 &lt;code&gt;sudo nano /etc/profile&lt;/code&gt;를 실행시켜 나오는 창의 마지막 행에 &lt;code&gt;export LANG=ko_KR.UTF-8&lt;/code&gt; 열어 설정을 마무리 한다.&lt;/p&gt;
+&lt;p&gt;한글 언어팩 설치가 완료되면 우분투 터미널에  &lt;code&gt;sudo nano /etc/profile&lt;/code&gt;의 코드를 실행시켜 편집창의 마지막 행에 &lt;code&gt;export LANG=ko_KR.UTF-8&lt;/code&gt; 을 추가한다.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;sudo nano /etc/profile
 export LANG=ko_KR.UTF-8
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;다음으로 우분투 터미널에 &lt;code&gt;sudo nano /etc/default/locale&lt;/code&gt;을 실행시켜 편집창의 마지막 행에  &lt;code&gt;LANG=&amp;quot;en_US.UTF-8&amp;quot;&lt;/code&gt;과 &lt;code&gt;LANG=&amp;quot;ko_KR.UTF-8&amp;quot;&lt;/code&gt;의 두 줄을 추가한다.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo nano /etc/default/locale
+LANG=&amp;quot;en_US.UTF-8&amp;quot;
+LANG=&amp;quot;ko_KR.UTF-8&amp;quot;
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;마지막으로 한글 글꼴을 설치한다. 글꼴이 없으면 나중에 그래프를 그릴때 한글 글꼴이 깨지는 경우가 있다.&lt;/p&gt;
