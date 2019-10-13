@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>WSL | 日常茶飯事</title>
-    <link>/tags/wsl/</link>
-      <atom:link href="/tags/wsl/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://gbkim01.github.io/myblog/tags/wsl/</link>
+      <atom:link href="https://gbkim01.github.io/myblog/tags/wsl/index.xml" rel="self" type="application/rss+xml" />
     <description>WSL</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019</copyright><lastBuildDate>Sat, 12 Oct 2019 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/img/icon-192.png</url>
+      <url>https://gbkim01.github.io/myblog/img/icon-192.png</url>
       <title>WSL</title>
-      <link>/tags/wsl/</link>
+      <link>https://gbkim01.github.io/myblog/tags/wsl/</link>
     </image>
     
     <item>
       <title>WSl을 이용해 R 사용하기</title>
-      <link>/post/wsl%EC%9D%84-%EC%9D%B4%EC%9A%A9%ED%95%B4-r-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</link>
+      <link>https://gbkim01.github.io/myblog/post/wsl%EC%9D%84-%EC%9D%B4%EC%9A%A9%ED%95%B4-r-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</link>
       <pubDate>Sat, 12 Oct 2019 00:00:00 +0000</pubDate>
-      <guid>/post/wsl%EC%9D%84-%EC%9D%B4%EC%9A%A9%ED%95%B4-r-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</guid>
+      <guid>https://gbkim01.github.io/myblog/post/wsl%EC%9D%84-%EC%9D%B4%EC%9A%A9%ED%95%B4-r-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</guid>
       <description>
 
 &lt;h2 id=&#34;using-r-on-wsl-windows-subsystem-for-linux&#34;&gt;&lt;strong&gt;Using R on WSL(Windows Subsystem for Linux)&lt;/strong&gt;&lt;/h2&gt;

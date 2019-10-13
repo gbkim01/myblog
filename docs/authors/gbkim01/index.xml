@@ -2,14 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>日常茶飯事</title>
-    <link>/authors/gbkim01/</link>
-      <atom:link href="/authors/gbkim01/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://gbkim01.github.io/myblog/authors/gbkim01/</link>
+      <atom:link href="https://gbkim01.github.io/myblog/authors/gbkim01/index.xml" rel="self" type="application/rss+xml" />
     <description>日常茶飯事</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019</copyright>
     <image>
-      <url>/img/icon-192.png</url>
+      <url>https://gbkim01.github.io/myblog/img/icon-192.png</url>
       <title>日常茶飯事</title>
-      <link>/authors/gbkim01/</link>
+      <link>https://gbkim01.github.io/myblog/authors/gbkim01/</link>
     </image>
     
   </channel>
