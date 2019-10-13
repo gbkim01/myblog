@@ -470,7 +470,7 @@ $ sudo ./install.sh
 
 <p>이제 윈도우의 웹브라우저를 통해 WSL의 R에 접속하여 사용할 수 있도록 Rstudio-server를 설치해야 한다. 방법은 매우 간단하다. <a href="https://rstudio.com/products/rstudio/download-server/debian-ubuntu/" target="_blank">링크</a>에 나온 설명을 따라 그대로 우분투 터미널에 다음의 코드를 입력하면 된다.</p>
 
-<pre><code>$ sudo apt-get install gdebi-core
+<pre><code>$ sudo apt install gdebi-core
 $ wget https://download2.rstudio.org/server/trusty/amd64/rstudio-server-1.2.5001-amd64.deb
 $ sudo gdebi rstudio-server-1.2.5001-amd64.deb
 </code></pre>
@@ -485,7 +485,7 @@ $ sudo rstudio-server stop
 
 <p><code>sudo rstudio-server start</code>는 Rstudio-server를 실행시키는 명령어 이고 <code>sudo rstudio-server stop</code>은 Rstudio-server를 종료시키는 명령어이다. 작업이나 분석이 끝나면 꼭 <code>sudo rstudio-server stop</code>를 입력하여 R 서버를 종료시키자.</p>
 
-<p><code>sudo rstudio-server stop</code> 코드를 입력하여 서버를 실행시켰다면 윈도우 브라우저 주소창에 <code>localhost:8787</code>을 입력하자. 파이어폭스, 크롬, 익스플로러, 엣지&hellip; 어느 브라우저를 이용해도 상관없다. 다만 개인이 운용하는 서버나 AWS등의 클라우드 서버를 운용할 경우 <code>localhost:8787</code>의 localhost 대신 서버 ip주소를 입력해야 한다.</p>
+<p><code>sudo rstudio-server start</code> 코드를 입력하여 서버를 실행시켰다면 윈도우 브라우저 주소창에 <code>localhost:8787</code>을 입력하자. 파이어폭스, 크롬, 익스플로러, 엣지&hellip; 어느 브라우저를 이용해도 상관없다. 다만 개인이 운용하는 서버나 AWS등의 클라우드 서버를 운용할 경우 <code>localhost:8787</code>의 localhost 대신 서버 ip주소를 입력해야 한다.</p>
 
 <p>브라우저에 다음과 같은 화면이 뜨면 정상적으로 작동한 것이다. 화면의 <strong>Username</strong>과 <strong>Password</strong>는 WSL의 개인 사용자명과 비밀번호이다. 이제 기본적인 설치과정은 완료되었다.</p>
 
@@ -497,24 +497,26 @@ $ sudo rstudio-server stop
 
 <h4 id="1-java-rjava-설치">1) JAVA, rJava 설치</h4>
 
-<p>R에서 사용하는 다양한 패키지 중에서 JAVA에 의존하는 패키지가 있다. 예를들어 한글 형태소 분석을 위한 R패키지인 <strong>KoNLP</strong>는 JAVA와 rJava가 설정되어 있지 않으면 사용할 수 없다.
-우분투에서 JAVA를 설치하는 방법은 다양하다. 기본저장소에서 제공하는 Open-JDK를 설치할 수도 있고 오라클에서 제공하는 JDK를 직접 다운받아 설치할 수도 있다. 여기서는 개인적으로 가장 간단하다고 생각하는 방법을 안내한다.</p>
+<p>R에서 사용하는 다양한 패키지 중에는 JAVA에 의존하는 패키지가 있다. 예컨대 한글 형태소 분석을 위한 R패키지인 <strong>KoNLP</strong>는 JAVA와 rJava가 설정되어 있지 않으면 사용할 수 없다. 따라서 JAVA와 관련된 설정을 미리 해두는 것이 좋다.</p>
 
-<pre><code>$ sudo apt-get install default-jdk
+<p>우분투에서 JAVA를 설치하는 방법은 다양하다. 기본저장소에서 제공하는 Open-JDK를 설치할 수도 있고 오라클에서 제공하는 JDK를 직접 다운받아 설치할 수도 있다. 여기서는 개인적으로 가장 간단하다고 생각하는 방법을 안내한다.</p>
+
+<pre><code>$ sudo apt install default-jdk
 $ sudo update-alternatives --config java
 $ sudo R CMD javareconf
 $ sudo apt install r-cran-rjava
 </code></pre>
 
-<p>첫번째 코드를 우분투 터미널에 입력하여 JDK를 설치한다. 컴퓨터에 여러가지 버전의 JAVA가 설치되어 있다면 두번째 코드를 실행시켜 실제 이용할 JAVA를 선택한다. 한가지 종류만 설치되어 있을 경우 이 과정은 생략한다.
-마지막 코드인  <code>sudo R CMD javareconf</code>는 자바 환경변수를 설정하는 것이다. 윈도우 상에서도 JAVA를 설치할 경우  시스템 변수에 <strong>JAVA_HOME</strong>과 <strong>PATH</strong>를 추가하는 과정을 거치는 것과 유사한 과정이다. 우분투에서도 편집기 창을 열어 직접 환경을 설정할 수도 있지만 그냥 간단하게 <code>sudo R CMD javareconf</code>입력으로 마무리 하자.</p>
+<p>첫번째 코드를 우분투 터미널에 입력하여 JDK를 설치한다. 컴퓨터에 여러가지 버전의 JAVA가 설치되어 있다면 두번째 코드를 실행시켜 실제 이용할 JAVA를 선택한다. 한가지 종류만 설치되어 있을 경우 이 과정은 생략한다.</p>
+
+<p>마지막 코드인  <code>sudo R CMD javareconf</code>는 자바 환경변수를 설정하는 것이다. 윈도우에서도 JAVA를 설치한 후,  시스템 변수에 <strong>JAVA_HOME</strong>과 <strong>PATH</strong>를 추가하는 과정을 거치는데 이와 유사한 작업이라고 볼 수 있다. 우분투에서는 편집기 창을 열어 옵션을 입력함으로써 직접 JAVA환경을 설정할 수도 있지만 여기서는 그냥 간단하게 <code>sudo R CMD javareconf</code>입력으로 마무리 한다.</p>
 
 <p>네번째 코드인 <code>sudo apt install r-cran-rjava</code>는 cran을 통해 우분투 시스템 상에 <strong>rJava</strong>를 설치하는 것이다. 인터넷에는 이 과정을 생략하고 바로 R 스크립트 창에서 <code>install.packages(&quot;rJava&quot;)</code>를 실행하면 된다고 하지만 내 경우에  <code>sudo apt install r-cran-rjava</code>를 생략하면 다음 과정에 오류가 났다.</p>
 
 <pre><code>install.packages(&quot;rJava&quot;)
 </code></pre>
 
-<p>자바를 설정하는 마지막 과정으로 R스크립트 상에서 <strong>rJava</strong>를 설치하기 위해  <code>install.packages(&quot;rJava&quot;)</code>를 실행한다.</p>
+<p>자바를 설정하는 마지막 과정으로 R스크립트 상에서 <strong>rJava</strong>를 설치하기 위한 <code>install.packages(&quot;rJava&quot;)</code>를 실행한다.</p>
 
 <h4 id="2-wsl-한글-언어-로케일-설정">2) WSL 한글 언어 로케일 설정</h4>
 
@@ -532,33 +534,35 @@ sudo locale-gen ko_KR.UTF-8
 export LANG=ko_KR.UTF-8
 </code></pre>
 
-<p>다음으로 우분투 터미널에 <code>sudo nano /etc/default/locale</code>을 실행시켜 편집창의 마지막 행에  <code>LANG=&quot;en_US.UTF-8&quot;</code>과 <code>LANG=&quot;ko_KR.UTF-8&quot;</code>의 두 줄을 추가한다.</p>
+<p>위의 작업에 이어 우분투 터미널에 <code>sudo nano /etc/default/locale</code>을 실행시켜 편집창의 마지막 행에  <code>LANG=&quot;en_US.UTF-8&quot;</code>과 <code>LANG=&quot;ko_KR.UTF-8&quot;</code>의 두 줄을 추가한다.</p>
 
 <pre><code>sudo nano /etc/default/locale
 LANG=&quot;en_US.UTF-8&quot;
 LANG=&quot;ko_KR.UTF-8&quot;
 </code></pre>
 
-<p>마지막으로 한글 글꼴을 설치한다. 글꼴이 없으면 나중에 그래프를 그릴때 한글 글꼴이 깨지는 경우가 있다.</p>
+<p>마지막으로 한글 글꼴을 설치한다. 글꼴이 없으면 나중에 워드클라우드 등의 그래픽작업에서 한글 글꼴이 깨지는 경우가 발생한다. 은글꼴, 백묵글꼭, 나눔글꼴 등 우분투에서 통상적으로 사용되는 글꼴을 설치한다. 이들 글꼴 외에 취향에 따라 구글 폰트 등을 설치해도 좋다.</p>
 
 <pre><code>sudo apt-get install fonts-unfonts-core fonts-unfonts-extra fonts-baekmuk fonts-nanum fonts-nanum-coding fonts-nanum-extra
 </code></pre>
 
 <h4 id="3-의존성-문제-해결을-위한-기타-라이브러리-및-r패키지-설치">3) 의존성 문제 해결을 위한 기타 라이브러리 및 R패키지 설치</h4>
 
-<p>사용하다 보면 <code>The previous R session was abnormally terminated due to an unexpected crash</code>의 문구와 함께 R이 갑자기 중단되는 경우가 생긴다. 그 때마다 검색해 보면 SSL오류라거나 의존성 있는 R패키지가 제대로 설치되지 않았다거나 하는 등 문제도 다양하고 해결책도 다양하다. 그냥 다음의 코드를 우분투 터미널에 실행시켜 한꺼번에 해결하자.</p>
+<p>사용하다 보면 <code>The previous R session was abnormally terminated due to an unexpected crash</code>의 문구와 함께 R이 갑자기 중단되는 경우가 생긴다. 원인을 찾아보면 SSL오류라거나 의존성 있는 R패키지가 제대로 설치되지 않았다거나 하는 등 문제도 다양하고 해결책도 다양하다. 그냥 다음의 코드를 우분투 터미널에 실행시켜 한꺼번에 해결하자.</p>
 
-<pre><code>sudo apt-get install libcurl4-openssl-dev libssl-dev libxslt1-dev libxml2-dev
-sudo apt-get install r-cran-rcpp r-cran-inline r-cran-rcpp r-cran-rsqlite r-cran-devtools
-sudo apt-get install gfortran curl
+<pre><code>sudo apt install libcurl4-openssl-dev libssl-dev libxslt1-dev libxml2-dev
+sudo apt install r-cran-rcpp r-cran-inline r-cran-rsqlite r-cran-devtools
+sudo apt install gfortran curl
 </code></pre>
 
-<p>마지막 다음의 코드는 R스크립트에서 실행시킨다.</p>
+<h4 id="4-웹페이지-스크래핑-중-r세션이-갑자기-중단되는-문제">4) 웹페이지 스크래핑 중, R세션이 갑자기 중단되는 문제</h4>
+
+<p>R패키지인 <strong>rvest</strong>를 이용하여 특정 웹의 html페이지를 R로 불러오는 과정에서 <code>The previous R session was abnormally terminated due to an unexpected crash</code>의 문구와 함께 R이 갑자기 중단되는 경우가 발생했다. 원인은 잘 모르지만 또다른 R패키지 <strong>curl</strong>을 설치하면 이상없이 작동한다.</p>
 
 <pre><code>install.packages(&quot;curl&quot;)
 </code></pre>
 
-<h4 id="4-blogdown-운영시-블로그-페이지가-깨지는-문제">4) blogdown 운영시 블로그 페이지가 깨지는 문제</h4>
+<h4 id="5-blogdown-운영시-블로그-페이지가-깨지는-문제">5) blogdown 운영시 블로그 페이지가 깨지는 문제</h4>
 
 <p>윈도우에서 <strong>blogdown</strong>을 실행시켰을 때는 겪지 못한 문제인데 우분투 R에서 블로그의 새로운 글을 작성하고 &lsquo;blogdown:::serve_site()&lsquo;로 사이트를 생성하면 블로그 페이지가 전부 깨지는 문제가 발생했다.
 검색하니 블로그 페이지의 주소가 제대로 생성되지 않기 때문이라고 한다. 설정파일인 <strong>config.toml</strong>에  <code>relativeurls = true</code>의 옵션을 추가한다.</p>
