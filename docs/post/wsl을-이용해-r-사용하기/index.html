@@ -540,9 +540,9 @@ LANG=&quot;en_US.UTF-8&quot;
 LANG=&quot;ko_KR.UTF-8&quot;
 </code></pre>
 
-<p>마지막으로 한글 글꼴을 설치한다. 글꼴이 없으면 나중에 워드클라우드 등의 그래픽작업에서 한글 글꼴이 깨지는 경우가 발생한다. 은글꼴, 백묵글꼭, 나눔글꼴 등 우분투에서 통상적으로 사용되는 글꼴을 설치한다. 이들 글꼴 외에 취향에 따라 구글 폰트 등을 설치해도 좋다.</p>
+<p>마지막으로 한글 글꼴을 설치한다. 글꼴이 없으면 나중에 워드클라우드 등의 그래픽작업에서 한글 글꼴이 깨지는 경우가 발생한다. 은글꼴, 백묵글꼴, 나눔글꼴, 구글폰트 등 우분투에서 통상적으로 사용되는 글꼴을 설치한다.</p>
 
-<pre><code>sudo apt-get install fonts-unfonts-core fonts-unfonts-extra fonts-baekmuk fonts-nanum fonts-nanum-coding fonts-nanum-extra
+<pre><code>sudo apt-get install fonts-unfonts-core fonts-unfonts-extra fonts-baekmuk fonts-nanum fonts-nanum-coding fonts-nanum-extra fonts-noto-cjk
 </code></pre>
 
 <h4 id="3-의존성-문제-해결을-위한-기타-라이브러리-및-r패키지-설치">3) 의존성 문제 해결을 위한 기타 라이브러리 및 R패키지 설치</h4>
@@ -556,9 +556,9 @@ sudo apt install gfortran curl
 
 <h4 id="4-웹페이지-스크래핑-중-r세션이-갑자기-중단되는-문제">4) 웹페이지 스크래핑 중, R세션이 갑자기 중단되는 문제</h4>
 
-<p>R패키지인 <strong>rvest</strong>를 이용하여 특정 웹의 html페이지를 R로 불러오는 과정에서 <code>The previous R session was abnormally terminated due to an unexpected crash</code>의 문구와 함께 R이 갑자기 중단되는 경우가 발생했다. 원인은 잘 모르지만 또다른 R패키지 <strong>curl</strong>을 설치하면 이상없이 작동한다.</p>
+<p>R패키지인 <strong>rvest</strong>를 이용하여 특정 웹의 html페이지를 R로 불러오는 과정에서 <code>The previous R session was abnormally terminated due to an unexpected crash</code>의 문구와 함께 R이 갑자기 중단되는 경우가 발생했다. 원인은 잘 모르지만 또다른 R패키지 <strong>RCurl</strong>, <strong>curl</strong>을 설치하면 이상없이 작동한다.</p>
 
-<pre><code>install.packages(&quot;curl&quot;)
+<pre><code>install.packages(c(&quot;RCurl&quot;, &quot;curl&quot;))
 </code></pre>
 
 <h4 id="5-blogdown-운영시-블로그-페이지가-깨지는-문제">5) blogdown 운영시 블로그 페이지가 깨지는 문제</h4>
