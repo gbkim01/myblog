@@ -1,0 +1,44 @@
+---
+title: Rstudio cloud를 이용한 블로그 포스팅
+author: 김강배
+date: '2020-07-28'
+slug: rstudio-cloud를-이용한-블로그-포스팅
+categories:
+  - R
+  - 일상다반사
+tags:
+  - blogdown
+  - daily
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2020-07-28T13:31:53Z'
+blogdown::html_page:
+  toc: true
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+<center>
+<img src = "https://user-images.githubusercontent.com/30010992/88744717-20d56b80-d183-11ea-86e6-8beef56dbd26.jpg" width=80%>
+</center>
+
+
+## **블로그를 다시 시작해보려고 한다.**
+
+한창 R을 만지작 거리며 블로그도 개설했지만, 작년 10월을 마지막으로 새로운 글을 올리지 않고 있었다. 공개도니 장소에 글을 올릴 만큼 내 인생에 특별한 사건이 없기도 했거니와, 마음에 여유가 없으니 진득하게 앉아 키보드를 두드리고 싶지도 않았기 때문이다. 
+
+마지막 글 이후로 10개월이나 지나서 특별히 심경의 변화가 있는 것은 아니고 딱히 맘 둘 곳 없으니 블로그라도 다시 시작하자는 마음에서 글을 남긴다. 오랜만에 다시 시작하려니 굉장히 어색하지만 나중에 기회가 된다면 블로그 테마도 변경(이 [테마](https://themes.gohugo.io/hugo-clarity/)로 바꾸고 싶다.)하고 새로운 마음으로 시작하려 한다. 
+
+
+## **Rstudio Cloud**
+
+최근에 그 존재를 알게된 **Rstudio cloud**를 요긴하게 써먹고 있다. 몇 가지 불만족 스러운 부분(CPU 1코어, 램 1기가의 낮은 성능이라던지...)이 있기는 하지만 가볍게 사용하기에는 충분한 성능을 제공하고 있다. 무엇보다 프로젝트별로 독립적인 환경을 제공하고 있어서 나중에 패키지가 꼬일 염려도 덜하고 **리눅스 환경의 최신 R 버전**(현재는 4.02버전)을 제공한다는 장점이 있다. 한동안 개인 컴퓨터 보다는 **Rstudio cloud**만 사용하지 싶다.
+
+지금 이 블로그 글도 **Rstudio cloud**에서 작성하였다. 쓸데없이 개인 컴퓨터 자원을 낭비하지 않아도 되니 좋다. 
+
+
