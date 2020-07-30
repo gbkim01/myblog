@@ -10,7 +10,7 @@
 
 [[main]]
   name = "유용한 팁"
-  url = "courses/"
+  url = "#courses"
   weight = 30
 
 [[main]]
