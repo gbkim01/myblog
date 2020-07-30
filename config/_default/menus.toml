@@ -4,17 +4,17 @@
 #   The weight parameter defines the order that the links will appear in.
 
 [[main]]
-  name = "Home"
+  name = "대문"
   url = "#demo"
   weight = 10
 
 [[main]]
-  name = "Tips"
+  name = "유용한 팁"
   url = "courses/"
   weight = 30
 
 [[main]]
-  name = "Posts"
+  name = "저잣거리"
   url = "#posts"
   weight = 20
 
