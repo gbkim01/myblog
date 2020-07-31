@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>R | 日常茶飯事</title>
-    <link>https://gbkim01.github.io/myblog/categories/r/</link>
-      <atom:link href="https://gbkim01.github.io/myblog/categories/r/index.xml" rel="self" type="application/rss+xml" />
+    <link>/categories/r/</link>
+      <atom:link href="/categories/r/index.xml" rel="self" type="application/rss+xml" />
     <description>R</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© gbkim01 2020</copyright><lastBuildDate>Tue, 28 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 본 블로그에 게시된 모든 컨텐츠의 저작권은 블로그 주인에게 있습니다.</copyright><lastBuildDate>Tue, 28 Jul 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://gbkim01.github.io/myblog/media/icon-32.png</url>
+      <url>/media/icon-32.png</url>
       <title>R</title>
-      <link>https://gbkim01.github.io/myblog/categories/r/</link>
+      <link>/categories/r/</link>
     </image>
     
     <item>
       <title>Rstudio cloud를 이용한 블로그 포스팅</title>
-      <link>https://gbkim01.github.io/myblog/post/rstudio-cloud%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EB%B8%94%EB%A1%9C%EA%B7%B8-%ED%8F%AC%EC%8A%A4%ED%8C%85/</link>
+      <link>/post/rstudio-cloud%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EB%B8%94%EB%A1%9C%EA%B7%B8-%ED%8F%AC%EC%8A%A4%ED%8C%85/</link>
       <pubDate>Tue, 28 Jul 2020 00:00:00 +0000</pubDate>
-      <guid>https://gbkim01.github.io/myblog/post/rstudio-cloud%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EB%B8%94%EB%A1%9C%EA%B7%B8-%ED%8F%AC%EC%8A%A4%ED%8C%85/</guid>
+      <guid>/post/rstudio-cloud%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EB%B8%94%EB%A1%9C%EA%B7%B8-%ED%8F%AC%EC%8A%A4%ED%8C%85/</guid>
       <description>
 
 
@@ -38,9 +38,9 @@
     
     <item>
       <title>WSl을 이용해 R 사용하기</title>
-      <link>https://gbkim01.github.io/myblog/post/wsl%EC%9D%84-%EC%9D%B4%EC%9A%A9%ED%95%B4-r-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</link>
+      <link>/post/wsl%EC%9D%84-%EC%9D%B4%EC%9A%A9%ED%95%B4-r-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</link>
       <pubDate>Sat, 12 Oct 2019 00:00:00 +0000</pubDate>
-      <guid>https://gbkim01.github.io/myblog/post/wsl%EC%9D%84-%EC%9D%B4%EC%9A%A9%ED%95%B4-r-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</guid>
+      <guid>/post/wsl%EC%9D%84-%EC%9D%B4%EC%9A%A9%ED%95%B4-r-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</guid>
       <description>&lt;h2 id=&#34;using-r-on-wslwindows-subsystem-for-linux&#34;&gt;&lt;strong&gt;Using R on WSL(Windows Subsystem for Linux)&lt;/strong&gt;&lt;/h2&gt;
 &lt;p&gt;WSL에 &lt;strong&gt;Rstudio-server&lt;/strong&gt;를 설치하면 윈도우 브라우저를 통해 리눅스 버전의 R을 사용할 수 있는데, 이를 위한 기본적인 설정 방법과 의존성 문제 해결방법 등을 정리해서 올린다. WSL은 우분투 18.04 LTS 버전을 기준으로 한다.&lt;/p&gt;
 &lt;h3 id=&#34;1-microsoft-r-open-설치&#34;&gt;1. Microsoft R Open 설치&lt;/h3&gt;
@@ -114,9 +114,9 @@ sudo apt install gfortran curl
     
     <item>
       <title>데이터 프레임에서 짝수행과 홀수행 선별하는 다른 방법</title>
-      <link>https://gbkim01.github.io/myblog/post/%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%94%84%EB%A0%88%EC%9E%84%EC%97%90%EC%84%9C-%EC%A7%9D%EC%88%98%ED%96%89%EA%B3%BC-%ED%99%80%EC%88%98%ED%96%89-%EC%84%A0%EB%B3%84%ED%95%98%EB%8A%94-%EB%8B%A4%EB%A5%B8-%EB%B0%A9%EB%B2%95/</link>
+      <link>/post/%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%94%84%EB%A0%88%EC%9E%84%EC%97%90%EC%84%9C-%EC%A7%9D%EC%88%98%ED%96%89%EA%B3%BC-%ED%99%80%EC%88%98%ED%96%89-%EC%84%A0%EB%B3%84%ED%95%98%EB%8A%94-%EB%8B%A4%EB%A5%B8-%EB%B0%A9%EB%B2%95/</link>
       <pubDate>Fri, 04 Oct 2019 00:00:00 +0000</pubDate>
-      <guid>https://gbkim01.github.io/myblog/post/%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%94%84%EB%A0%88%EC%9E%84%EC%97%90%EC%84%9C-%EC%A7%9D%EC%88%98%ED%96%89%EA%B3%BC-%ED%99%80%EC%88%98%ED%96%89-%EC%84%A0%EB%B3%84%ED%95%98%EB%8A%94-%EB%8B%A4%EB%A5%B8-%EB%B0%A9%EB%B2%95/</guid>
+      <guid>/post/%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%94%84%EB%A0%88%EC%9E%84%EC%97%90%EC%84%9C-%EC%A7%9D%EC%88%98%ED%96%89%EA%B3%BC-%ED%99%80%EC%88%98%ED%96%89-%EC%84%A0%EB%B3%84%ED%95%98%EB%8A%94-%EB%8B%A4%EB%A5%B8-%EB%B0%A9%EB%B2%95/</guid>
       <description>
 
 
@@ -157,9 +157,9 @@ df %&amp;gt;% filter(row_number() %% 3 == 1)&lt;/code&gt;&lt;/pre&gt;
     
     <item>
       <title>데이터셋의 짝수행과 홀수행 구분</title>
-      <link>https://gbkim01.github.io/myblog/post/%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%94%84%EB%A0%88%EC%9E%84%EC%97%90%EC%84%9C-%EC%A7%9D%EC%88%98%ED%96%89%EA%B3%BC-%ED%99%80%EC%88%98%ED%96%89-%EC%84%A0%EB%B3%84%ED%95%98%EA%B8%B0/</link>
+      <link>/post/%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%94%84%EB%A0%88%EC%9E%84%EC%97%90%EC%84%9C-%EC%A7%9D%EC%88%98%ED%96%89%EA%B3%BC-%ED%99%80%EC%88%98%ED%96%89-%EC%84%A0%EB%B3%84%ED%95%98%EA%B8%B0/</link>
       <pubDate>Tue, 01 Oct 2019 00:00:00 +0000</pubDate>
-      <guid>https://gbkim01.github.io/myblog/post/%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%94%84%EB%A0%88%EC%9E%84%EC%97%90%EC%84%9C-%EC%A7%9D%EC%88%98%ED%96%89%EA%B3%BC-%ED%99%80%EC%88%98%ED%96%89-%EC%84%A0%EB%B3%84%ED%95%98%EA%B8%B0/</guid>
+      <guid>/post/%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%94%84%EB%A0%88%EC%9E%84%EC%97%90%EC%84%9C-%EC%A7%9D%EC%88%98%ED%96%89%EA%B3%BC-%ED%99%80%EC%88%98%ED%96%89-%EC%84%A0%EB%B3%84%ED%95%98%EA%B8%B0/</guid>
       <description>
 
 
@@ -180,9 +180,9 @@ data_odd &amp;lt;- filter(data, seq_len(nrow(data))%% 2==1) # 홀수행&lt;/code
     
     <item>
       <title>URL 리스트 취합</title>
-      <link>https://gbkim01.github.io/myblog/post/web-scraping-with-r-www-climatewatchdata-org/</link>
+      <link>/post/web-scraping-with-r-www-climatewatchdata-org/</link>
       <pubDate>Sun, 29 Sep 2019 00:00:00 +0000</pubDate>
-      <guid>https://gbkim01.github.io/myblog/post/web-scraping-with-r-www-climatewatchdata-org/</guid>
+      <guid>/post/web-scraping-with-r-www-climatewatchdata-org/</guid>
       <description>
 
 

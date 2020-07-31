@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Overview | 日常茶飯事</title>
-    <link>https://gbkim01.github.io/myblog/courses/r_tip_102/</link>
-      <atom:link href="https://gbkim01.github.io/myblog/courses/r_tip_102/index.xml" rel="self" type="application/rss+xml" />
+    <link>/courses/r_tip_102/</link>
+      <atom:link href="/courses/r_tip_102/index.xml" rel="self" type="application/rss+xml" />
     <description>Overview</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© gbkim01 2020</copyright><lastBuildDate>Sun, 09 Sep 2018 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 본 블로그에 게시된 모든 컨텐츠의 저작권은 블로그 주인에게 있습니다.</copyright><lastBuildDate>Sun, 09 Sep 2018 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://gbkim01.github.io/myblog/media/icon-32.png</url>
+      <url>/media/icon-32.png</url>
       <title>Overview</title>
-      <link>https://gbkim01.github.io/myblog/courses/r_tip_102/</link>
+      <link>/courses/r_tip_102/</link>
     </image>
     
     <item>
       <title>Example Page 1</title>
-      <link>https://gbkim01.github.io/myblog/courses/r_tip_102/example1/</link>
+      <link>/courses/r_tip_102/example1/</link>
       <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
-      <guid>https://gbkim01.github.io/myblog/courses/r_tip_102/example1/</guid>
+      <guid>/courses/r_tip_102/example1/</guid>
       <description>&lt;p&gt;In this tutorial, I&amp;rsquo;ll share my top 10 tips for getting started with Academic:&lt;/p&gt;
 &lt;h2 id=&#34;tip-1&#34;&gt;Tip 1&lt;/h2&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
