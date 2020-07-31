@@ -2,32 +2,54 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>daily | 日常茶飯事</title>
-    <link>/tags/daily/</link>
-      <atom:link href="/tags/daily/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://gbkim01.github.io/myblog/tags/daily/</link>
+      <atom:link href="https://gbkim01.github.io/myblog/tags/daily/index.xml" rel="self" type="application/rss+xml" />
     <description>daily</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019</copyright><lastBuildDate>Sat, 28 Sep 2019 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019</copyright><lastBuildDate>Tue, 28 Jul 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/img/icon-32.png</url>
+      <url>https://gbkim01.github.io/myblog/media/icon-32.png</url>
       <title>daily</title>
-      <link>/tags/daily/</link>
+      <link>https://gbkim01.github.io/myblog/tags/daily/</link>
     </image>
     
     <item>
+      <title>Rstudio cloud를 이용한 블로그 포스팅</title>
+      <link>https://gbkim01.github.io/myblog/post/rstudio-cloud%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EB%B8%94%EB%A1%9C%EA%B7%B8-%ED%8F%AC%EC%8A%A4%ED%8C%85/</link>
+      <pubDate>Tue, 28 Jul 2020 00:00:00 +0000</pubDate>
+      <guid>https://gbkim01.github.io/myblog/post/rstudio-cloud%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EB%B8%94%EB%A1%9C%EA%B7%B8-%ED%8F%AC%EC%8A%A4%ED%8C%85/</guid>
+      <description>
+
+
+&lt;center&gt;
+&lt;img src = &#34;https://user-images.githubusercontent.com/30010992/88744717-20d56b80-d183-11ea-86e6-8beef56dbd26.jpg&#34; width=80%&gt;
+&lt;/center&gt;
+&lt;div id=&#34;블로그를-다시-시작하려고-한다.&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;strong&gt;블로그를 다시 시작하려고 한다.&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;한창 R을 만지작 거리며 블로그도 개설했지만, 작년 10월을 마지막으로 새로운 글을 올리지 않고 있었다. 공개된 장소에 글을 올릴 만큼 내 인생에 특별한 사건이 없기도 했거니와, 마음에 여유가 없어 진득하게 앉아 키보드를 두드리고 싶지 않았기 때문이다.&lt;/p&gt;
+&lt;p&gt;마지막 올린 글 이후로 10개월이나 지나서 특별히 심경의 변화가 있는 것은 아니다. 다만 딱히 맘 둘 곳 없어 블로그라도 다시 시작하면 나아지려나 하는 심정으로 글을 쓴다. 오랜만에 몇자 적으려니 굉장히 어색하지만 나중에 기회가 된다면 블로그 테마도 변경(이 &lt;a href=&#34;https://themes.gohugo.io/hugo-clarity/&#34;&gt;&lt;strong&gt;테마&lt;/strong&gt;&lt;/a&gt;로 바꾸고 싶다.)하고 마음을 다잡으려 한다.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;rstudio-cloud&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;strong&gt;Rstudio Cloud&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;최근에 그 존재를 알게된 &lt;strong&gt;Rstudio cloud&lt;/strong&gt;를 요긴하게 써먹고 있다. 몇 가지 불만족 스러운 부분(CPU 1코어, 램 1기가의 낮은 성능이라던지…)이 있기는 하지만 가볍게 사용하기에는 충분한 성능을 제공하고 있다. 무엇보다 프로젝트별로 독립적인 환경을 제공하고 있어서 나중에 패키지가 꼬일 염려도 덜하고 &lt;strong&gt;리눅스 환경의 최신 R 버전&lt;/strong&gt;(현재는 4.02버전)을 제공한다는 장점이 있다. 한동안 개인 컴퓨터 보다는 &lt;strong&gt;Rstudio cloud&lt;/strong&gt;만 사용하지 싶다.&lt;/p&gt;
+&lt;p&gt;지금 이 블로그 글도 &lt;strong&gt;Rstudio cloud&lt;/strong&gt;에서 작성하였다. 쓸데없이 개인 컴퓨터 자원을 낭비하지 않아도 되니 좋다.&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
       <title>블로그에 첫 글을 남긴다.</title>
-      <link>/post/%EB%B8%94%EB%A1%9C%EA%B7%B8%EC%97%90-%EC%B2%AB-%EA%B8%80%EC%9D%84-%EB%82%A8%EA%B8%B4%EB%8B%A4/</link>
+      <link>https://gbkim01.github.io/myblog/post/%EB%B8%94%EB%A1%9C%EA%B7%B8%EC%97%90-%EC%B2%AB-%EA%B8%80%EC%9D%84-%EB%82%A8%EA%B8%B4%EB%8B%A4/</link>
       <pubDate>Sat, 28 Sep 2019 00:00:00 +0000</pubDate>
-      <guid>/post/%EB%B8%94%EB%A1%9C%EA%B7%B8%EC%97%90-%EC%B2%AB-%EA%B8%80%EC%9D%84-%EB%82%A8%EA%B8%B4%EB%8B%A4/</guid>
+      <guid>https://gbkim01.github.io/myblog/post/%EB%B8%94%EB%A1%9C%EA%B7%B8%EC%97%90-%EC%B2%AB-%EA%B8%80%EC%9D%84-%EB%82%A8%EA%B8%B4%EB%8B%A4/</guid>
       <description>&lt;p&gt;spss나 stata 정도 돌려서 회귀분석이나 해본게 전부인 문과생인데 최근 몇달 동안 R과 파이썬을 들여다보고 있다. 사실은 다른 할 일들은 좀체 하기 싫어서 그냥 외도하는 것이지만&amp;hellip; 이제는 더는 미룰수 없는 일 때문에 마음은 죄여 오는데, 그러면 그럴수록 한 눈 팔게된다.&lt;/p&gt;
-
-&lt;p&gt;주변에 물어볼 사람도 없이 유투브 동영상 보며 흉내내기에 그친 결과물이지만 다른 사람들한테 점검 받고 수정받으면 재밌겠다 싶어 &lt;strong&gt;Github&lt;/strong&gt;과 &lt;strong&gt;blogdown&lt;/strong&gt;으로 블로그를 만들었다. blogdown의 설치 및 운용은 &lt;strong&gt;mrchypark&lt;/strong&gt;님의 유투브 강좌인 &lt;a href=&#34;https://www.youtube.com/watch?v=zeYn0maX1nQ&amp;amp;t=2723s&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;R코홀릭1&lt;/strong&gt;&lt;/a&gt;과  &lt;a href=&#34;https://www.youtube.com/watch?v=9WZWD1VxBL8&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;R코홀릭2&lt;/strong&gt;&lt;/a&gt;를 참고하였다.&lt;/p&gt;
-
+&lt;p&gt;주변에 물어볼 사람도 없이 유투브 동영상 보며 흉내내기에 그친 결과물이지만 다른 사람들한테 점검 받고 수정받으면 재밌겠다 싶어 &lt;strong&gt;Github&lt;/strong&gt;과 &lt;strong&gt;blogdown&lt;/strong&gt;으로 블로그를 만들었다. blogdown의 설치 및 운용은 &lt;strong&gt;mrchypark&lt;/strong&gt;님의 유투브 강좌인 
+&lt;a href=&#34;https://www.youtube.com/watch?v=zeYn0maX1nQ&amp;amp;t=2723s&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;R코홀릭1&lt;/strong&gt;&lt;/a&gt;과  
+&lt;a href=&#34;https://www.youtube.com/watch?v=9WZWD1VxBL8&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;R코홀릭2&lt;/strong&gt;&lt;/a&gt;를 참고하였다.&lt;/p&gt;
 &lt;p&gt;친절하고도 상세한 설명에도 기본테마에 댓글기능 추가하니 반나절이 다 갔다. 고작해야 간단한 블로그 하나 만드는 일에도 쩔쩔매는 서툰 실력이지만 시간이 잘 가니 오히려 기쁜 마음이 앞선다.&lt;/p&gt;
-
 &lt;p&gt;여기까지만 하고 꾸미기와 기능의 추가는 차후에 진행할 생각이다.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;블로그 운영 외에도 &lt;strong&gt;mrchypark&lt;/strong&gt;님이 운영하는 &lt;a href=&#34;https://github.com/mrchypark&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;github&lt;/strong&gt;&lt;/a&gt;에는 흥미로운 주제를 가진 레포지터리가 많다. 여유를 가지고 차분히 살펴볼 요량이다.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;블로그 운영 외에도 &lt;strong&gt;mrchypark&lt;/strong&gt;님이 운영하는 
+&lt;a href=&#34;https://github.com/mrchypark&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;github&lt;/strong&gt;&lt;/a&gt;에는 흥미로운 주제를 가진 레포지터리가 많다. 여유를 가지고 차분히 살펴볼 요량이다.&lt;/p&gt;
 </description>
     </item>
     

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>rvest | 日常茶飯事</title>
-    <link>/tags/rvest/</link>
-      <atom:link href="/tags/rvest/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://gbkim01.github.io/myblog/tags/rvest/</link>
+      <atom:link href="https://gbkim01.github.io/myblog/tags/rvest/index.xml" rel="self" type="application/rss+xml" />
     <description>rvest</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019</copyright><lastBuildDate>Sun, 29 Sep 2019 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/img/icon-32.png</url>
+      <url>https://gbkim01.github.io/myblog/media/icon-32.png</url>
       <title>rvest</title>
-      <link>/tags/rvest/</link>
+      <link>https://gbkim01.github.io/myblog/tags/rvest/</link>
     </image>
     
     <item>
       <title>URL 리스트 취합</title>
-      <link>/post/web-scraping-with-r-www-climatewatchdata-org/</link>
+      <link>https://gbkim01.github.io/myblog/post/web-scraping-with-r-www-climatewatchdata-org/</link>
       <pubDate>Sun, 29 Sep 2019 00:00:00 +0000</pubDate>
-      <guid>/post/web-scraping-with-r-www-climatewatchdata-org/</guid>
+      <guid>https://gbkim01.github.io/myblog/post/web-scraping-with-r-www-climatewatchdata-org/</guid>
       <description>
 
 
@@ -44,7 +44,7 @@ url_list&lt;/code&gt;&lt;/pre&gt;
 ## [7] &amp;quot;www.main_url.co.kr/search=pineapple&amp;amp;indexpage=1&amp;quot;
 ## [8] &amp;quot;www.main_url.co.kr/search=pineapple&amp;amp;indexpage=2&amp;quot;
 ## [9] &amp;quot;www.main_url.co.kr/search=pineapple&amp;amp;indexpage=3&amp;quot;&lt;/code&gt;&lt;/pre&gt;
-&lt;div id=&#34;climate-watch-data--&#34; class=&#34;section level3&#34;&gt;
+&lt;div id=&#34;climate-watch-data의-페이지-구성&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;climate watch data의 페이지 구성&lt;/h3&gt;
 &lt;center&gt;
 &lt;img src = &#34;https://user-images.githubusercontent.com/30010992/66132557-36940600-e630-11e9-9982-e39c42dc0967.jpg&#34; width=80%&gt;
