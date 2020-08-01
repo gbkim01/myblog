@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>日常茶飯事</title>
-    <link>/</link>
-      <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://gbkim01.github.io/myblog/</link>
+      <atom:link href="https://gbkim01.github.io/myblog/index.xml" rel="self" type="application/rss+xml" />
     <description>日常茶飯事</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 본 블로그에 게시된 모든 컨텐츠의 저작권은 블로그 주인에게 있습니다.</copyright><lastBuildDate>Sat, 01 Jun 2030 13:00:00 +0000</lastBuildDate>
     <image>
-      <url>/media/icon-32.png</url>
+      <url>https://gbkim01.github.io/myblog/media/icon-32.png</url>
       <title>日常茶飯事</title>
-      <link>/</link>
+      <link>https://gbkim01.github.io/myblog/</link>
     </image>
     
     <item>
       <title>Example Page 1</title>
-      <link>/courses/example/example1/</link>
+      <link>https://gbkim01.github.io/myblog/courses/example/example1/</link>
       <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
-      <guid>/courses/example/example1/</guid>
+      <guid>https://gbkim01.github.io/myblog/courses/example/example1/</guid>
       <description>&lt;p&gt;In this tutorial, I&amp;rsquo;ll share my top 10 tips for getting started with Academic:&lt;/p&gt;
 &lt;h2 id=&#34;tip-1&#34;&gt;Tip 1&lt;/h2&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
@@ -35,30 +35,9 @@
     
     <item>
       <title>Example Page 1</title>
-      <link>/courses/r_tip_101/example1/</link>
+      <link>https://gbkim01.github.io/myblog/courses/r_tip_102/example1/</link>
       <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
-      <guid>/courses/r_tip_101/example1/</guid>
-      <description>&lt;p&gt;In this tutorial, I&amp;rsquo;ll share my top 10 tips for getting started with Academic:&lt;/p&gt;
-&lt;h2 id=&#34;tip-1&#34;&gt;Tip 1&lt;/h2&gt;
-&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
-&lt;p&gt;Nullam vel molestie justo. Curabitur vitae efficitur leo. In hac habitasse platea dictumst. Sed pulvinar mauris dui, eget varius purus congue ac. Nulla euismod, lorem vel elementum dapibus, nunc justo porta mi, sed tempus est est vel tellus. Nam et enim eleifend, laoreet sem sit amet, elementum sem. Morbi ut leo congue, maximus velit ut, finibus arcu. In et libero cursus, rutrum risus non, molestie leo. Nullam congue quam et volutpat malesuada. Sed risus tortor, pulvinar et dictum nec, sodales non mi. Phasellus lacinia commodo laoreet. Nam mollis, erat in feugiat consectetur, purus eros egestas tellus, in auctor urna odio at nibh. Mauris imperdiet nisi ac magna convallis, at rhoncus ligula cursus.&lt;/p&gt;
-&lt;p&gt;Cras aliquam rhoncus ipsum, in hendrerit nunc mattis vitae. Duis vitae efficitur metus, ac tempus leo. Cras nec fringilla lacus. Quisque sit amet risus at ipsum pharetra commodo. Sed aliquam mauris at consequat eleifend. Praesent porta, augue sed viverra bibendum, neque ante euismod ante, in vehicula justo lorem ac eros. Suspendisse augue libero, venenatis eget tincidunt ut, malesuada at lorem. Donec vitae bibendum arcu. Aenean maximus nulla non pretium iaculis. Quisque imperdiet, nulla in pulvinar aliquet, velit quam ultrices quam, sit amet fringilla leo sem vel nunc. Mauris in lacinia lacus.&lt;/p&gt;
-&lt;p&gt;Suspendisse a tincidunt lacus. Curabitur at urna sagittis, dictum ante sit amet, euismod magna. Sed rutrum massa id tortor commodo, vitae elementum turpis tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean purus turpis, venenatis a ullamcorper nec, tincidunt et massa. Integer posuere quam rutrum arcu vehicula imperdiet. Mauris ullamcorper quam vitae purus congue, quis euismod magna eleifend. Vestibulum semper vel augue eget tincidunt. Fusce eget justo sodales, dapibus odio eu, ultrices lorem. Duis condimentum lorem id eros commodo, in facilisis mauris scelerisque. Morbi sed auctor leo. Nullam volutpat a lacus quis pharetra. Nulla congue rutrum magna a ornare.&lt;/p&gt;
-&lt;p&gt;Aliquam in turpis accumsan, malesuada nibh ut, hendrerit justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque sed erat nec justo posuere suscipit. Donec ut efficitur arcu, in malesuada neque. Nunc dignissim nisl massa, id vulputate nunc pretium nec. Quisque eget urna in risus suscipit ultricies. Pellentesque odio odio, tincidunt in eleifend sed, posuere a diam. Nam gravida nisl convallis semper elementum. Morbi vitae felis faucibus, vulputate orci placerat, aliquet nisi. Aliquam erat volutpat. Maecenas sagittis pulvinar purus, sed porta quam laoreet at.&lt;/p&gt;
-&lt;h2 id=&#34;tip-2&#34;&gt;Tip 2&lt;/h2&gt;
-&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
-&lt;p&gt;Nullam vel molestie justo. Curabitur vitae efficitur leo. In hac habitasse platea dictumst. Sed pulvinar mauris dui, eget varius purus congue ac. Nulla euismod, lorem vel elementum dapibus, nunc justo porta mi, sed tempus est est vel tellus. Nam et enim eleifend, laoreet sem sit amet, elementum sem. Morbi ut leo congue, maximus velit ut, finibus arcu. In et libero cursus, rutrum risus non, molestie leo. Nullam congue quam et volutpat malesuada. Sed risus tortor, pulvinar et dictum nec, sodales non mi. Phasellus lacinia commodo laoreet. Nam mollis, erat in feugiat consectetur, purus eros egestas tellus, in auctor urna odio at nibh. Mauris imperdiet nisi ac magna convallis, at rhoncus ligula cursus.&lt;/p&gt;
-&lt;p&gt;Cras aliquam rhoncus ipsum, in hendrerit nunc mattis vitae. Duis vitae efficitur metus, ac tempus leo. Cras nec fringilla lacus. Quisque sit amet risus at ipsum pharetra commodo. Sed aliquam mauris at consequat eleifend. Praesent porta, augue sed viverra bibendum, neque ante euismod ante, in vehicula justo lorem ac eros. Suspendisse augue libero, venenatis eget tincidunt ut, malesuada at lorem. Donec vitae bibendum arcu. Aenean maximus nulla non pretium iaculis. Quisque imperdiet, nulla in pulvinar aliquet, velit quam ultrices quam, sit amet fringilla leo sem vel nunc. Mauris in lacinia lacus.&lt;/p&gt;
-&lt;p&gt;Suspendisse a tincidunt lacus. Curabitur at urna sagittis, dictum ante sit amet, euismod magna. Sed rutrum massa id tortor commodo, vitae elementum turpis tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean purus turpis, venenatis a ullamcorper nec, tincidunt et massa. Integer posuere quam rutrum arcu vehicula imperdiet. Mauris ullamcorper quam vitae purus congue, quis euismod magna eleifend. Vestibulum semper vel augue eget tincidunt. Fusce eget justo sodales, dapibus odio eu, ultrices lorem. Duis condimentum lorem id eros commodo, in facilisis mauris scelerisque. Morbi sed auctor leo. Nullam volutpat a lacus quis pharetra. Nulla congue rutrum magna a ornare.&lt;/p&gt;
-&lt;p&gt;Aliquam in turpis accumsan, malesuada nibh ut, hendrerit justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque sed erat nec justo posuere suscipit. Donec ut efficitur arcu, in malesuada neque. Nunc dignissim nisl massa, id vulputate nunc pretium nec. Quisque eget urna in risus suscipit ultricies. Pellentesque odio odio, tincidunt in eleifend sed, posuere a diam. Nam gravida nisl convallis semper elementum. Morbi vitae felis faucibus, vulputate orci placerat, aliquet nisi. Aliquam erat volutpat. Maecenas sagittis pulvinar purus, sed porta quam laoreet at.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Example Page 1</title>
-      <link>/courses/r_tip_102/example1/</link>
-      <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
-      <guid>/courses/r_tip_102/example1/</guid>
+      <guid>https://gbkim01.github.io/myblog/courses/r_tip_102/example1/</guid>
       <description>&lt;p&gt;In this tutorial, I&amp;rsquo;ll share my top 10 tips for getting started with Academic:&lt;/p&gt;
 &lt;h2 id=&#34;tip-1&#34;&gt;Tip 1&lt;/h2&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
@@ -77,30 +56,9 @@
     
     <item>
       <title>Example Page 2</title>
-      <link>/courses/example/example2/</link>
+      <link>https://gbkim01.github.io/myblog/courses/example/example2/</link>
       <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
-      <guid>/courses/example/example2/</guid>
-      <description>&lt;p&gt;Here are some more tips for getting started with Academic:&lt;/p&gt;
-&lt;h2 id=&#34;tip-3&#34;&gt;Tip 3&lt;/h2&gt;
-&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
-&lt;p&gt;Nullam vel molestie justo. Curabitur vitae efficitur leo. In hac habitasse platea dictumst. Sed pulvinar mauris dui, eget varius purus congue ac. Nulla euismod, lorem vel elementum dapibus, nunc justo porta mi, sed tempus est est vel tellus. Nam et enim eleifend, laoreet sem sit amet, elementum sem. Morbi ut leo congue, maximus velit ut, finibus arcu. In et libero cursus, rutrum risus non, molestie leo. Nullam congue quam et volutpat malesuada. Sed risus tortor, pulvinar et dictum nec, sodales non mi. Phasellus lacinia commodo laoreet. Nam mollis, erat in feugiat consectetur, purus eros egestas tellus, in auctor urna odio at nibh. Mauris imperdiet nisi ac magna convallis, at rhoncus ligula cursus.&lt;/p&gt;
-&lt;p&gt;Cras aliquam rhoncus ipsum, in hendrerit nunc mattis vitae. Duis vitae efficitur metus, ac tempus leo. Cras nec fringilla lacus. Quisque sit amet risus at ipsum pharetra commodo. Sed aliquam mauris at consequat eleifend. Praesent porta, augue sed viverra bibendum, neque ante euismod ante, in vehicula justo lorem ac eros. Suspendisse augue libero, venenatis eget tincidunt ut, malesuada at lorem. Donec vitae bibendum arcu. Aenean maximus nulla non pretium iaculis. Quisque imperdiet, nulla in pulvinar aliquet, velit quam ultrices quam, sit amet fringilla leo sem vel nunc. Mauris in lacinia lacus.&lt;/p&gt;
-&lt;p&gt;Suspendisse a tincidunt lacus. Curabitur at urna sagittis, dictum ante sit amet, euismod magna. Sed rutrum massa id tortor commodo, vitae elementum turpis tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean purus turpis, venenatis a ullamcorper nec, tincidunt et massa. Integer posuere quam rutrum arcu vehicula imperdiet. Mauris ullamcorper quam vitae purus congue, quis euismod magna eleifend. Vestibulum semper vel augue eget tincidunt. Fusce eget justo sodales, dapibus odio eu, ultrices lorem. Duis condimentum lorem id eros commodo, in facilisis mauris scelerisque. Morbi sed auctor leo. Nullam volutpat a lacus quis pharetra. Nulla congue rutrum magna a ornare.&lt;/p&gt;
-&lt;p&gt;Aliquam in turpis accumsan, malesuada nibh ut, hendrerit justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque sed erat nec justo posuere suscipit. Donec ut efficitur arcu, in malesuada neque. Nunc dignissim nisl massa, id vulputate nunc pretium nec. Quisque eget urna in risus suscipit ultricies. Pellentesque odio odio, tincidunt in eleifend sed, posuere a diam. Nam gravida nisl convallis semper elementum. Morbi vitae felis faucibus, vulputate orci placerat, aliquet nisi. Aliquam erat volutpat. Maecenas sagittis pulvinar purus, sed porta quam laoreet at.&lt;/p&gt;
-&lt;h2 id=&#34;tip-4&#34;&gt;Tip 4&lt;/h2&gt;
-&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
-&lt;p&gt;Nullam vel molestie justo. Curabitur vitae efficitur leo. In hac habitasse platea dictumst. Sed pulvinar mauris dui, eget varius purus congue ac. Nulla euismod, lorem vel elementum dapibus, nunc justo porta mi, sed tempus est est vel tellus. Nam et enim eleifend, laoreet sem sit amet, elementum sem. Morbi ut leo congue, maximus velit ut, finibus arcu. In et libero cursus, rutrum risus non, molestie leo. Nullam congue quam et volutpat malesuada. Sed risus tortor, pulvinar et dictum nec, sodales non mi. Phasellus lacinia commodo laoreet. Nam mollis, erat in feugiat consectetur, purus eros egestas tellus, in auctor urna odio at nibh. Mauris imperdiet nisi ac magna convallis, at rhoncus ligula cursus.&lt;/p&gt;
-&lt;p&gt;Cras aliquam rhoncus ipsum, in hendrerit nunc mattis vitae. Duis vitae efficitur metus, ac tempus leo. Cras nec fringilla lacus. Quisque sit amet risus at ipsum pharetra commodo. Sed aliquam mauris at consequat eleifend. Praesent porta, augue sed viverra bibendum, neque ante euismod ante, in vehicula justo lorem ac eros. Suspendisse augue libero, venenatis eget tincidunt ut, malesuada at lorem. Donec vitae bibendum arcu. Aenean maximus nulla non pretium iaculis. Quisque imperdiet, nulla in pulvinar aliquet, velit quam ultrices quam, sit amet fringilla leo sem vel nunc. Mauris in lacinia lacus.&lt;/p&gt;
-&lt;p&gt;Suspendisse a tincidunt lacus. Curabitur at urna sagittis, dictum ante sit amet, euismod magna. Sed rutrum massa id tortor commodo, vitae elementum turpis tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean purus turpis, venenatis a ullamcorper nec, tincidunt et massa. Integer posuere quam rutrum arcu vehicula imperdiet. Mauris ullamcorper quam vitae purus congue, quis euismod magna eleifend. Vestibulum semper vel augue eget tincidunt. Fusce eget justo sodales, dapibus odio eu, ultrices lorem. Duis condimentum lorem id eros commodo, in facilisis mauris scelerisque. Morbi sed auctor leo. Nullam volutpat a lacus quis pharetra. Nulla congue rutrum magna a ornare.&lt;/p&gt;
-&lt;p&gt;Aliquam in turpis accumsan, malesuada nibh ut, hendrerit justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque sed erat nec justo posuere suscipit. Donec ut efficitur arcu, in malesuada neque. Nunc dignissim nisl massa, id vulputate nunc pretium nec. Quisque eget urna in risus suscipit ultricies. Pellentesque odio odio, tincidunt in eleifend sed, posuere a diam. Nam gravida nisl convallis semper elementum. Morbi vitae felis faucibus, vulputate orci placerat, aliquet nisi. Aliquam erat volutpat. Maecenas sagittis pulvinar purus, sed porta quam laoreet at.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Example Page 2</title>
-      <link>/courses/r_tip_101/example2/</link>
-      <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
-      <guid>/courses/r_tip_101/example2/</guid>
+      <guid>https://gbkim01.github.io/myblog/courses/example/example2/</guid>
       <description>&lt;p&gt;Here are some more tips for getting started with Academic:&lt;/p&gt;
 &lt;h2 id=&#34;tip-3&#34;&gt;Tip 3&lt;/h2&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
@@ -119,9 +77,9 @@
     
     <item>
       <title>Example Talk</title>
-      <link>/talk/example/</link>
+      <link>https://gbkim01.github.io/myblog/talk/example/</link>
       <pubDate>Sat, 01 Jun 2030 13:00:00 +0000</pubDate>
-      <guid>/talk/example/</guid>
+      <guid>https://gbkim01.github.io/myblog/talk/example/</guid>
       <description>&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;Slides can be added in a few ways:&lt;/p&gt;
 &lt;ul&gt;
@@ -136,10 +94,42 @@
     </item>
     
     <item>
+      <title>블로그에 &#34;유용한 팁&#34; 섹션을 추가했다.</title>
+      <link>https://gbkim01.github.io/myblog/post/%EB%B8%94%EB%A1%9C%EA%B7%B8%EC%97%90-%EC%9C%A0%EC%9A%A9%ED%95%9C-%ED%8C%81-%EC%84%B9%EC%85%98%EC%9D%84-%EC%B6%94%EA%B0%80%ED%96%88%EB%8B%A4/</link>
+      <pubDate>Sat, 01 Aug 2020 00:00:00 +0000</pubDate>
+      <guid>https://gbkim01.github.io/myblog/post/%EB%B8%94%EB%A1%9C%EA%B7%B8%EC%97%90-%EC%9C%A0%EC%9A%A9%ED%95%9C-%ED%8C%81-%EC%84%B9%EC%85%98%EC%9D%84-%EC%B6%94%EA%B0%80%ED%96%88%EB%8B%A4/</guid>
+      <description>
+
+
+&lt;center&gt;
+&lt;img src = &#34;https://user-images.githubusercontent.com/30010992/89092312-89bf1c80-d3eb-11ea-8fe5-98dba84398f3.PNG&#34; width=80%&gt;
+&lt;/center&gt;
+&lt;div id=&#34;블로그에-새로운-섹션을-추가했다.&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;블로그에 새로운 섹션을 추가했다.&lt;/h3&gt;
+&lt;p&gt;새로운 마음으로 다시 시작한 블로그라 테마를 바꾸고 싶었지만, 오랜만에 들여다보는 설정파일이 복잡해서 어떻게 손을 써야할지 감도 잡지 못하겠더라. 그래서 테마를 변경하는 대신 본래의 블로그 테마인 &lt;a href=&#34;https://themes.gohugo.io/academic/&#34;&gt;&lt;strong&gt;hugo-academic&lt;/strong&gt;&lt;/a&gt;을 최신 버전으로 업데이트 하고 섹션 하나를 추가하는 것으로 타협했다.&lt;/p&gt;
+&lt;p&gt;즐겨쓰는 &lt;strong&gt;R&lt;/strong&gt;은 통계분석을 위한 언어로 시작되었고 여전히 분석 툴로써 많은 사람들에게 사랑받고 있지만, 이를 단순히 분석을 위한 도구로만 사용하기에는 재미있는 기능들이 너무 많다. 최근엔 온종일 모니터의 절반은 Rstudio, 나머지 절반은 구글검색을 켜 두고 &lt;strong&gt;R&lt;/strong&gt;의 여러 기능을 검색하고 실험해보는 것으로 시간을 보내고 있다. 이렇게 알게된, 그리고 지금은 모르지만 차차 찾아보고 공부할 &lt;strong&gt;R&lt;/strong&gt;에 대한 여러가지 기능들을 정리하고 개인적으로 실제 업무/생활에 응용하는 방법을 공유하는 섹션 &lt;strong&gt;“유용한 팁”&lt;/strong&gt;을 개설했다.&lt;/p&gt;
+&lt;p&gt;지금 생각하고 있는 &lt;strong&gt;“유용한 팁”&lt;/strong&gt; 섹션의 여러 주제는…&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;R을 이용하여 데이터를 다루는 방법(기초적인 사용법)&lt;/li&gt;
+&lt;li&gt;R을 이용한 웹 크롤링(요청 부터 데이터 정리 까지, Rselenium 포함)&lt;/li&gt;
+&lt;li&gt;R을 이용한 문서작성(일반 문서, 논문, 프리젠테이션, 책) 및 공유&lt;/li&gt;
+&lt;li&gt;응용편 : 네이버에서 KOSPI 지수를 끌어와서 시계열 분석하기&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;… 등이다. 시간이 얼마나 걸릴진 모르겠지만 하나하나 정리해가며 각각의 기능에 익숙해 지려고 노력해 보련다.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;막걸리-맛있게-먹는-방법이-따로-있나&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;막걸리 맛있게 먹는 방법이 따로 있나??&lt;/h3&gt;
+&lt;p&gt;지난번 동료들과 양평에 놀이삼아 다녀왔다. 거기서 마신 &lt;strong&gt;지평막걸리&lt;/strong&gt;가 굉장히 맛있어서 인상에 깊이 남았다. 적절한 탄산의 자극과 상큼하게 느껴지는 알콜의 알싸함이 적절히 어우러져 단 한모금을 마셔도 기분이 좋아지는 그런 맛…&lt;/p&gt;
+&lt;p&gt;아침부터 쏟아지는 폭우를 핑계로 주말 오전의 브런치 삼아 &lt;strong&gt;지평막걸리&lt;/strong&gt; 한 상을 차렸다. 그런데 이상하게도 양평에서 마셨던 그 맛이 안나더라. 많이 마시면 다음날 꽤나 머리가 앞을 듯한, 묵직하고 그렇고 그런 보통의 막걸리 맛이었다. 옆에 친구 없이 혼자서 마시는 술이라 그런건가? 아니면 자취살림의 비루한 안주 때문에 그런것인지…&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Rstudio cloud를 이용한 블로그 포스팅</title>
-      <link>/post/rstudio-cloud%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EB%B8%94%EB%A1%9C%EA%B7%B8-%ED%8F%AC%EC%8A%A4%ED%8C%85/</link>
+      <link>https://gbkim01.github.io/myblog/post/rstudio-cloud%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EB%B8%94%EB%A1%9C%EA%B7%B8-%ED%8F%AC%EC%8A%A4%ED%8C%85/</link>
       <pubDate>Tue, 28 Jul 2020 00:00:00 +0000</pubDate>
-      <guid>/post/rstudio-cloud%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EB%B8%94%EB%A1%9C%EA%B7%B8-%ED%8F%AC%EC%8A%A4%ED%8C%85/</guid>
+      <guid>https://gbkim01.github.io/myblog/post/rstudio-cloud%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EB%B8%94%EB%A1%9C%EA%B7%B8-%ED%8F%AC%EC%8A%A4%ED%8C%85/</guid>
       <description>
 
 
@@ -161,9 +151,9 @@
     
     <item>
       <title>WSl을 이용해 R 사용하기</title>
-      <link>/post/wsl%EC%9D%84-%EC%9D%B4%EC%9A%A9%ED%95%B4-r-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</link>
+      <link>https://gbkim01.github.io/myblog/post/wsl%EC%9D%84-%EC%9D%B4%EC%9A%A9%ED%95%B4-r-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</link>
       <pubDate>Sat, 12 Oct 2019 00:00:00 +0000</pubDate>
-      <guid>/post/wsl%EC%9D%84-%EC%9D%B4%EC%9A%A9%ED%95%B4-r-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</guid>
+      <guid>https://gbkim01.github.io/myblog/post/wsl%EC%9D%84-%EC%9D%B4%EC%9A%A9%ED%95%B4-r-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</guid>
       <description>&lt;h2 id=&#34;using-r-on-wslwindows-subsystem-for-linux&#34;&gt;&lt;strong&gt;Using R on WSL(Windows Subsystem for Linux)&lt;/strong&gt;&lt;/h2&gt;
 &lt;p&gt;WSL에 &lt;strong&gt;Rstudio-server&lt;/strong&gt;를 설치하면 윈도우 브라우저를 통해 리눅스 버전의 R을 사용할 수 있는데, 이를 위한 기본적인 설정 방법과 의존성 문제 해결방법 등을 정리해서 올린다. WSL은 우분투 18.04 LTS 버전을 기준으로 한다.&lt;/p&gt;
 &lt;h3 id=&#34;1-microsoft-r-open-설치&#34;&gt;1. Microsoft R Open 설치&lt;/h3&gt;
@@ -237,9 +227,9 @@ sudo apt install gfortran curl
     
     <item>
       <title>데이터 프레임에서 짝수행과 홀수행 선별하는 다른 방법</title>
-      <link>/post/%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%94%84%EB%A0%88%EC%9E%84%EC%97%90%EC%84%9C-%EC%A7%9D%EC%88%98%ED%96%89%EA%B3%BC-%ED%99%80%EC%88%98%ED%96%89-%EC%84%A0%EB%B3%84%ED%95%98%EB%8A%94-%EB%8B%A4%EB%A5%B8-%EB%B0%A9%EB%B2%95/</link>
+      <link>https://gbkim01.github.io/myblog/post/%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%94%84%EB%A0%88%EC%9E%84%EC%97%90%EC%84%9C-%EC%A7%9D%EC%88%98%ED%96%89%EA%B3%BC-%ED%99%80%EC%88%98%ED%96%89-%EC%84%A0%EB%B3%84%ED%95%98%EB%8A%94-%EB%8B%A4%EB%A5%B8-%EB%B0%A9%EB%B2%95/</link>
       <pubDate>Fri, 04 Oct 2019 00:00:00 +0000</pubDate>
-      <guid>/post/%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%94%84%EB%A0%88%EC%9E%84%EC%97%90%EC%84%9C-%EC%A7%9D%EC%88%98%ED%96%89%EA%B3%BC-%ED%99%80%EC%88%98%ED%96%89-%EC%84%A0%EB%B3%84%ED%95%98%EB%8A%94-%EB%8B%A4%EB%A5%B8-%EB%B0%A9%EB%B2%95/</guid>
+      <guid>https://gbkim01.github.io/myblog/post/%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%94%84%EB%A0%88%EC%9E%84%EC%97%90%EC%84%9C-%EC%A7%9D%EC%88%98%ED%96%89%EA%B3%BC-%ED%99%80%EC%88%98%ED%96%89-%EC%84%A0%EB%B3%84%ED%95%98%EB%8A%94-%EB%8B%A4%EB%A5%B8-%EB%B0%A9%EB%B2%95/</guid>
       <description>
 
 
@@ -280,9 +270,9 @@ df %&amp;gt;% filter(row_number() %% 3 == 1)&lt;/code&gt;&lt;/pre&gt;
     
     <item>
       <title>데이터셋의 짝수행과 홀수행 구분</title>
-      <link>/post/%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%94%84%EB%A0%88%EC%9E%84%EC%97%90%EC%84%9C-%EC%A7%9D%EC%88%98%ED%96%89%EA%B3%BC-%ED%99%80%EC%88%98%ED%96%89-%EC%84%A0%EB%B3%84%ED%95%98%EA%B8%B0/</link>
+      <link>https://gbkim01.github.io/myblog/post/%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%94%84%EB%A0%88%EC%9E%84%EC%97%90%EC%84%9C-%EC%A7%9D%EC%88%98%ED%96%89%EA%B3%BC-%ED%99%80%EC%88%98%ED%96%89-%EC%84%A0%EB%B3%84%ED%95%98%EA%B8%B0/</link>
       <pubDate>Tue, 01 Oct 2019 00:00:00 +0000</pubDate>
-      <guid>/post/%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%94%84%EB%A0%88%EC%9E%84%EC%97%90%EC%84%9C-%EC%A7%9D%EC%88%98%ED%96%89%EA%B3%BC-%ED%99%80%EC%88%98%ED%96%89-%EC%84%A0%EB%B3%84%ED%95%98%EA%B8%B0/</guid>
+      <guid>https://gbkim01.github.io/myblog/post/%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%94%84%EB%A0%88%EC%9E%84%EC%97%90%EC%84%9C-%EC%A7%9D%EC%88%98%ED%96%89%EA%B3%BC-%ED%99%80%EC%88%98%ED%96%89-%EC%84%A0%EB%B3%84%ED%95%98%EA%B8%B0/</guid>
       <description>
 
 
@@ -303,9 +293,9 @@ data_odd &amp;lt;- filter(data, seq_len(nrow(data))%% 2==1) # 홀수행&lt;/code
     
     <item>
       <title>URL 리스트 취합</title>
-      <link>/post/web-scraping-with-r-www-climatewatchdata-org/</link>
+      <link>https://gbkim01.github.io/myblog/post/web-scraping-with-r-www-climatewatchdata-org/</link>
       <pubDate>Sun, 29 Sep 2019 00:00:00 +0000</pubDate>
-      <guid>/post/web-scraping-with-r-www-climatewatchdata-org/</guid>
+      <guid>https://gbkim01.github.io/myblog/post/web-scraping-with-r-www-climatewatchdata-org/</guid>
       <description>
 
 
@@ -403,9 +393,9 @@ section_sector &amp;lt;- cbind(section_sector, link_pool)&lt;/code&gt;&lt;/pre&g
     
     <item>
       <title>블로그에 첫 글을 남긴다.</title>
-      <link>/post/%EB%B8%94%EB%A1%9C%EA%B7%B8%EC%97%90-%EC%B2%AB-%EA%B8%80%EC%9D%84-%EB%82%A8%EA%B8%B4%EB%8B%A4/</link>
+      <link>https://gbkim01.github.io/myblog/post/%EB%B8%94%EB%A1%9C%EA%B7%B8%EC%97%90-%EC%B2%AB-%EA%B8%80%EC%9D%84-%EB%82%A8%EA%B8%B4%EB%8B%A4/</link>
       <pubDate>Sat, 28 Sep 2019 00:00:00 +0000</pubDate>
-      <guid>/post/%EB%B8%94%EB%A1%9C%EA%B7%B8%EC%97%90-%EC%B2%AB-%EA%B8%80%EC%9D%84-%EB%82%A8%EA%B8%B4%EB%8B%A4/</guid>
+      <guid>https://gbkim01.github.io/myblog/post/%EB%B8%94%EB%A1%9C%EA%B7%B8%EC%97%90-%EC%B2%AB-%EA%B8%80%EC%9D%84-%EB%82%A8%EA%B8%B4%EB%8B%A4/</guid>
       <description>&lt;p&gt;spss나 stata 정도 돌려서 회귀분석이나 해본게 전부인 문과생인데 최근 몇달 동안 R과 파이썬을 들여다보고 있다. 사실은 다른 할 일들은 좀체 하기 싫어서 그냥 외도하는 것이지만&amp;hellip; 이제는 더는 미룰수 없는 일 때문에 마음은 죄여 오는데, 그러면 그럴수록 한 눈 팔게된다.&lt;/p&gt;
 &lt;p&gt;주변에 물어볼 사람도 없이 유투브 동영상 보며 흉내내기에 그친 결과물이지만 다른 사람들한테 점검 받고 수정받으면 재밌겠다 싶어 &lt;strong&gt;Github&lt;/strong&gt;과 &lt;strong&gt;blogdown&lt;/strong&gt;으로 블로그를 만들었다. blogdown의 설치 및 운용은 &lt;strong&gt;mrchypark&lt;/strong&gt;님의 유투브 강좌인 
 &lt;a href=&#34;https://www.youtube.com/watch?v=zeYn0maX1nQ&amp;amp;t=2723s&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;R코홀릭1&lt;/strong&gt;&lt;/a&gt;과  
@@ -420,9 +410,9 @@ section_sector &amp;lt;- cbind(section_sector, link_pool)&lt;/code&gt;&lt;/pre&g
     
     <item>
       <title>An example preprint / working paper</title>
-      <link>/publication/preprint/</link>
+      <link>https://gbkim01.github.io/myblog/publication/preprint/</link>
       <pubDate>Sun, 07 Apr 2019 00:00:00 +0000</pubDate>
-      <guid>/publication/preprint/</guid>
+      <guid>https://gbkim01.github.io/myblog/publication/preprint/</guid>
       <description>&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;Supplementary notes can be added here, including 
 &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;code and math&lt;/a&gt;.&lt;/p&gt;
@@ -431,9 +421,9 @@ section_sector &amp;lt;- cbind(section_sector, link_pool)&lt;/code&gt;&lt;/pre&g
     
     <item>
       <title>Slides</title>
-      <link>/slides/example/</link>
+      <link>https://gbkim01.github.io/myblog/slides/example/</link>
       <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
-      <guid>/slides/example/</guid>
+      <guid>https://gbkim01.github.io/myblog/slides/example/</guid>
       <description>&lt;h1 id=&#34;welcome-to-slides&#34;&gt;Welcome to Slides&lt;/h1&gt;
 &lt;p&gt;
 &lt;a href=&#34;https://sourcethemes.com/academic/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Academic&lt;/a&gt;&lt;/p&gt;
@@ -558,28 +548,10 @@ Three
     </item>
     
     <item>
-      <title>Privacy Policy</title>
-      <link>/privacy/</link>
-      <pubDate>Thu, 28 Jun 2018 00:00:00 +0100</pubDate>
-      <guid>/privacy/</guid>
-      <description>&lt;p&gt;&amp;hellip;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Terms</title>
-      <link>/terms/</link>
-      <pubDate>Thu, 28 Jun 2018 00:00:00 +0100</pubDate>
-      <guid>/terms/</guid>
-      <description>&lt;p&gt;&amp;hellip;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>About</title>
-      <link>/about/</link>
+      <link>https://gbkim01.github.io/myblog/about/</link>
       <pubDate>Thu, 05 May 2016 21:48:51 -0700</pubDate>
-      <guid>/about/</guid>
+      <guid>https://gbkim01.github.io/myblog/about/</guid>
       <description>&lt;p&gt;This is a &amp;ldquo;hello world&amp;rdquo; example website for the 
 &lt;a href=&#34;https://github.com/rstudio/blogdown&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;blogdown&lt;/strong&gt;&lt;/a&gt; package. The theme was forked from 
 &lt;a href=&#34;https://github.com/jrutheiser/hugo-lithium-theme&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;@jrutheiser/hugo-lithium-theme&lt;/a&gt; and modified by 
@@ -589,17 +561,17 @@ Three
     
     <item>
       <title>External Project</title>
-      <link>/project/external-project/</link>
+      <link>https://gbkim01.github.io/myblog/project/external-project/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>/project/external-project/</guid>
+      <guid>https://gbkim01.github.io/myblog/project/external-project/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Internal Project</title>
-      <link>/project/internal-project/</link>
+      <link>https://gbkim01.github.io/myblog/project/internal-project/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>/project/internal-project/</guid>
+      <guid>https://gbkim01.github.io/myblog/project/internal-project/</guid>
       <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
 &lt;p&gt;Nullam vel molestie justo. Curabitur vitae efficitur leo. In hac habitasse platea dictumst. Sed pulvinar mauris dui, eget varius purus congue ac. Nulla euismod, lorem vel elementum dapibus, nunc justo porta mi, sed tempus est est vel tellus. Nam et enim eleifend, laoreet sem sit amet, elementum sem. Morbi ut leo congue, maximus velit ut, finibus arcu. In et libero cursus, rutrum risus non, molestie leo. Nullam congue quam et volutpat malesuada. Sed risus tortor, pulvinar et dictum nec, sodales non mi. Phasellus lacinia commodo laoreet. Nam mollis, erat in feugiat consectetur, purus eros egestas tellus, in auctor urna odio at nibh. Mauris imperdiet nisi ac magna convallis, at rhoncus ligula cursus.&lt;/p&gt;
 &lt;p&gt;Cras aliquam rhoncus ipsum, in hendrerit nunc mattis vitae. Duis vitae efficitur metus, ac tempus leo. Cras nec fringilla lacus. Quisque sit amet risus at ipsum pharetra commodo. Sed aliquam mauris at consequat eleifend. Praesent porta, augue sed viverra bibendum, neque ante euismod ante, in vehicula justo lorem ac eros. Suspendisse augue libero, venenatis eget tincidunt ut, malesuada at lorem. Donec vitae bibendum arcu. Aenean maximus nulla non pretium iaculis. Quisque imperdiet, nulla in pulvinar aliquet, velit quam ultrices quam, sit amet fringilla leo sem vel nunc. Mauris in lacinia lacus.&lt;/p&gt;
@@ -610,9 +582,9 @@ Three
     
     <item>
       <title>An example journal article</title>
-      <link>/publication/journal-article/</link>
+      <link>https://gbkim01.github.io/myblog/publication/journal-article/</link>
       <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
-      <guid>/publication/journal-article/</guid>
+      <guid>https://gbkim01.github.io/myblog/publication/journal-article/</guid>
       <description>&lt;!-- raw HTML omitted --&gt;
 &lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;Supplementary notes can be added here, including 
@@ -622,9 +594,9 @@ Three
     
     <item>
       <title>An example conference paper</title>
-      <link>/publication/conference-paper/</link>
+      <link>https://gbkim01.github.io/myblog/publication/conference-paper/</link>
       <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
-      <guid>/publication/conference-paper/</guid>
+      <guid>https://gbkim01.github.io/myblog/publication/conference-paper/</guid>
       <description>&lt;!-- raw HTML omitted --&gt;
 &lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;Supplementary notes can be added here, including 

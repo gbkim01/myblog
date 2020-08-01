@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Rselenium | 日常茶飯事</title>
-    <link>/tags/rselenium/</link>
-      <atom:link href="/tags/rselenium/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://gbkim01.github.io/myblog/tags/rselenium/</link>
+      <atom:link href="https://gbkim01.github.io/myblog/tags/rselenium/index.xml" rel="self" type="application/rss+xml" />
     <description>Rselenium</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 본 블로그에 게시된 모든 컨텐츠의 저작권은 블로그 주인에게 있습니다.</copyright><lastBuildDate>Sun, 29 Sep 2019 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/media/icon-32.png</url>
+      <url>https://gbkim01.github.io/myblog/media/icon-32.png</url>
       <title>Rselenium</title>
-      <link>/tags/rselenium/</link>
+      <link>https://gbkim01.github.io/myblog/tags/rselenium/</link>
     </image>
     
     <item>
       <title>URL 리스트 취합</title>
-      <link>/post/web-scraping-with-r-www-climatewatchdata-org/</link>
+      <link>https://gbkim01.github.io/myblog/post/web-scraping-with-r-www-climatewatchdata-org/</link>
       <pubDate>Sun, 29 Sep 2019 00:00:00 +0000</pubDate>
-      <guid>/post/web-scraping-with-r-www-climatewatchdata-org/</guid>
+      <guid>https://gbkim01.github.io/myblog/post/web-scraping-with-r-www-climatewatchdata-org/</guid>
       <description>
 
 
