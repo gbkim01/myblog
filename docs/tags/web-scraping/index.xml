@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>web scraping | 日常茶飯事</title>
-    <link>https://gbkim01.github.io/myblog/tags/web-scraping/</link>
-      <atom:link href="https://gbkim01.github.io/myblog/tags/web-scraping/index.xml" rel="self" type="application/rss+xml" />
+    <link>/tags/web-scraping/</link>
+      <atom:link href="/tags/web-scraping/index.xml" rel="self" type="application/rss+xml" />
     <description>web scraping</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 본 블로그에 게시된 모든 컨텐츠의 저작권은 블로그 주인에게 있습니다.</copyright><lastBuildDate>Tue, 01 Oct 2019 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://gbkim01.github.io/myblog/media/icon-32.png</url>
+      <url>/media/icon-32.png</url>
       <title>web scraping</title>
-      <link>https://gbkim01.github.io/myblog/tags/web-scraping/</link>
+      <link>/tags/web-scraping/</link>
     </image>
     
     <item>
       <title>데이터셋의 짝수행과 홀수행 구분</title>
-      <link>https://gbkim01.github.io/myblog/post/%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%94%84%EB%A0%88%EC%9E%84%EC%97%90%EC%84%9C-%EC%A7%9D%EC%88%98%ED%96%89%EA%B3%BC-%ED%99%80%EC%88%98%ED%96%89-%EC%84%A0%EB%B3%84%ED%95%98%EA%B8%B0/</link>
+      <link>/post/%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%94%84%EB%A0%88%EC%9E%84%EC%97%90%EC%84%9C-%EC%A7%9D%EC%88%98%ED%96%89%EA%B3%BC-%ED%99%80%EC%88%98%ED%96%89-%EC%84%A0%EB%B3%84%ED%95%98%EA%B8%B0/</link>
       <pubDate>Tue, 01 Oct 2019 00:00:00 +0000</pubDate>
-      <guid>https://gbkim01.github.io/myblog/post/%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%94%84%EB%A0%88%EC%9E%84%EC%97%90%EC%84%9C-%EC%A7%9D%EC%88%98%ED%96%89%EA%B3%BC-%ED%99%80%EC%88%98%ED%96%89-%EC%84%A0%EB%B3%84%ED%95%98%EA%B8%B0/</guid>
+      <guid>/post/%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%94%84%EB%A0%88%EC%9E%84%EC%97%90%EC%84%9C-%EC%A7%9D%EC%88%98%ED%96%89%EA%B3%BC-%ED%99%80%EC%88%98%ED%96%89-%EC%84%A0%EB%B3%84%ED%95%98%EA%B8%B0/</guid>
       <description>
 
 
@@ -37,9 +37,9 @@ data_odd &amp;lt;- filter(data, seq_len(nrow(data))%% 2==1) # 홀수행&lt;/code
     
     <item>
       <title>URL 리스트 취합</title>
-      <link>https://gbkim01.github.io/myblog/post/web-scraping-with-r-www-climatewatchdata-org/</link>
+      <link>/post/web-scraping-with-r-www-climatewatchdata-org/</link>
       <pubDate>Sun, 29 Sep 2019 00:00:00 +0000</pubDate>
-      <guid>https://gbkim01.github.io/myblog/post/web-scraping-with-r-www-climatewatchdata-org/</guid>
+      <guid>/post/web-scraping-with-r-www-climatewatchdata-org/</guid>
       <description>
 
 

@@ -22,7 +22,7 @@ date_format = "Jan 2006"
 [[item]]
   organization = "웹에서 원하는 자료를 마음대로 긁어옵니다."
   organization_url = ""
-  title = "[R_Tip:101 - Web Crawling with R(페이지 준비중)](/courses/example/)"
+  title = "[R_Tip:101 - Web Crawling with R(페이지 준비중)](/courses/r_tip_101/)"
   url = ""
   certificate_url = ""
   date_start = "2020-08-01"
