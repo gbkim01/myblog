@@ -1,0 +1,30 @@
+---
+title: 2. 요청과 응답
+author: 김강배
+date: '2020-08-03'
+slug: 2-요청과-응답
+linktitle: 2. 요청과 응답
+lastmod: '2020-08-03T15:13:02Z'
+draft: yes
+type: docs
+weight: 2
+menu:
+  r_tip_1:
+    parent: Contents
+    weight: 2
+output:
+  blogdown::html_page:
+    toc: true
+    fig_caption: yes
+    number_sections: yes
+    df_print: kable
+---
+
+```{r include=FALSE}
+knitr::opts_chunk$set(comment = ">>")
+```
+
+---
+
+
+준비중

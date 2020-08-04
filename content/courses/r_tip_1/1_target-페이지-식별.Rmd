@@ -1,0 +1,34 @@
+---
+title: 1. Target 페이지 식별
+date: '2020-08-01'
+linktitle: 1. Target 페이지 식별
+lastmod: '2020-08-01T20:43:47Z'
+type: docs
+draft: yes
+weight: 1
+menu:
+  r_tip_1:
+    parent: Contents
+    weight: 1
+output:
+  blogdown::html_page:
+    toc: true
+    fig_caption: yes
+    number_sections: yes
+    df_print: kable
+---
+
+```{r include=FALSE}
+knitr::opts_chunk$set(comment = ">>")
+```
+
+---
+
+# **크롤링의 순서**
+
+보편적인 크롤링의 순서는 다음과 같습니다. 
+
+1. 크롤링 하고자 하는 대상 확인
+2. 웹 서버에 크롤링 하고자 하는 웹페이지 요청/응답
+3. 내려 받은 웹 문서의 xml 파일 분석
+4. 여러 웹페이지를 대상으로 2와 3의 단계를 반복하며 데이터 수집

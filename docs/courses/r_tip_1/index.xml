@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>개요 | 日常茶飯事</title>
+    <link>/courses/r_tip_1/</link>
+      <atom:link href="/courses/r_tip_1/index.xml" rel="self" type="application/rss+xml" />
+    <description>개요</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 본 블로그에 게시된 모든 컨텐츠의 저작권은 블로그 주인에게 있습니다.</copyright><lastBuildDate>Sat, 01 Aug 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/media/icon-32.png</url>
+      <title>개요</title>
+      <link>/courses/r_tip_1/</link>
+    </image>
+    
+    <item>
+      <title>1. Target 페이지 식별</title>
+      <link>/courses/r_tip_1/1_target-%ED%8E%98%EC%9D%B4%EC%A7%80-%EC%8B%9D%EB%B3%84/</link>
+      <pubDate>Sat, 01 Aug 2020 00:00:00 +0000</pubDate>
+      <guid>/courses/r_tip_1/1_target-%ED%8E%98%EC%9D%B4%EC%A7%80-%EC%8B%9D%EB%B3%84/</guid>
+      <description>
+
+&lt;div id=&#34;TOC&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#크롤링의-순서&#34;&gt;&lt;span class=&#34;toc-section-number&#34;&gt;1&lt;/span&gt; &lt;strong&gt;크롤링의 순서&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;hr /&gt;
+&lt;div id=&#34;크롤링의-순서&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;&lt;span class=&#34;header-section-number&#34;&gt;1&lt;/span&gt; &lt;strong&gt;크롤링의 순서&lt;/strong&gt;&lt;/h1&gt;
+&lt;p&gt;보편적인 크롤링의 순서는 다음과 같습니다.&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;크롤링 하고자 하는 대상 확인&lt;/li&gt;
+&lt;li&gt;웹 서버에 크롤링 하고자 하는 웹페이지 요청/응답&lt;/li&gt;
+&lt;li&gt;내려 받은 웹 문서의 xml 파일 분석&lt;/li&gt;
+&lt;li&gt;여러 웹페이지를 대상으로 2와 3의 단계를 반복하며 데이터 수집&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>2. 요청과 응답</title>
+      <link>/courses/r_tip_1/2-%EC%9A%94%EC%B2%AD%EA%B3%BC-%EC%9D%91%EB%8B%B5/</link>
+      <pubDate>Mon, 03 Aug 2020 00:00:00 +0000</pubDate>
+      <guid>/courses/r_tip_1/2-%EC%9A%94%EC%B2%AD%EA%B3%BC-%EC%9D%91%EB%8B%B5/</guid>
+      <description>
+
+
+&lt;hr /&gt;
+&lt;p&gt;준비중&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -3,13 +3,18 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/courses/r_tip_102/example1/</loc>
-    <lastmod>2019-05-05T00:00:00+01:00</lastmod>
+    <loc>/courses/r_tip_1/1_target-%ED%8E%98%EC%9D%B4%EC%A7%80-%EC%8B%9D%EB%B3%84/</loc>
+    <lastmod>2020-08-01T20:43:47+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/courses/r_tip_102/</loc>
+    <loc>/courses/r_tip_2/</loc>
     <lastmod>2018-09-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/courses/r_tip_1/2-%EC%9A%94%EC%B2%AD%EA%B3%BC-%EC%9D%91%EB%8B%B5/</loc>
+    <lastmod>2020-08-03T15:13:02+00:00</lastmod>
   </url>
   
   <url>
@@ -28,7 +33,12 @@
   </url>
   
   <url>
-    <loc>/courses/r_tip_101/</loc>
+    <loc>/courses/r_tip_3/</loc>
+    <lastmod>2020-08-03T14:56:59+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/courses/r_tip_1/</loc>
     <lastmod>2020-08-01T20:39:08+00:00</lastmod>
   </url>
   
@@ -65,11 +75,6 @@
   <url>
     <loc>/post/%EB%B8%94%EB%A1%9C%EA%B7%B8%EC%97%90-%EC%9C%A0%EC%9A%A9%ED%95%9C-%ED%8C%81-%EC%84%B9%EC%85%98%EC%9D%84-%EC%B6%94%EA%B0%80%ED%96%88%EB%8B%A4/</loc>
     <lastmod>2020-08-01T02:40:15+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/courses/r_tip_101/%EC%9A%94%EC%B2%AD%EA%B3%BC-%EC%9D%91%EB%8B%B5-%EA%B7%B8%EB%A6%AC%EA%B3%A0-target-%ED%8E%98%EC%9D%B4%EC%A7%80-%EC%8B%9D%EB%B3%84/</loc>
-    <lastmod>2020-08-01T20:43:47+00:00</lastmod>
   </url>
   
   <url>
