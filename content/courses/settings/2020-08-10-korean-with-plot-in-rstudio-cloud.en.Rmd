@@ -69,7 +69,7 @@ plot(1:10, main="이것은 테스트입니다.", xlab = "X축", ylab = "Y축")
 
 ## 그래프를 html로 렌더링하여 출력
 
-`plotly` 패키지는 인터랙티브 시각화 패키지로 이를 이용하면 `ggplot`으로 구현된 그래프를 html로 렌더링하여 출력할 수 있다. 
+`plotly` 패키지는 인터랙티브 시각화 패키지로 이를 이용하면 `ggplot`으로 구현된 그래프를 html로 렌더링하여 출력할 수 있습니다.
 
 [한국 R스터디 그룹](https://de-de.facebook.com/groups/krstudy/permalink/1546879218819678/?comment_id=1549629918544608)에는 `ggplot`으로 그린 그래프를 `plotly`로 감싸야만 한글이 제대로 출력이 된다고 나왔는데 직접 해보니 `ggplot` 만으로도 제대로된 그래프가 출력됩니다. 이 부분은 좀 더 살펴봐야 할 듯 합니다. 
 ```{r plotly, message=FALSE, warning=FALSE}
