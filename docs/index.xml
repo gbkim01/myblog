@@ -21,19 +21,33 @@
 
 &lt;div id=&#34;TOC&#34;&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;#크롤링의-순서&#34;&gt;&lt;span class=&#34;toc-section-number&#34;&gt;1&lt;/span&gt; &lt;strong&gt;크롤링의 순서&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#웹-페이지-주소-확인을-위해-고려해야할-사항&#34;&gt;&lt;span class=&#34;toc-section-number&#34;&gt;1&lt;/span&gt; 웹 페이지 주소 확인을 위해 고려해야할 사항&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 
 &lt;hr /&gt;
-&lt;div id=&#34;크롤링의-순서&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;&lt;span class=&#34;header-section-number&#34;&gt;1&lt;/span&gt; &lt;strong&gt;크롤링의 순서&lt;/strong&gt;&lt;/h1&gt;
-&lt;p&gt;보편적인 크롤링의 순서는 다음과 같습니다.&lt;/p&gt;
-&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
-&lt;li&gt;크롤링 하고자 하는 대상 확인&lt;/li&gt;
-&lt;li&gt;웹 서버에 크롤링 하고자 하는 웹페이지 요청/응답&lt;/li&gt;
-&lt;li&gt;내려 받은 웹 문서의 xml 파일 분석&lt;/li&gt;
-&lt;li&gt;여러 웹페이지를 대상으로 2와 3의 단계를 반복하며 데이터 수집&lt;/li&gt;
+&lt;p&gt;크롤링을 함에 있어서 가장 먼저 확인해야할 부분은 내가 원하는 자료가 어디에 있는지 &lt;strong&gt;웹 페이지 주소&lt;/strong&gt;를 정확하게 파악하는 것입니다. 물론 대부분은 브라우저 상단의 주소창을 확인하는 것만으로도 해당 목적을 달성할 수 있습니다. 그러나 이렇게 쉽게 끝나면 다행이건만 예외적인 상황이 많아 좀 더 자세히 살펴봐야 합니다.&lt;/p&gt;
+&lt;p&gt;웹브라우저는 상에서 우리가 눈으로 보는 내용은 단순한 문서로 보이겠지만 실제로 그 안에는 매우 복잡한 구성으로 되어 있기 때문에 실제 우리가 가져와야 할 정보는 별도의 URL을 가지고 있는 경우가 종종 있습니다.
+한가지 예를 들어 살펴보겠습니다.&lt;/p&gt;
+
+&lt;div id=&#34;웹-페이지-주소-확인을-위해-고려해야할-사항&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;&lt;span class=&#34;header-section-number&#34;&gt;1&lt;/span&gt; 웹 페이지 주소 확인을 위해 고려해야할 사항&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;네이버 증권&lt;/strong&gt;에서 &lt;a href=&#34;https://finance.naver.com/sise/sise_index.nhn?code=KOSPI&#34;&gt;&lt;strong&gt;KOSPI 지수 일별 시세&lt;/strong&gt;&lt;/a&gt;의
+최근 10년치 기록을 가져온다고 가정해 봅시다. 처음 주소창에 &lt;a href=&#34;https://finance.naver.com/sise/sise_index.nhn?code=KOSPI&#34;&gt;&lt;strong&gt;네이버 증권 국내증시&lt;/strong&gt;&lt;/a&gt;의 주소를 입력하고 해당 페이지로 이동&lt;a href=&#34;#fn1&#34; class=&#34;footnote-ref&#34; id=&#34;fnref1&#34;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt; 한 후
+&lt;strong&gt;&lt;code&gt;F12키&lt;/code&gt;&lt;/strong&gt;&lt;a href=&#34;#fn2&#34; class=&#34;footnote-ref&#34; id=&#34;fnref2&#34;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt;를 누르면 다음과 같은 화면을 확인할 수 있습니다.&lt;/p&gt;
+&lt;div class=&#34;figure&#34; style=&#34;text-align: center&#34;&gt;&lt;span id=&#34;fig:figs1&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;https://user-images.githubusercontent.com/30010992/89721986-a1ffee80-da1e-11ea-9af8-c66eb549e81a.jpg&#34; alt=&#34;웹 페이지 구성&#34;  /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figure 1.1: 웹 페이지 구성
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;in Figure &lt;a href=&#34;#fig:figs1&#34;&gt;1.1&lt;/a&gt; we see examples of plotting in R.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn1&#34;&gt;&lt;p&gt;이후의 웹 페이지에 대한 모든 설명은 &lt;strong&gt;구글 크롬 브라우저&lt;/strong&gt;를 기준으로 합니다. 파이어폭스나 엣지브라우저에서도 동일한 기능을 제공하고 동일한 순서로 크롤링이 진행되지만 보통 인터넷 검색을 통해 얻을 수 있는 대부분의 팁이 크롬을 기준으로 하고 있기 때문에 크롬에 익숙해 지면 향후 혼자서 정보검색할 때에도 편리하다는 장점이 있습니다.&lt;a href=&#34;#fnref1&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn2&#34;&gt;&lt;p&gt;웹 브라우저의 개발자도구를 표시합니다.&lt;a href=&#34;#fnref2&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
 </description>
@@ -67,6 +81,18 @@
 &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;shortcodes&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Further talk details can easily be added to this page using &lt;em&gt;Markdown&lt;/em&gt; and $\rm \LaTeX$ math code.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Rstudio Cloud의 그래프에서 한글폰트의 출력</title>
+      <link>/courses/settings/korean-with-plot-in-rstudio-cloud/</link>
+      <pubDate>Mon, 10 Aug 2020 00:00:00 +0000</pubDate>
+      <guid>/courses/settings/korean-with-plot-in-rstudio-cloud/</guid>
+      <description>
+
+
+
 </description>
     </item>
     

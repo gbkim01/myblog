@@ -61,4 +61,17 @@ date_format = "Jan 2006"
   여기서는 Rmd 파일을 이용하여 보고서/논문/발표 슬라이드 등을 작성하는 방법을 정리합니다.    
   """
 
+[[item]]
+  organization = "오만가지 설정을 다룹니다."
+  organization_url = ""
+  title = "[각종 설정 - 컴퓨터 사용시 필요한 설정(페이지 준비중)](/courses/settings/)"
+  url = ""
+  certificate_url = ""
+  date_start = "2020-08-01"
+  date_end = ""
+  description = """
+  개인적으로 컴퓨터를 사용하면서 필요한 설정을 정리합니다. 
+  각종 오류에 대한 대처 방법을 포함합니다. 
+  """
+
 +++
