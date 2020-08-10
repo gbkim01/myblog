@@ -11,7 +11,7 @@ lastmod: '2020-08-10T01:26:29Z'
 type: docs
 menu:
   settings:
-    parent: R
+    parent: Tip1. R
     weight: 1
 output:
   blogdown::html_page:
@@ -20,4 +20,91 @@ output:
     number_sections: yes
     df_print: kable
 ---
+
+**Rstudio Cloud**는 굉장한 서비스이지만 한국인으로서 한글사용에 제약이 있는 점은 큰 불만입니다. 예를 들어 base plot이나 ggplot에서 그래프를 그릴때 한글로 된 라벨을 붙이면 Viwer에는 한글이 깨져서 출력^[그래프 외에도 rmd를 pdf 파일로 변환할 때 문서 내부에 한글이 있으면 컴파일이 중단되는 문제가 있습니다. 이 부분에 대한 해결책은 아직 찾지 못했습니다. Latex 설정을 어떻게 하면 된다고 하는데 말이죠...]이 됩니다. 이 문제는 **Rstudio Cloud**에 적절한 한글 글꼴이 설치되어 있지 않고 X11을 지원하지 않기 때문에 발생한다고 합니다. 해당문제의 해결책은 [미완성의 신](https://medium.com/@unfinishedgod/aws%EC%97%90%EC%84%9C-%EA%B5%AC%EC%B6%95%ED%95%9C-rstudio-plot-%ED%95%9C%EA%B8%80-%EA%B9%A8%EC%A7%90-%ED%95%B4%EA%B2%B0-%EB%B0%A9%EC%95%88-5ada27828fd4)이라는 국내 블로그와 [한국 R 스터디 그룹](https://de-de.facebook.com/groups/krstudy/permalink/1546879218819678/?comment_id=1549629918544608)의 내용을 참고했습니다. 
+
+# Rstudio Cloud에서 한글 글꼴 설치
+
+**Rstudio Cloud**는 리눅스 기반의 R을 제공하지만 사용자에게 관리자 권한을 제공하지 않기 때문에 `root` 디렉토리에 글꼴을 설치할 수 없습니다. 그래서 `home` 디렉토리에 `.fonts` 폴더를 생성한 후, 그곳에 글꼴을 설치하고 R에서 인식할 수 있도록 해줘야 합니다.  
+
+먼저 Rstudio의 콘솔창 옆에 터미널 창을 실행시킵니다. 평소 git에 푸시할 때 빼고는 Rstudio에서 터미널을 이용하는 경우는 거의 없는데 여기서 사용하니 신기합니다.
+
+터미널 창에 다음의 코드를 실행시켜 `.fonts` 디렉토리를 만들고 **나눔글꼴**을 설치합니다. 
+
+```
+$ mkdir ~/.fonts  # '~/.fonts' 디렉토리 생성
+$ cd ~/.fonts     # '~/.fonts' 디렉토리 이동
+$ wget http://cdn.naver.com/naver/NanumFont/fontfiles/NanumFont_TTF_ALL.zip
+  # 나눔글꼴(zip파일) 내려받기
+$ unzip NanumFont_TTF_ALL.zip -d NanumFont  # zip파일 해제
+$ rm -f NanumFont_TTF_ALL.zip  # 내려받은 zip파일 제거
+```
+
+여기까지 **Rstudio Cloud**에서 한글 글꼴을 설치하는 작업은 끝났습니다. 이제 R에 글꼴이 설치된 경로를 등록하여 R이 글꼴을 인식할 수 있도록 해야 합니다. 앞에서는 터미널에서 작업했지만 이젠 우리가 자주 사용하는 콘솔창으로 이동하여 다음의 코드를 실행시킵니다. 
+
+```{r add_fonts_path, eval=FALSE}
+# install.packages("sysfonts")
+library(sysfonts)
+font_add("NanumGothicBold", "~/.fonts/NanumFont/NanumGothicBold.ttf")
+font_add("NanumGothic", "~/.fonts/NanumFont/NanumGothic.ttf")
+```
+
+저는 앞으로 고딕체만 쓸 예정이므로 `NanumGothicBold`, `NanumGothic` 폰트만 추가했습니다.
+
+이제 마무리 되었습니다. 그러나 여기까지 작업만으로는 **Rstudio Cloud**의 그래프에서 한글글꼴이 제대로 출력되지 않습니다. [한국 R스터디 그룹](https://de-de.facebook.com/groups/krstudy/permalink/1546879218819678/?comment_id=1549629918544608)에서는 `rmd chunk`에 `fig.showtext` 옵션을 추가하는 방법, 그래프를 html로 렌더링한 결과를 보여주는 방법,  `svgPanZoom`과 `svglite` 패키지를 이용하여 기본 plot pane으로 보내는 방법 세가지 방안을 제안^[샤이니 서버에 '~/.Renviron' 생성 후, 'LANG=en_US.UTF-8' 옵션을 추가하는 방안도 제시되었으나 샤이니는 제가 모르는 방법이라 본 쓰레드에서는 제외하였습니다. 관심이 있으신 분은 [한국 R스터디 그룹](https://de-de.facebook.com/groups/krstudy/permalink/1546879218819678/?comment_id=1549629918544608)을 참고하시길 바랍니다.]하고 있습니다. 
+
+# 한글 글꼴 출력 방법
+## `rmd chunk`에 `fig.showtext` 옵션 추가
+
+최근 rmd 파일을 자주 사용하는 저로서는 정말 반가운 팁이 아닐 수 없습니다. 
+
+```{r figs1, fig.showtext=TRUE, message=FALSE, warning=FALSE}
+# install.packages("showtext")
+library(showtext)
+showtext_auto()
+plot(1:10, main="이것은 테스트입니다.", xlab = "X축", ylab = "Y축")
+```
+
+정상적으로 잘 작동합니다. 
+
+## 그래프를 html로 렌더링하여 출력
+
+`plotly` 패키지는 인터랙티브 시각화 패키지로 이를 이용하면 `ggplot`으로 구현된 그래프를 html로 렌더링하여 출력할 수 있다. 
+
+[한국 R스터디 그룹](https://de-de.facebook.com/groups/krstudy/permalink/1546879218819678/?comment_id=1549629918544608)에는 `ggplot`으로 그린 그래프를 `plotly`로 감싸야만 한글이 제대로 출력이 된다고 나왔는데 직접 해보니 `ggplot` 만으로도 제대로된 그래프가 출력된다. 이 부분은 좀 더 살펴봐야 할 듯 하다. 
+```{r plotly, message=FALSE, warning=FALSE}
+# install.packages("ggplot2")
+# install.packages("plotly")
+library(ggplot2)
+library(plotly)
+
+ggplot(mtcars, aes(x=wt, y=mpg)) +
+  geom_point() + geom_smooth() +
+  ggtitle("이것은 테스트입니다.")
+```
+
+
+```{r plotly2, message=FALSE, warning=FALSE}
+library(dplyr)
+{ggplot(mtcars, aes(x=wt, y=mpg)) +
+  geom_point() + geom_smooth() +
+  ggtitle("이것은 테스트입니다.")} %>% ggplotly()
+```
+
+## `svgPanZoom`과 `svglite` 패키지 이용
+
+```{r svg, message=FALSE, warning=FALSE}
+# install.packages("svgPanZoom")
+# install.packages("svglite")
+
+library(svgPanZoom)
+library(svglite)
+
+showtext_auto()
+svgPanZoom(
+  svglite:::inlineSVG(
+   plot(1:10, main="이것은 테스트입니다.", xlab = "X축", ylab = "Y축") 
+  )
+)
+```
 
