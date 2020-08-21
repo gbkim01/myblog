@@ -87,7 +87,7 @@ Figure 2: KOSPI 일별시세 정보표시
 &lt;/div&gt;
 &lt;div id=&#34;개발자도구-네트워크-탭에-대한-팁-하나-더&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;&lt;strong&gt;개발자도구 네트워크 탭에 대한 팁 하나 더…&lt;/strong&gt;&lt;/h2&gt;
-&lt;p&gt;Figure&lt;a href=&#34;#fig:figs1&#34;&gt;1&lt;/a&gt;의 개발자도구 네트워크 탭에서 &lt;strong&gt;5번&lt;/strong&gt;의 “모두” 항목에 표시되는 정보로 부터 내가 원하는 정확한 신호정보를 찾기란 쉬운게 아닙니다. “모두” 항목은 말 그대로 브라우저에 표시되는 정보의 모든 신호를 표기하기 때문에 웹페이지 하나를 띄울 때마다 엄청난 양의 신호정보가 쌓이기 때문입니다. 좀 더 편하게 확인하려면 &lt;strong&gt;5번&lt;/strong&gt;항목 옆으로 보이는 XHR, CSS,… 등등을 클릭하면서 확인해 보는 것이 좋습니다. 웹페이지 신호를 정보 유형별로 구분해서 보여주기 때문에 내가 찾는 신호를 차기가 훨씬 수월할 것입니다.&lt;/p&gt;
+&lt;p&gt;Figure&lt;a href=&#34;#fig:figs1&#34;&gt;1&lt;/a&gt;의 개발자도구 네트워크 탭에서 &lt;strong&gt;5번&lt;/strong&gt;의 “모두” 항목에 표시되는 정보로 부터 내가 원하는 정확한 신호정보를 찾기란 쉬운게 아닙니다. “모두” 항목은 말 그대로 브라우저에 표시되는 정보의 모든 신호를 표기하기 때문에 웹페이지 하나를 띄울 때마다 엄청난 양의 신호정보가 쌓이기 때문입니다. 좀 더 편하게 확인하려면 &lt;strong&gt;5번&lt;/strong&gt;항목 옆으로 보이는 XHR, CSS,… 등등을 클릭하면서 확인해 보는 것이 좋습니다. 웹페이지 신호를 정보 유형별로 구분해서 보여주기 때문에 내가 찾는 신호를 찾기가 훨씬 수월할 것입니다.&lt;/p&gt;
 &lt;p&gt;이번 포스트에서 다룬 네이버 KOSPI 일별시세의 경우 &lt;strong&gt;5번&lt;/strong&gt;항목의 “문서&lt;a href=&#34;#fn5&#34; class=&#34;footnote-ref&#34; id=&#34;fnref5&#34;&gt;&lt;sup&gt;5&lt;/sup&gt;&lt;/a&gt;”탭에 나타나 있습니다. 아래의 Figure&lt;a href=&#34;#fig:figs3&#34;&gt;3&lt;/a&gt;이 “문서”항목에서 신호정보를 확인한 것인데 Figure&lt;a href=&#34;#fig:figs1&#34;&gt;1&lt;/a&gt;에서 보다 훨씬 간단하게 일별시세에 대한 신호가 식별됩니다.&lt;/p&gt;
 &lt;div class=&#34;figure&#34; style=&#34;text-align: center&#34;&gt;&lt;span id=&#34;fig:figs3&#34;&gt;&lt;/span&gt;
 &lt;img src=&#34;https://user-images.githubusercontent.com/30010992/89721987-a5937580-da1e-11ea-8d2f-4e8ed85d094d.jpg&#34; alt=&#34;네트워크의 &#39;문서&#39;항목&#34;  /&gt;
@@ -118,7 +118,46 @@ Figure 3: 네트워크의 ’문서’항목
 
 
 &lt;hr /&gt;
+&lt;div class=&#34;figure&#34; style=&#34;text-align: center&#34;&gt;&lt;span id=&#34;fig:figs1&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;https://miro.medium.com/max/875/1*8-fT6K1o6nHiBRxKppcqOg.png&#34; alt=&#34;Request와 Response^[출처 : https://medium.com/@rohitpatil97/http-request-http-response-context-and-headers-part-iii-5c37bd4cb06b]&#34;  /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figure 1: Request와 Response&lt;a href=&#34;#fn1&#34; class=&#34;footnote-ref&#34; id=&#34;fnref1&#34;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;figure&#34; style=&#34;text-align: center&#34;&gt;&lt;span id=&#34;fig:figs2&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;https://miro.medium.com/max/875/1*xJEUm1hUvxppvcjY14IKQA.jpeg&#34; alt=&#34;HTTP 메서드 종류^[출처 : https://medium.com/@NikiMichaelsonqiv/http-methods-get-vs-post-b3ffb60c7f55]&#34;  /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figure 2: HTTP 메서드 종류&lt;a href=&#34;#fn2&#34; class=&#34;footnote-ref&#34; id=&#34;fnref2&#34;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;pre&gt;&lt;code&gt;GET vs POST
+
+HTTP POST 요청은 클라이언트에서 서버로 전송할 때 추가적인 데이터를 body에 포함할 수 있다. 
+
+반면에 GET 요청은 모든 필요한 데이터를 URL에 포함하여 요청한다. 
+
+HTML의 &amp;lt;form&amp;gt;태그에 method=&amp;quot;POST&amp;quot; 또는 method=&amp;quot;GET&amp;quot;(기본값)을 모두 사용할 수 있다.
+
+만약에 GET 메소드를 사용하면 모든 form data는 URL로 인코딩되어 action URL에 query string parameters로 전달된다. 
+
+POST 메소드를 사용하면 form data는 HTTP request의 message body에 나타날 것이다.
+
+출처: https://im-developer.tistory.com/166 [Code Playground]&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;figure&#34; style=&#34;text-align: center&#34;&gt;&lt;span id=&#34;fig:figs3&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;https://i1.wp.com/csharpcorner.mindcrackerinc.netdna-cdn.com/article/create-api-with-asp-net-core-day-three-working-with-http-status-codes-in-asp/Images/image002.jpg?zoom=2&#34; alt=&#34;HTTP 상태 코드^[출처 : https://codeteddy.com/2017/06/06/create-api-with-asp-net-core-day-3-working-with-http-status-codes-in-asp-net-core-api/]&#34;  /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figure 3: HTTP 상태 코드&lt;a href=&#34;#fn3&#34; class=&#34;footnote-ref&#34; id=&#34;fnref3&#34;&gt;&lt;sup&gt;3&lt;/sup&gt;&lt;/a&gt;
+&lt;/p&gt;
+&lt;/div&gt;
 &lt;p&gt;준비중&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn1&#34;&gt;&lt;p&gt;출처 : &lt;a href=&#34;https://medium.com/@rohitpatil97/http-request-http-response-context-and-headers-part-iii-5c37bd4cb06b&#34; class=&#34;uri&#34;&gt;https://medium.com/@rohitpatil97/http-request-http-response-context-and-headers-part-iii-5c37bd4cb06b&lt;/a&gt;&lt;a href=&#34;#fnref1&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn2&#34;&gt;&lt;p&gt;출처 : &lt;a href=&#34;https://medium.com/@NikiMichaelsonqiv/http-methods-get-vs-post-b3ffb60c7f55&#34; class=&#34;uri&#34;&gt;https://medium.com/@NikiMichaelsonqiv/http-methods-get-vs-post-b3ffb60c7f55&lt;/a&gt;&lt;a href=&#34;#fnref2&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn3&#34;&gt;&lt;p&gt;출처 : &lt;a href=&#34;https://codeteddy.com/2017/06/06/create-api-with-asp-net-core-day-3-working-with-http-status-codes-in-asp-net-core-api/&#34; class=&#34;uri&#34;&gt;https://codeteddy.com/2017/06/06/create-api-with-asp-net-core-day-3-working-with-http-status-codes-in-asp-net-core-api/&lt;/a&gt;&lt;a href=&#34;#fnref3&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
 </description>
     </item>
     
