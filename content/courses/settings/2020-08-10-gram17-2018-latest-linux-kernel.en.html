@@ -17,26 +17,27 @@ output:
   blogdown::html_page:
     toc: true
     fig_caption: yes
-    number_sections: yes
     df_print: kable
+    fig_height: 6
+    fig_width: 10
 ---
 
 
 <div id="TOC">
 <ul>
-<li><a href="#문제의-원인"><span class="toc-section-number">1</span> 문제의 원인</a></li>
-<li><a href="#해법"><span class="toc-section-number">2</span> 해법</a></li>
+<li><a href="#문제의-원인"><strong>문제의 원인</strong></a></li>
+<li><a href="#해결책"><strong>해결책</strong></a></li>
 </ul>
 </div>
 
 <p>이 설정은 LG의 Gram17(2018년)형에 해당되는 내용입니다. 작년에 인터넷을 뒤지다가 국내 블로그에서 간신히 알아낸 설정 팁인데 출처가 어딘지 가물가물합니다. 검색해서 찾기도 어렵고… 기억나지 않는 그 분께 일단 감사말씀 드립니다.</p>
 <p>정확하진 않지만 문제가 발생한건 <strong>우분투 18.04.02</strong> 버전인 것으로 기억합니다. 그 전 까지는 별다른 이상 없이 우분투 설치가 가능했는데 <strong>우분투 18.04.02</strong>부터 그램17에 설치하면 화면에 <code>ACPI Error</code>를 무한 출력하며 진행이 멈추는 현상이 발생했습니다.</p>
-<div id="문제의-원인" class="section level1">
-<h1><span class="header-section-number">1</span> 문제의 원인</h1>
+<div id="문제의-원인" class="section level2">
+<h2><strong>문제의 원인</strong></h2>
 <p>문제의 원인은 <strong>우분투 18.04.02</strong> 에 올라간 최신 리눅스 커널과 그램17의 썬더볼트 설정이 맞지 않은 것에 기인한다고 합니다. 따라서 바이오스에서 썬더볼트 설정만 만져주면 됩니다. 방법은 다음과 같습니다.</p>
 </div>
-<div id="해법" class="section level1">
-<h1><span class="header-section-number">2</span> 해법</h1>
+<div id="해결책" class="section level2">
+<h2><strong>해결책</strong></h2>
 <ul>
 <li><p>부팅 시작될 때 F2를 눌러서 바이오스 진입</p></li>
 <li><p>ctrl + alt + F7을 눌러서 고급 모드 진입(advanced mode)</p></li>
@@ -45,13 +46,13 @@ output:
 <li><p>Thunderbolt (TM) Configuration 선택</p></li>
 <li><p>맨 아래 Discrete Thunderbolt (TM) Configuration 선택</p></li>
 <li><p>맨 아래 Thunderbolt (TM) OS Select 선택</p></li>
-<li><p>Windows 10 Thunderbolt support<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>를 Enabled나 Disabled로 변경</p></li>
+<li><p>Windows 10 Thunderbolt support<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>를 <code>Enabled</code>나 <code>Disabled</code>로 변경</p></li>
 <li><p>자동 재시작 또는 F10을 눌러서 Save and Exit</p></li>
 </ul>
 </div>
 <div class="footnotes">
 <hr />
 <ol>
-<li id="fn1"><p>기본값은 Enable + RTD3<a href="#fnref1" class="footnote-back">↩︎</a></p></li>
+<li id="fn1"><p>기본값은 <code>Enable + RTD3</code><a href="#fnref1" class="footnote-back">↩︎</a></p></li>
 </ol>
 </div>

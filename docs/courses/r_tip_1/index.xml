@@ -24,7 +24,7 @@
 &lt;li&gt;&lt;a href=&#34;#페이지-속의-페이지&#34;&gt;&lt;strong&gt;페이지 속의 페이지??&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#브라우저-개발자도구의-활용&#34;&gt;&lt;strong&gt;브라우저 개발자도구의 활용&lt;/strong&gt;&lt;/a&gt;&lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;#네트워크-탭에서-서버와-브라우저-사이에-오가는-신호를-확인하자&#34;&gt;네트워크 탭에서 서버와 브라우저 사이에 오가는 신호를 확인하자!&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#그런데-네트워크에서-url-주소는-도대체-어디에-있나&#34;&gt;그런데 네트워크에서 URL 주소는 도대체 어디에 있나?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#그런데-url-주소는-어디서-확인하나&#34;&gt;그런데 URL 주소는 어디서 확인하나?&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#개발자도구-네트워크-탭에-대한-팁-하나-더&#34;&gt;&lt;strong&gt;개발자도구 네트워크 탭에 대한 팁 하나 더…&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -63,8 +63,8 @@ Figure 1: 웹 페이지 구성
 &lt;/ul&gt;
 &lt;p&gt;뭔가 규칙성을 확인할 수 있지 않습니까? 맞습니다. &lt;code&gt;sise_index_day.nhn?code=KOSPI&amp;amp;&lt;/code&gt; 까지는 동일하고 페이지 숫자를 누를 때마다 &lt;code&gt;page=5&lt;/code&gt; 숫자만 바뀌는 것을 알 수 있습니다. 여기까지 왔다면 사실 거의 다 끝났습니다.&lt;/p&gt;
 &lt;/div&gt;
-&lt;div id=&#34;그런데-네트워크에서-url-주소는-도대체-어디에-있나&#34; class=&#34;section level3&#34;&gt;
-&lt;h3&gt;그런데 네트워크에서 URL 주소는 도대체 어디에 있나?&lt;/h3&gt;
+&lt;div id=&#34;그런데-url-주소는-어디서-확인하나&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;그런데 URL 주소는 어디서 확인하나?&lt;/h3&gt;
 &lt;p&gt;그런데 앞에서 확인한 &lt;code&gt;sise_index_day.nhn?code=KOSPI&amp;amp;page=4&lt;/code&gt;는 인터넷 주소처럼 생기진 않았습니다. 무릇 인터넷 주소라면 &lt;code&gt;https://&lt;/code&gt;나 &lt;code&gt;www&lt;/code&gt;로 시작해야 하는데 이건 그렇진 않죠. 그렇다면 정확한 URL은 어디서 확인해야 하는냐? 그건 Figure&lt;a href=&#34;#fig:figs1&#34;&gt;1&lt;/a&gt;의 &lt;strong&gt;8번&lt;/strong&gt; 항목의 머리글 탭&lt;a href=&#34;#fn3&#34; class=&#34;footnote-ref&#34; id=&#34;fnref3&#34;&gt;&lt;sup&gt;3&lt;/sup&gt;&lt;/a&gt;에서 확인할 수 있습니다.&lt;/p&gt;
 &lt;p&gt;Figure&lt;a href=&#34;#fig:figs1&#34;&gt;1&lt;/a&gt;의 &lt;strong&gt;8번&lt;/strong&gt; 항목을 살펴보먄 &lt;strong&gt;요청URL&lt;a href=&#34;#fn4&#34; class=&#34;footnote-ref&#34; id=&#34;fnref4&#34;&gt;&lt;sup&gt;4&lt;/sup&gt;&lt;/a&gt;&lt;/strong&gt;이라고 해서 &lt;code&gt;https://finance.naver.com/sise/sise_index_day.nhn?code=KOSPI&amp;amp;page=4&lt;/code&gt;이라는 URL 정보가 나옵니다. 이 주소가 네이버에서 제공하는 KOSPI 일별시세 정보의 4번째 페이지에 해당되는 정보입니다. 바로 그 밑으로 &lt;strong&gt;요청 메서드 : GET&lt;/strong&gt;, &lt;strong&gt;상태 코드 : 200&lt;/strong&gt; 등등의 정보가 있는데 이러한 내용은 다음 번에 설명하겠습니다.&lt;/p&gt;
 &lt;p&gt;각설하고, 해당 URL을 인터넷 주소창에 입력해 보면 다음의 그림처럼 표시될 겁니다.&lt;/p&gt;

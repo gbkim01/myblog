@@ -25,7 +25,7 @@ output:
 <li><a href="#페이지-속의-페이지"><strong>페이지 속의 페이지??</strong></a></li>
 <li><a href="#브라우저-개발자도구의-활용"><strong>브라우저 개발자도구의 활용</strong></a><ul>
 <li><a href="#네트워크-탭에서-서버와-브라우저-사이에-오가는-신호를-확인하자">네트워크 탭에서 서버와 브라우저 사이에 오가는 신호를 확인하자!</a></li>
-<li><a href="#그런데-네트워크에서-url-주소는-도대체-어디에-있나">그런데 네트워크에서 URL 주소는 도대체 어디에 있나?</a></li>
+<li><a href="#그런데-url-주소는-어디서-확인하나">그런데 URL 주소는 어디서 확인하나?</a></li>
 </ul></li>
 <li><a href="#개발자도구-네트워크-탭에-대한-팁-하나-더"><strong>개발자도구 네트워크 탭에 대한 팁 하나 더…</strong></a></li>
 </ul>
@@ -64,8 +64,8 @@ Figure 1: 웹 페이지 구성
 </ul>
 <p>뭔가 규칙성을 확인할 수 있지 않습니까? 맞습니다. <code>sise_index_day.nhn?code=KOSPI&amp;</code> 까지는 동일하고 페이지 숫자를 누를 때마다 <code>page=5</code> 숫자만 바뀌는 것을 알 수 있습니다. 여기까지 왔다면 사실 거의 다 끝났습니다.</p>
 </div>
-<div id="그런데-네트워크에서-url-주소는-도대체-어디에-있나" class="section level3">
-<h3>그런데 네트워크에서 URL 주소는 도대체 어디에 있나?</h3>
+<div id="그런데-url-주소는-어디서-확인하나" class="section level3">
+<h3>그런데 URL 주소는 어디서 확인하나?</h3>
 <p>그런데 앞에서 확인한 <code>sise_index_day.nhn?code=KOSPI&amp;page=4</code>는 인터넷 주소처럼 생기진 않았습니다. 무릇 인터넷 주소라면 <code>https://</code>나 <code>www</code>로 시작해야 하는데 이건 그렇진 않죠. 그렇다면 정확한 URL은 어디서 확인해야 하는냐? 그건 Figure<a href="#fig:figs1">1</a>의 <strong>8번</strong> 항목의 머리글 탭<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a>에서 확인할 수 있습니다.</p>
 <p>Figure<a href="#fig:figs1">1</a>의 <strong>8번</strong> 항목을 살펴보먄 <strong>요청URL<a href="#fn4" class="footnote-ref" id="fnref4"><sup>4</sup></a></strong>이라고 해서 <code>https://finance.naver.com/sise/sise_index_day.nhn?code=KOSPI&amp;page=4</code>이라는 URL 정보가 나옵니다. 이 주소가 네이버에서 제공하는 KOSPI 일별시세 정보의 4번째 페이지에 해당되는 정보입니다. 바로 그 밑으로 <strong>요청 메서드 : GET</strong>, <strong>상태 코드 : 200</strong> 등등의 정보가 있는데 이러한 내용은 다음 번에 설명하겠습니다.</p>
 <p>각설하고, 해당 URL을 인터넷 주소창에 입력해 보면 다음의 그림처럼 표시될 겁니다.</p>
