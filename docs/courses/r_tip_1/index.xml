@@ -21,19 +21,22 @@
 
 &lt;div id=&#34;TOC&#34;&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;#웹-페이지-주소-확인을-위해-고려해야할-사항&#34;&gt;&lt;span class=&#34;toc-section-number&#34;&gt;1&lt;/span&gt; 웹 페이지 주소 확인을 위해 고려해야할 사항&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#페이지-속의-페이지&#34;&gt;&lt;span class=&#34;toc-section-number&#34;&gt;1&lt;/span&gt; 페이지 속의 페이지&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#브라우저-개발자도구의-활용&#34;&gt;&lt;span class=&#34;toc-section-number&#34;&gt;2&lt;/span&gt; 브라우저 개발자도구의 활용&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#개발자-도구의-네트워크에서-서버와-브라우저-사이에-오가는-신호를-확인하자&#34;&gt;&lt;span class=&#34;toc-section-number&#34;&gt;2.1&lt;/span&gt; 개발자 도구의 &lt;strong&gt;네트워크&lt;/strong&gt;에서 서버와 브라우저 사이에 오가는 신호를 확인하자!&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#그런데-네트워크에서-url-주소는-도대체-어디에-있나&#34;&gt;&lt;span class=&#34;toc-section-number&#34;&gt;2.2&lt;/span&gt; 그런데 &lt;strong&gt;네트워크&lt;/strong&gt;에서 URL 주소는 도대체 어디에 있나?&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 
 &lt;hr /&gt;
-&lt;p&gt;크롤링을 함에 있어서 가장 먼저 확인해야할 부분은 내가 원하는 자료가 어디에 있는지 &lt;strong&gt;웹 페이지 주소&lt;/strong&gt;를 정확하게 파악하는 것입니다. 물론 대부분은 브라우저 상단의 주소창을 확인하는 것만으로도 해당 목적을 달성할 수 있습니다. 그러나 이렇게 쉽게 끝나면 다행이건만 예외적인 상황이 많아 좀 더 자세히 살펴봐야 합니다.&lt;/p&gt;
-&lt;p&gt;웹브라우저는 상에서 우리가 눈으로 보는 내용은 단순한 문서로 보이겠지만 실제로 그 안에는 매우 복잡한 구성으로 되어 있기 때문에 실제 우리가 가져와야 할 정보는 별도의 URL을 가지고 있는 경우가 종종 있습니다.
+&lt;p&gt;크롤링을 함에 있어서 가장 먼저 확인해야할 부분은 원하는 자료가 위치한 &lt;strong&gt;웹 페이지 주소&lt;/strong&gt;를 정확하게 파악하는 것입니다. 물론 대부분은 브라우저 상단의 주소창을 확인하는 것만으로도 해당 목적을 달성할 수 있습니다. 그러나 세상 일이 그렇게 간단치는 않죠. 예외적인 상황이 많기 때문에 브라우저의 구조와 작동원리를 좀 더 자세히 살펴볼 필요가 있습니다.&lt;/p&gt;
+&lt;p&gt;인터넷을 통해 우리가 눈으로 확인하는 내용은 한 페이지의 문서에 불과합니다. 그러나 그 한 페이지의 문서를 실제로 웹브라우저에 구현하기 위해서는 매우 복잡한 작용이 진행되고 있습니다. 때문에 실제 우리가 가져와야 할 정보를 찾고 긁어오기 위해서는 브라우저 안에서 어떤 동작이 진행되고 있는지에 대한 약간의 이해가 필요합니다.
 한가지 예를 들어 살펴보겠습니다.&lt;/p&gt;
-
-&lt;div id=&#34;웹-페이지-주소-확인을-위해-고려해야할-사항&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;&lt;span class=&#34;header-section-number&#34;&gt;1&lt;/span&gt; 웹 페이지 주소 확인을 위해 고려해야할 사항&lt;/h1&gt;
+&lt;div id=&#34;페이지-속의-페이지&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;&lt;span class=&#34;header-section-number&#34;&gt;1&lt;/span&gt; 페이지 속의 페이지&lt;/h1&gt;
 &lt;p&gt;&lt;strong&gt;네이버 증권&lt;/strong&gt;에서 &lt;a href=&#34;https://finance.naver.com/sise/sise_index.nhn?code=KOSPI&#34;&gt;&lt;strong&gt;KOSPI 지수 일별 시세&lt;/strong&gt;&lt;/a&gt;의
-최근 10년치 기록을 가져온다고 가정해 봅시다. 처음 주소창에 &lt;a href=&#34;https://finance.naver.com/sise/sise_index.nhn?code=KOSPI&#34;&gt;&lt;strong&gt;네이버 증권 국내증시&lt;/strong&gt;&lt;/a&gt;의 주소를 입력하고 해당 페이지로 이동&lt;a href=&#34;#fn1&#34; class=&#34;footnote-ref&#34; id=&#34;fnref1&#34;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt; 한 후
+지난 10년치 기록을 가져온다고 가정해 봅시다. 처음 주소창에 &lt;a href=&#34;https://finance.naver.com/sise/sise_index.nhn?code=KOSPI&#34;&gt;&lt;strong&gt;네이버 증권 국내증시&lt;/strong&gt;&lt;/a&gt;의 주소를 입력하고 해당 페이지로 이동&lt;a href=&#34;#fn1&#34; class=&#34;footnote-ref&#34; id=&#34;fnref1&#34;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt; 한 후
 &lt;strong&gt;&lt;code&gt;F12키&lt;/code&gt;&lt;/strong&gt;&lt;a href=&#34;#fn2&#34; class=&#34;footnote-ref&#34; id=&#34;fnref2&#34;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt;를 누르면 다음과 같은 화면을 확인할 수 있습니다.&lt;/p&gt;
 &lt;div class=&#34;figure&#34; style=&#34;text-align: center&#34;&gt;&lt;span id=&#34;fig:figs1&#34;&gt;&lt;/span&gt;
 &lt;img src=&#34;https://user-images.githubusercontent.com/30010992/89721986-a1ffee80-da1e-11ea-9af8-c66eb549e81a.jpg&#34; alt=&#34;웹 페이지 구성&#34;  /&gt;
@@ -41,7 +44,25 @@
 Figure 1.1: 웹 페이지 구성
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;p&gt;in Figure &lt;a href=&#34;#fig:figs1&#34;&gt;1.1&lt;/a&gt; we see examples of plotting in R.&lt;/p&gt;
+&lt;p&gt;Figure &lt;a href=&#34;#fig:figs1&#34;&gt;1.1&lt;/a&gt;에서 KOSPI 일별 시세에 대한 정보는 페이지 하단의 &lt;strong&gt;2번&lt;/strong&gt; 구역에 위치하고 있습니다. 가만히 살펴보니 첫 화면에서는 최근 6일에 대한 시세 정보만 제공하고 있네요. 최근 6일치 말고 그보다 더 전의 시세에 대한 기록을 찾아보려면 &lt;strong&gt;3번&lt;/strong&gt;위치에 있는 페이지 숫자를 일일이 마우스로 클릭해야 합니다. 페이지 숫자를 클릭할때마다 예전 시세정보를 6일치씩 끊어서 볼 수 있도록 사이트가 구성되어 있습니다.&lt;/p&gt;
+&lt;p&gt;근데 &lt;strong&gt;3번&lt;/strong&gt;의 페이지를 누른다고 해서 &lt;strong&gt;1번&lt;/strong&gt;주소창의 URL이 변경된다거나 그러지는 않습니다. &lt;strong&gt;3번&lt;/strong&gt; 페이지를 클릭하면 새로운 일별시세 정보로 갱신되어 화면에는 나타나는데 주소창 URL은 그대로입니다. 즉, &lt;strong&gt;1번&lt;/strong&gt; 주소표시줄만 봐서는 긁고자 하는 대상의 URL을 정확하게 알 수 없는 상황입니다. 이때 봐야할 곳이 웹브라우저의 &lt;strong&gt;개발자도구&lt;/strong&gt;입니다.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;브라우저-개발자도구의-활용&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;&lt;span class=&#34;header-section-number&#34;&gt;2&lt;/span&gt; 브라우저 개발자도구의 활용&lt;/h1&gt;
+&lt;div id=&#34;개발자-도구의-네트워크에서-서버와-브라우저-사이에-오가는-신호를-확인하자&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;span class=&#34;header-section-number&#34;&gt;2.1&lt;/span&gt; 개발자 도구의 &lt;strong&gt;네트워크&lt;/strong&gt;에서 서버와 브라우저 사이에 오가는 신호를 확인하자!&lt;/h2&gt;
+&lt;p&gt;크롬에서 &lt;strong&gt;&lt;code&gt;F12키&lt;/code&gt;&lt;/strong&gt;를 누르면 개발자도구가 활성화 됩니다. Figure&lt;a href=&#34;#fig:figs1&#34;&gt;1.1&lt;/a&gt;의 오른편 처럼 말입니다. 가장 처음 확인해봐야 할 것이 &lt;strong&gt;4번&lt;/strong&gt; 위치의 &lt;strong&gt;네트워크&lt;/strong&gt; 부분입니다. 인터넷을 할 때, 웹 브라우저를 통해 서버와 신호를 주고받는데 &lt;strong&gt;네트워크&lt;/strong&gt; 에는 서버와 브라우저 사이에 오가는 모든 신호정보가 표시됩니다. 즉, 코스피 지수의 과거 시세 정보를 보기 위해 &lt;strong&gt;3&lt;/strong&gt;번의 페이지 숫자를 클릭하여 시세 정보를 갱신하게 되면 그 신호 정보가 &lt;strong&gt;네트워크&lt;/strong&gt;에 표시된다는 이야기 입니다.그럼 다시 코스피 시세정보의 URL을 어떻게 확인할 수 있는지 확인해 보도록 합니다.&lt;/p&gt;
+&lt;p&gt;먼저 &lt;strong&gt;3번&lt;/strong&gt; 에서 숫자 4를 클릭해 봅시다. 그러자 &lt;strong&gt;6번&lt;/strong&gt;에 새롭게 서버에서 내려받는 정보가 하단으로 줄륵 표시되기 시작합니다. 새로 받은 신호정보를 위에서 부터 차근차근 보니 &lt;strong&gt;7번&lt;/strong&gt;의 &lt;code&gt;sise_index_day.nhn?code=KOSPI&amp;amp;page=4&lt;/code&gt;이 눈에 보이네요. 맨 앞에는 &lt;code&gt;sise_index&lt;/code&gt;라고 적혀있고 뒤로는 &lt;code&gt;code=KOSPI&lt;/code&gt;, &lt;code&gt;page=4&lt;/code&gt;라는 단어가 보입니다. 누가 봐도 시세정보를 나타내는게 아닌가 싶을 정도로 명확하게 적혀있네요. 시험삼아 &lt;strong&gt;3번&lt;/strong&gt; 에서 숫자 5부터 7까지 눌러보면서 다시 개발자도구에 올라오는 정보를 확인해봅시다. 차례대로 다음과 인덱스 주소를 확인할 수 있을 것입니다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;sise_index_day.nhn?code=KOSPI&amp;amp;page=5&lt;/li&gt;
+&lt;li&gt;sise_index_day.nhn?code=KOSPI&amp;amp;page=6&lt;/li&gt;
+&lt;li&gt;sise_index_day.nhn?code=KOSPI&amp;amp;page=7&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;뭔가 규칙성을 확인할 수 있지 않습니까? 맞습니다. &lt;code&gt;sise_index_day.nhn?code=KOSPI&amp;amp;&lt;/code&gt; 까지는 동일하고 페이지 숫자를 누를 때마다 &lt;code&gt;page=5&lt;/code&gt; 숫자만 바뀌는 것을 알 수 있습니다.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;그런데-네트워크에서-url-주소는-도대체-어디에-있나&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;span class=&#34;header-section-number&#34;&gt;2.2&lt;/span&gt; 그런데 &lt;strong&gt;네트워크&lt;/strong&gt;에서 URL 주소는 도대체 어디에 있나?&lt;/h2&gt;
+&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;footnotes&#34;&gt;
 &lt;hr /&gt;

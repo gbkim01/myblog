@@ -30,7 +30,7 @@
   
     
   
-  <meta name="description" content="1 웹 페이지 주소 확인을 위해 고려해야할 사항 크롤링을 함에 있어서 가장 먼저 확인해야할 부분은 내가 원하는 자료가 어디에 있는지 웹 페이지 주소를 정확하게 파악하는 것">
+  <meta name="description" content="1 페이지 속의 페이지 2 브라우저 개발자도구의 활용 2.1 개발자 도구의 네트워크에서 서버와 브라우저 사이에 오가는 신호를 확인하자! 2.2 그런데 네트워크에서 URL 주소는">
 
   
   <link rel="alternate" hreflang="en-us" href="../../../courses/r_tip_1/1_target-%ED%8E%98%EC%9D%B4%EC%A7%80-%EC%8B%9D%EB%B3%84/">
@@ -251,7 +251,7 @@
   <meta property="og:site_name" content="日常茶飯事">
   <meta property="og:url" content="/courses/r_tip_1/1_target-%ED%8E%98%EC%9D%B4%EC%A7%80-%EC%8B%9D%EB%B3%84/">
   <meta property="og:title" content="1. Target 페이지 식별 | 日常茶飯事">
-  <meta property="og:description" content="1 웹 페이지 주소 확인을 위해 고려해야할 사항 크롤링을 함에 있어서 가장 먼저 확인해야할 부분은 내가 원하는 자료가 어디에 있는지 웹 페이지 주소를 정확하게 파악하는 것"><meta property="og:image" content="/media/icon-32.png">
+  <meta property="og:description" content="1 페이지 속의 페이지 2 브라우저 개발자도구의 활용 2.1 개발자 도구의 네트워크에서 서버와 브라우저 사이에 오가는 신호를 확인하자! 2.2 그런데 네트워크에서 URL 주소는"><meta property="og:image" content="/media/icon-32.png">
   <meta property="twitter:image" content="/media/icon-32.png"><meta property="og:locale" content="en-us">
   
     
@@ -580,19 +580,22 @@
 
 <div id="TOC">
 <ul>
-<li><a href="#웹-페이지-주소-확인을-위해-고려해야할-사항"><span class="toc-section-number">1</span> 웹 페이지 주소 확인을 위해 고려해야할 사항</a></li>
+<li><a href="#페이지-속의-페이지"><span class="toc-section-number">1</span> 페이지 속의 페이지</a></li>
+<li><a href="#브라우저-개발자도구의-활용"><span class="toc-section-number">2</span> 브라우저 개발자도구의 활용</a><ul>
+<li><a href="#개발자-도구의-네트워크에서-서버와-브라우저-사이에-오가는-신호를-확인하자"><span class="toc-section-number">2.1</span> 개발자 도구의 <strong>네트워크</strong>에서 서버와 브라우저 사이에 오가는 신호를 확인하자!</a></li>
+<li><a href="#그런데-네트워크에서-url-주소는-도대체-어디에-있나"><span class="toc-section-number">2.2</span> 그런데 <strong>네트워크</strong>에서 URL 주소는 도대체 어디에 있나?</a></li>
+</ul></li>
 </ul>
 </div>
 
 <hr />
-<p>크롤링을 함에 있어서 가장 먼저 확인해야할 부분은 내가 원하는 자료가 어디에 있는지 <strong>웹 페이지 주소</strong>를 정확하게 파악하는 것입니다. 물론 대부분은 브라우저 상단의 주소창을 확인하는 것만으로도 해당 목적을 달성할 수 있습니다. 그러나 이렇게 쉽게 끝나면 다행이건만 예외적인 상황이 많아 좀 더 자세히 살펴봐야 합니다.</p>
-<p>웹브라우저는 상에서 우리가 눈으로 보는 내용은 단순한 문서로 보이겠지만 실제로 그 안에는 매우 복잡한 구성으로 되어 있기 때문에 실제 우리가 가져와야 할 정보는 별도의 URL을 가지고 있는 경우가 종종 있습니다.
+<p>크롤링을 함에 있어서 가장 먼저 확인해야할 부분은 원하는 자료가 위치한 <strong>웹 페이지 주소</strong>를 정확하게 파악하는 것입니다. 물론 대부분은 브라우저 상단의 주소창을 확인하는 것만으로도 해당 목적을 달성할 수 있습니다. 그러나 세상 일이 그렇게 간단치는 않죠. 예외적인 상황이 많기 때문에 브라우저의 구조와 작동원리를 좀 더 자세히 살펴볼 필요가 있습니다.</p>
+<p>인터넷을 통해 우리가 눈으로 확인하는 내용은 한 페이지의 문서에 불과합니다. 그러나 그 한 페이지의 문서를 실제로 웹브라우저에 구현하기 위해서는 매우 복잡한 작용이 진행되고 있습니다. 때문에 실제 우리가 가져와야 할 정보를 찾고 긁어오기 위해서는 브라우저 안에서 어떤 동작이 진행되고 있는지에 대한 약간의 이해가 필요합니다.
 한가지 예를 들어 살펴보겠습니다.</p>
-
-<div id="웹-페이지-주소-확인을-위해-고려해야할-사항" class="section level1">
-<h1><span class="header-section-number">1</span> 웹 페이지 주소 확인을 위해 고려해야할 사항</h1>
+<div id="페이지-속의-페이지" class="section level1">
+<h1><span class="header-section-number">1</span> 페이지 속의 페이지</h1>
 <p><strong>네이버 증권</strong>에서 <a href="https://finance.naver.com/sise/sise_index.nhn?code=KOSPI"><strong>KOSPI 지수 일별 시세</strong></a>의
-최근 10년치 기록을 가져온다고 가정해 봅시다. 처음 주소창에 <a href="https://finance.naver.com/sise/sise_index.nhn?code=KOSPI"><strong>네이버 증권 국내증시</strong></a>의 주소를 입력하고 해당 페이지로 이동<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a> 한 후
+지난 10년치 기록을 가져온다고 가정해 봅시다. 처음 주소창에 <a href="https://finance.naver.com/sise/sise_index.nhn?code=KOSPI"><strong>네이버 증권 국내증시</strong></a>의 주소를 입력하고 해당 페이지로 이동<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a> 한 후
 <strong><code>F12키</code></strong><a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a>를 누르면 다음과 같은 화면을 확인할 수 있습니다.</p>
 <div class="figure" style="text-align: center"><span id="fig:figs1"></span>
 <img src="https://user-images.githubusercontent.com/30010992/89721986-a1ffee80-da1e-11ea-9af8-c66eb549e81a.jpg" alt="웹 페이지 구성"  />
@@ -600,7 +603,25 @@
 Figure 1.1: 웹 페이지 구성
 </p>
 </div>
-<p>in Figure <a href="#fig:figs1">1.1</a> we see examples of plotting in R.</p>
+<p>Figure <a href="#fig:figs1">1.1</a>에서 KOSPI 일별 시세에 대한 정보는 페이지 하단의 <strong>2번</strong> 구역에 위치하고 있습니다. 가만히 살펴보니 첫 화면에서는 최근 6일에 대한 시세 정보만 제공하고 있네요. 최근 6일치 말고 그보다 더 전의 시세에 대한 기록을 찾아보려면 <strong>3번</strong>위치에 있는 페이지 숫자를 일일이 마우스로 클릭해야 합니다. 페이지 숫자를 클릭할때마다 예전 시세정보를 6일치씩 끊어서 볼 수 있도록 사이트가 구성되어 있습니다.</p>
+<p>근데 <strong>3번</strong>의 페이지를 누른다고 해서 <strong>1번</strong>주소창의 URL이 변경된다거나 그러지는 않습니다. <strong>3번</strong> 페이지를 클릭하면 새로운 일별시세 정보로 갱신되어 화면에는 나타나는데 주소창 URL은 그대로입니다. 즉, <strong>1번</strong> 주소표시줄만 봐서는 긁고자 하는 대상의 URL을 정확하게 알 수 없는 상황입니다. 이때 봐야할 곳이 웹브라우저의 <strong>개발자도구</strong>입니다.</p>
+</div>
+<div id="브라우저-개발자도구의-활용" class="section level1">
+<h1><span class="header-section-number">2</span> 브라우저 개발자도구의 활용</h1>
+<div id="개발자-도구의-네트워크에서-서버와-브라우저-사이에-오가는-신호를-확인하자" class="section level2">
+<h2><span class="header-section-number">2.1</span> 개발자 도구의 <strong>네트워크</strong>에서 서버와 브라우저 사이에 오가는 신호를 확인하자!</h2>
+<p>크롬에서 <strong><code>F12키</code></strong>를 누르면 개발자도구가 활성화 됩니다. Figure<a href="#fig:figs1">1.1</a>의 오른편 처럼 말입니다. 가장 처음 확인해봐야 할 것이 <strong>4번</strong> 위치의 <strong>네트워크</strong> 부분입니다. 인터넷을 할 때, 웹 브라우저를 통해 서버와 신호를 주고받는데 <strong>네트워크</strong> 에는 서버와 브라우저 사이에 오가는 모든 신호정보가 표시됩니다. 즉, 코스피 지수의 과거 시세 정보를 보기 위해 <strong>3</strong>번의 페이지 숫자를 클릭하여 시세 정보를 갱신하게 되면 그 신호 정보가 <strong>네트워크</strong>에 표시된다는 이야기 입니다.그럼 다시 코스피 시세정보의 URL을 어떻게 확인할 수 있는지 확인해 보도록 합니다.</p>
+<p>먼저 <strong>3번</strong> 에서 숫자 4를 클릭해 봅시다. 그러자 <strong>6번</strong>에 새롭게 서버에서 내려받는 정보가 하단으로 줄륵 표시되기 시작합니다. 새로 받은 신호정보를 위에서 부터 차근차근 보니 <strong>7번</strong>의 <code>sise_index_day.nhn?code=KOSPI&amp;page=4</code>이 눈에 보이네요. 맨 앞에는 <code>sise_index</code>라고 적혀있고 뒤로는 <code>code=KOSPI</code>, <code>page=4</code>라는 단어가 보입니다. 누가 봐도 시세정보를 나타내는게 아닌가 싶을 정도로 명확하게 적혀있네요. 시험삼아 <strong>3번</strong> 에서 숫자 5부터 7까지 눌러보면서 다시 개발자도구에 올라오는 정보를 확인해봅시다. 차례대로 다음과 인덱스 주소를 확인할 수 있을 것입니다.</p>
+<ul>
+<li>sise_index_day.nhn?code=KOSPI&amp;page=5</li>
+<li>sise_index_day.nhn?code=KOSPI&amp;page=6</li>
+<li>sise_index_day.nhn?code=KOSPI&amp;page=7</li>
+</ul>
+<p>뭔가 규칙성을 확인할 수 있지 않습니까? 맞습니다. <code>sise_index_day.nhn?code=KOSPI&amp;</code> 까지는 동일하고 페이지 숫자를 누를 때마다 <code>page=5</code> 숫자만 바뀌는 것을 알 수 있습니다.</p>
+</div>
+<div id="그런데-네트워크에서-url-주소는-도대체-어디에-있나" class="section level2">
+<h2><span class="header-section-number">2.2</span> 그런데 <strong>네트워크</strong>에서 URL 주소는 도대체 어디에 있나?</h2>
+</div>
 </div>
 <div class="footnotes">
 <hr />
