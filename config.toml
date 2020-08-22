@@ -14,6 +14,7 @@ copyright = "&copy; 본 블로그에 게시된 모든 컨텐츠의 저작권은 
 
 # Name of Academic theme folder in `themes/`.
 theme = "hugo-academic"
+googleAnalytics: "gbkim01""
 
 # Get last modified date for content from Git?
 enableGitInfo = false
