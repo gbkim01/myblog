@@ -33,6 +33,16 @@
   </url>
   
   <url>
+    <loc>/post/</loc>
+    <lastmod>2020-08-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/%EA%B8%80%EC%93%B0%EA%B8%B0%EC%9D%98-%EC%96%B4%EB%A0%A4%EC%9B%80/</loc>
+    <lastmod>2020-08-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/courses/settings/gram17-2018-latest-linux-kernel/</loc>
     <lastmod>2020-08-10T06:57:33+00:00</lastmod>
   </url>
@@ -74,11 +84,6 @@
   
   <url>
     <loc>/tags/daily/</loc>
-    <lastmod>2020-08-01T02:40:15+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/</loc>
     <lastmod>2020-08-01T02:40:15+00:00</lastmod>
   </url>
   

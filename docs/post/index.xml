@@ -5,12 +5,29 @@
     <link>/post/</link>
       <atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     <description>Posts</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 본 블로그에 게시된 모든 컨텐츠의 저작권은 블로그 주인에게 있습니다.</copyright><lastBuildDate>Sat, 01 Aug 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 본 블로그에 게시된 모든 컨텐츠의 저작권은 블로그 주인에게 있습니다.</copyright><lastBuildDate>Mon, 24 Aug 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/media/icon-32.png</url>
       <title>Posts</title>
       <link>/post/</link>
     </image>
+    
+    <item>
+      <title>글쓰기의 어려움</title>
+      <link>/post/%EA%B8%80%EC%93%B0%EA%B8%B0%EC%9D%98-%EC%96%B4%EB%A0%A4%EC%9B%80/</link>
+      <pubDate>Mon, 24 Aug 2020 00:00:00 +0000</pubDate>
+      <guid>/post/%EA%B8%80%EC%93%B0%EA%B8%B0%EC%9D%98-%EC%96%B4%EB%A0%A4%EC%9B%80/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://get.pxhere.com/photo/writing-work-hand-white-pen-letter-business-writer-paper-page-education-brand-font-art-study-sketch-drawing-design-text-handwriting-message-inspiration-calligraphy-document-author-journalist-1085357.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;글-쓰기의-어려움&#34;&gt;글 쓰기의 어려움&lt;/h2&gt;
+&lt;hr&gt;
+&lt;p&gt;머릿속에 맴도는 무언가를 글로 정리하는 것을 매우 어려워 한다. 특히 잠재적 독자가 존재하는 경우에는 더욱 그러하다. A4 3페이지 짜리 리포트 작성에 며칠 밤을 지새는 것은 물론, 메모에 가까운 토막 글 앞에서 3~4시간은 망설여야 겨우 수첩 한 면 분량을 채울 수 있다.&lt;/p&gt;
+&lt;p&gt;스스로에 대한 개인적 진단으로는 남에게 보여지거나 평가받는 것을 꺼려하고 심리적으로도 대단히 방어적인 부분이 있어서가 아닌가 싶은데, 이게 나이를 먹어도 좀처럼 개선될 기미가 보이지 않는다. 성인이 된지 한참이 지난 나이임에도 한 문장을 쓰려면 많은 용기가 필요하다.&lt;/p&gt;
+&lt;p&gt;그래서 가장 가지고 싶은 능력이 &lt;strong&gt;문서 생산능력&lt;/strong&gt;이다. 글을 잘 쓰는 것은 차치하고라도 제한된 일정 앞에서 어떻게든 문서를 완성시켜 마감을 지키는 것, 그것이야 말로 내게 필요한 능력이다.&lt;/p&gt;
+&lt;p&gt;이렇게 헛소리를 하는건 최근 블로그에 몇가지 &amp;ldquo;팁&amp;quot;을 정리하면서 이 증상을 더 확실히 느끼고 있기 때문이다. 한 주에 글 한 편은 올리자는 애초의 계획이 무색하게도 
+&lt;a href=&#34;https://gbkim01.github.io/myblog/courses/r_tip_1/1_target-%ED%8E%98%EC%9D%B4%EC%A7%80-%EC%8B%9D%EB%B3%84/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;이 글&lt;/a&gt;을 완료하기 까지 거진 2~3주가 소요됐다. 
+&lt;a href=&#34;https://gbkim01.github.io/myblog/courses/r_tip_1/1_target-%ED%8E%98%EC%9D%B4%EC%A7%80-%EC%8B%9D%EB%B3%84/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;이 글&lt;/a&gt; 외에도 생각하고 있는게 많은데 전부 정리하자니 생각보다 시간이 오래 걸릴거 같다. 글 한 편 쓰는게 이렇게나 어려운 일일 줄이야&amp;hellip;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>블로그에 &#34;유용한 팁&#34; 섹션을 추가했다.</title>

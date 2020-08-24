@@ -222,6 +222,44 @@
 
 
 
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176074458-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'UA-176074458-1', {});
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
   
 
 
@@ -702,6 +740,96 @@
 
     
 
+    
+      
+        
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<div class="media stream-item">
+  <div class="media-body">
+
+    <h3 class="article-title mb-0 mt-0">
+      <a href="./post/%EA%B8%80%EC%93%B0%EA%B8%B0%EC%9D%98-%EC%96%B4%EB%A0%A4%EC%9B%80/" >글쓰기의 어려움</a>
+    </h3>
+
+    
+    <a href="./post/%EA%B8%80%EC%93%B0%EA%B8%B0%EC%9D%98-%EC%96%B4%EB%A0%A4%EC%9B%80/" class="summary-link">
+      <div class="article-style">
+        글 쓰기의 어려움 머릿속에 맴도는 무언가를 글로 정리하는 것을 매우 어려워 한다. 특히 잠재적 독자가 존재하는 경우에는 더욱 그러하다. A4 3페이지 짜리 리포트 작성에
+      </div>
+    </a>
+    
+
+    <div class="stream-meta article-metadata">
+
+      
+
+      
+        
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    2020-08-24
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    1 min read
+  </span>
+  
+
+  
+  
+  
+  <span class="middot-divider"></span>
+  <a href="./post/%EA%B8%80%EC%93%B0%EA%B8%B0%EC%9D%98-%EC%96%B4%EB%A0%A4%EC%9B%80/#disqus_thread"></a>
+  
+
+  
+  
+
+</div>
+
+      
+    </div>
+
+    
+
+  </div>
+  <div class="ml-3">
+    
+    
+  </div>
+</div>
+
+      
     
       
         
