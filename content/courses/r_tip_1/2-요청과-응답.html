@@ -22,6 +22,15 @@ output:
 ---
 
 
+<div id="TOC">
+<ul>
+<li><a href="#request요청"><strong>Request(요청)</strong></a><ul>
+<li><a href="#get-요청">GET 요청</a></li>
+<li><a href="#post-요청">POST 요청</a></li>
+</ul></li>
+<li><a href="#response응답"><strong>Response(응답)</strong></a></li>
+</ul>
+</div>
 
 <hr />
 <div class="figure" style="text-align: center"><span id="fig:figs1"></span>
@@ -30,12 +39,30 @@ output:
 Figure 1: Request와 Response<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>
 </p>
 </div>
+<hr />
+<p>본격적으로 크롤링을 하기 전에 웹브라우저가 하는 역할을 살펴봅시다.</p>
+<p>IE, 크롬, 파이어폭스 같은 웹브라우저는 <strong>1. 서버에 원하는 정보를 요청</strong>하고 <strong>2. 서버로 부터 원하는 정보(HTML 형식)를 내려받아</strong>, <strong>3. HTML 문서를 일반 문서형태로 전환</strong>해서 보여주는 기능을 수행합니다. 좀 더 풀어서 설명하면 인터넷을 할 때, 브라우저의 주소창에 주소를 입력하고, 엔터를 치거나 마우스를 클릭하는 행위를 통해 서버에 정보를 요청하는 신호를 보내고, 눈에 보이진 않지만 인터넷 연결망의 저편에 있는 서버로 부터 요청한 정보를 내려받으면 브라우저가 알아서 문서로 변환해 보여주는 것입니다. 우리가 인터넷을 하는 대부분의 행위가 이런 방식으로 진행됩니다.</p>
+<p>이 때, 정보를 서버에 요청하는 것을 Request(요청)라 하고, 서버로 부터 정보를 내려받는 것을 Response(응답)이라고 합니다. 크롤링을 할 때는 웹브라우저 대신에 R과 Rstudio가 이 이 두 가지 기능<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a>을 수행하게 됩니다.</p>
+<hr />
+<div id="request요청" class="section level2">
+<h2><strong>Request(요청)</strong></h2>
+<p>인터넷의 Request(요청)은 HTTP 전송 프로토콜을 따릅니다. 따라서 R에서도 마찬가지로 HTTP 전송 규격에 맞게 요청 신호를 서버에 보내야 합니다. HTTP 요청 메서드는 다음의 Figure<a href="#fig:figs2">2</a>에서와 같이 4~5 가지로 구분할 수 있는데, 우리가 꼭 알아야 할 것은 <strong>GET</strong>과 <strong>POST</strong>입니다<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a>.</p>
 <div class="figure" style="text-align: center"><span id="fig:figs2"></span>
 <img src="https://miro.medium.com/max/875/1*xJEUm1hUvxppvcjY14IKQA.jpeg" alt="HTTP 메서드 종류^[출처 : https://medium.com/@NikiMichaelsonqiv/http-methods-get-vs-post-b3ffb60c7f55]"  />
 <p class="caption">
-Figure 2: HTTP 메서드 종류<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a>
+Figure 2: HTTP 메서드 종류<a href="#fn4" class="footnote-ref" id="fnref4"><sup>4</sup></a>
 </p>
 </div>
+<div id="get-요청" class="section level3">
+<h3>GET 요청</h3>
+<div id="get-요청의-예" class="section level4">
+<h4>GET 요청의 예</h4>
+</div>
+</div>
+<div id="post-요청" class="section level3">
+<h3>POST 요청</h3>
+<div id="post-요청의-예" class="section level4">
+<h4>POST 요청의 예</h4>
 <pre><code>GET vs POST
 
 HTTP POST 요청은 클라이언트에서 서버로 전송할 때 추가적인 데이터를 body에 포함할 수 있다. 
@@ -49,18 +76,27 @@ HTML의 &lt;form&gt;태그에 method=&quot;POST&quot; 또는 method=&quot;GET&qu
 POST 메소드를 사용하면 form data는 HTTP request의 message body에 나타날 것이다.
 
 출처: https://im-developer.tistory.com/166 [Code Playground]</code></pre>
+<hr />
+</div>
+</div>
+</div>
+<div id="response응답" class="section level2">
+<h2><strong>Response(응답)</strong></h2>
 <div class="figure" style="text-align: center"><span id="fig:figs3"></span>
 <img src="https://i1.wp.com/csharpcorner.mindcrackerinc.netdna-cdn.com/article/create-api-with-asp-net-core-day-three-working-with-http-status-codes-in-asp/Images/image002.jpg?zoom=2" alt="HTTP 상태 코드^[출처 : https://codeteddy.com/2017/06/06/create-api-with-asp-net-core-day-3-working-with-http-status-codes-in-asp-net-core-api/]"  />
 <p class="caption">
-Figure 3: HTTP 상태 코드<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a>
+Figure 3: HTTP 상태 코드<a href="#fn5" class="footnote-ref" id="fnref5"><sup>5</sup></a>
 </p>
 </div>
 <p>준비중</p>
+</div>
 <div class="footnotes">
 <hr />
 <ol>
 <li id="fn1"><p>출처 : <a href="https://medium.com/@rohitpatil97/http-request-http-response-context-and-headers-part-iii-5c37bd4cb06b" class="uri">https://medium.com/@rohitpatil97/http-request-http-response-context-and-headers-part-iii-5c37bd4cb06b</a><a href="#fnref1" class="footnote-back">↩︎</a></p></li>
-<li id="fn2"><p>출처 : <a href="https://medium.com/@NikiMichaelsonqiv/http-methods-get-vs-post-b3ffb60c7f55" class="uri">https://medium.com/@NikiMichaelsonqiv/http-methods-get-vs-post-b3ffb60c7f55</a><a href="#fnref2" class="footnote-back">↩︎</a></p></li>
-<li id="fn3"><p>출처 : <a href="https://codeteddy.com/2017/06/06/create-api-with-asp-net-core-day-3-working-with-http-status-codes-in-asp-net-core-api/" class="uri">https://codeteddy.com/2017/06/06/create-api-with-asp-net-core-day-3-working-with-http-status-codes-in-asp-net-core-api/</a><a href="#fnref3" class="footnote-back">↩︎</a></p></li>
+<li id="fn2"><p>크롤링에서 HTML문서를 일반문서로 변환하는 과정은 필요치 않습니다. 대신 HTML 문서를 분석(parsing)하여 원하는 정보를 뽑아내는 과정이 필요한데 이 부분은 다음 글에서 설명하겠습니다.<a href="#fnref2" class="footnote-back">↩︎</a></p></li>
+<li id="fn3"><p>경험상 GET과 POST 외의 다른 요청 메서드는 보지 못했습니다.<a href="#fnref3" class="footnote-back">↩︎</a></p></li>
+<li id="fn4"><p>출처 : <a href="https://medium.com/@NikiMichaelsonqiv/http-methods-get-vs-post-b3ffb60c7f55" class="uri">https://medium.com/@NikiMichaelsonqiv/http-methods-get-vs-post-b3ffb60c7f55</a><a href="#fnref4" class="footnote-back">↩︎</a></p></li>
+<li id="fn5"><p>출처 : <a href="https://codeteddy.com/2017/06/06/create-api-with-asp-net-core-day-3-working-with-http-status-codes-in-asp-net-core-api/" class="uri">https://codeteddy.com/2017/06/06/create-api-with-asp-net-core-day-3-working-with-http-status-codes-in-asp-net-core-api/</a><a href="#fnref5" class="footnote-back">↩︎</a></p></li>
 </ol>
 </div>
