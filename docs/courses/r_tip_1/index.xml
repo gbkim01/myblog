@@ -22,38 +22,37 @@
 &lt;div id=&#34;TOC&#34;&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;#페이지-속의-페이지&#34;&gt;&lt;strong&gt;페이지 속의 페이지??&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#브라우저-개발자도구의-활용&#34;&gt;&lt;strong&gt;브라우저 개발자도구의 활용&lt;/strong&gt;&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;#네트워크-탭에서-서버와-브라우저-사이에-오가는-신호를-확인하자&#34;&gt;네트워크 탭에서 서버와 브라우저 사이에 오가는 신호를 확인하자!&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#그런데-url-주소는-어디서-확인하나&#34;&gt;그런데 URL 주소는 어디서 확인하나?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#네트워크-탭에서-서버와-브라우저-사이에-오가는-신호를-확인하자&#34;&gt;&lt;strong&gt;네트워크 탭에서 서버와 브라우저 사이에 오가는 신호를 확인하자!&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#url은-어디에&#34;&gt;&lt;strong&gt;URL은 어디에???&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#몇가지-추가&#34;&gt;&lt;strong&gt;몇가지 추가&lt;/strong&gt;&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#개발자도구-네트워크-탭에-대한-팁&#34;&gt;개발자도구 네트워크 탭에 대한 팁…&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#인터넷-주소의-구성&#34;&gt;인터넷 주소의 구성&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#개발자도구-네트워크-탭에-대한-팁-하나-더&#34;&gt;&lt;strong&gt;개발자도구 네트워크 탭에 대한 팁 하나 더…&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 
 &lt;hr /&gt;
-&lt;p&gt;크롤링에서 가장 먼저 해야하는 작업은 원하는 자료가 위치한 &lt;strong&gt;웹 페이지 주소&lt;/strong&gt;를 정확하게 파악하는 것입니다. 물론 대부분은 브라우저 상단의 주소창을 확인하는 것만으로도 해당 목적을 달성할 수 있습니다. 그러나 세상 일이 그렇게 간단치는 않죠. 예외적인 상황이 많기 때문에 브라우저의 구조와 작동원리를 좀 더 자세히 살펴볼 필요가 있습니다.&lt;/p&gt;
+&lt;p&gt;크롤링에서 가장 먼저 해야 할 작업은 원하는 자료가 위치한 &lt;strong&gt;웹 페이지 주소&lt;/strong&gt;를 정확하게 파악하는 것입니다. 물론 주소표시줄을 확인하는 것만으로도 대부분 해결할 수 있는 문제이긴 합니다. 그러나 세상 일이 그렇게 간단치는 않죠. 예외적인 상황이 많기 때문에 브라우저의 구조와 작동원리를 좀 더 자세히 살펴볼 필요가 있습니다.&lt;/p&gt;
 &lt;hr /&gt;
 &lt;div id=&#34;페이지-속의-페이지&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;&lt;strong&gt;페이지 속의 페이지??&lt;/strong&gt;&lt;/h2&gt;
-&lt;p&gt;인터넷을 통해 우리가 눈으로 확인하는 내용은 한 페이지의 문서에 불과합니다. 그러나 그 한 페이지의 문서를 실제로 웹브라우저에 구현하기 위해서는 매우 복잡한 작용이 진행되고 있습니다. 때문에 실제 우리가 가져와야 할 정보를 찾고 긁어오기 위해서는 브라우저 안에서 어떤 동작이 진행되고 있는지에 대한 약간의 이해가 필요합니다.&lt;/p&gt;
+&lt;p&gt;인터넷을 통해 우리가 눈으로 확인하는 내용은 한 페이지의 문서에 불과합니다. 그러나 그 한 페이지의 문서를 실제로 웹브라우저에 구현하기 위해, 브라우저 내부에서는 눈에 보이지 않는 많은 일이 벌어지고 있습니다. 목표로 하는 정보가 표시된 웹 문서의 정확한 URL을 확인하려면, 무엇보다도 브라우저 내부의 동작 및 서버와 브라우저 사이에 오가는 신호를 체크해야 합니다.&lt;/p&gt;
 &lt;p&gt;예를 들어 살펴보겠습니다.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;네이버 증권&lt;/strong&gt;에서 &lt;a href=&#34;https://finance.naver.com/sise/sise_index.nhn?code=KOSPI&#34;&gt;&lt;strong&gt;KOSPI 지수 일별 시세&lt;/strong&gt;&lt;/a&gt;의
 지난 10년치 기록을 가져온다고 가정해 봅시다. 처음 주소창에 &lt;a href=&#34;https://finance.naver.com/sise/sise_index.nhn?code=KOSPI&#34;&gt;&lt;strong&gt;네이버 증권 국내증시&lt;/strong&gt;&lt;/a&gt;의 주소를 입력하고 해당 페이지로 이동&lt;a href=&#34;#fn1&#34; class=&#34;footnote-ref&#34; id=&#34;fnref1&#34;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt; 한 후
-&lt;strong&gt;&lt;code&gt;F12키&lt;/code&gt;&lt;/strong&gt;&lt;a href=&#34;#fn2&#34; class=&#34;footnote-ref&#34; id=&#34;fnref2&#34;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt;를 누르면 다음과 같은 화면을 확인할 수 있습니다.&lt;/p&gt;
+&lt;strong&gt;&lt;code&gt;F12키&lt;/code&gt;&lt;/strong&gt;&lt;a href=&#34;#fn2&#34; class=&#34;footnote-ref&#34; id=&#34;fnref2&#34;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt;를 누르면 Figure&lt;a href=&#34;#fig:figs1&#34;&gt;1&lt;/a&gt;과 같은 화면이 나옵니다.&lt;/p&gt;
 &lt;div class=&#34;figure&#34; style=&#34;text-align: center&#34;&gt;&lt;span id=&#34;fig:figs1&#34;&gt;&lt;/span&gt;
 &lt;img src=&#34;https://user-images.githubusercontent.com/30010992/89721986-a1ffee80-da1e-11ea-9af8-c66eb549e81a.jpg&#34; alt=&#34;웹 페이지 구성&#34;  /&gt;
 &lt;p class=&#34;caption&#34;&gt;
 Figure 1: 웹 페이지 구성
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;p&gt;Figure &lt;a href=&#34;#fig:figs1&#34;&gt;1&lt;/a&gt;에서 KOSPI 일별 시세에 대한 정보는 페이지 하단의 &lt;strong&gt;2번&lt;/strong&gt; 구역에 위치하고 있습니다. 가만히 살펴보니 첫 화면에서는 최근 6일에 대한 시세 정보만 제공하고 있네요. 최근 6일치 말고 그보다 더 전의 시세에 대한 기록을 찾아보려면 &lt;strong&gt;3번&lt;/strong&gt;위치에 있는 페이지 숫자를 일일이 마우스로 클릭해야 합니다. 페이지 숫자를 클릭할때마다 예전 시세정보를 6일치씩 끊어서 볼 수 있도록 사이트가 구성되어 있습니다.&lt;/p&gt;
-&lt;p&gt;근데 &lt;strong&gt;3번&lt;/strong&gt;의 페이지를 누른다고 해서 &lt;strong&gt;1번&lt;/strong&gt;주소창의 URL이 변경된다거나 그러지는 않습니다. &lt;strong&gt;3번&lt;/strong&gt; 페이지를 클릭하면 새로운 일별시세 정보로 갱신되어 화면에는 나타나는데 주소창 URL은 그대로입니다. 즉, &lt;strong&gt;1번&lt;/strong&gt; 주소표시줄만 봐서는 긁고자 하는 대상의 URL을 정확하게 알 수 없는 상황입니다. 이때 봐야할 곳이 웹브라우저의 &lt;strong&gt;개발자도구&lt;/strong&gt;입니다.&lt;/p&gt;
+&lt;p&gt;Figure&lt;a href=&#34;#fig:figs1&#34;&gt;1&lt;/a&gt;에서 KOSPI 일별 시세에 대한 정보는 페이지 하단의 &lt;strong&gt;2번&lt;/strong&gt; 구역에 위치하고 있습니다. 가만히 살펴보니 첫 화면에서는 최근 6일에 대한 시세 정보만 제공하고 있네요. 최근 6일치 말고 그보다 더 전의 시세에 대한 기록을 찾아보려면 &lt;strong&gt;3번&lt;/strong&gt;위치에 있는 페이지 숫자를 일일이 마우스로 클릭해야 합니다. 페이지 숫자를 클릭할때마다 예전 시세정보를 6일치씩 끊어서 볼 수 있도록 사이트가 구성되어 있습니다.&lt;/p&gt;
+&lt;p&gt;근데 &lt;strong&gt;3번&lt;/strong&gt;의 페이지를 누른다고 해서 &lt;strong&gt;1번&lt;/strong&gt;주소표시줄의 URL이 변경된다거나 그러지는 않습니다. &lt;strong&gt;3번&lt;/strong&gt; 페이지를 클릭하면 새로운 일별시세 정보가 갱신되는데 주소표시줄의 URL은 그대로입니다. 즉, &lt;strong&gt;1번&lt;/strong&gt; 주소표시줄만 봐서는 과거 KOSPI 시세 정보를 노출시키는 URL을 정확하게 알 수 없는 상황입니다. 이때 봐야할 곳이 웹브라우저의 &lt;strong&gt;개발자도구&lt;/strong&gt;의 &lt;strong&gt;네트워크&lt;/strong&gt; 탭입니다.&lt;/p&gt;
 &lt;hr /&gt;
 &lt;/div&gt;
-&lt;div id=&#34;브라우저-개발자도구의-활용&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;&lt;strong&gt;브라우저 개발자도구의 활용&lt;/strong&gt;&lt;/h2&gt;
-&lt;div id=&#34;네트워크-탭에서-서버와-브라우저-사이에-오가는-신호를-확인하자&#34; class=&#34;section level3&#34;&gt;
-&lt;h3&gt;네트워크 탭에서 서버와 브라우저 사이에 오가는 신호를 확인하자!&lt;/h3&gt;
+&lt;div id=&#34;네트워크-탭에서-서버와-브라우저-사이에-오가는-신호를-확인하자&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;strong&gt;네트워크 탭에서 서버와 브라우저 사이에 오가는 신호를 확인하자!&lt;/strong&gt;&lt;/h2&gt;
 &lt;p&gt;크롬에서 &lt;strong&gt;&lt;code&gt;F12키&lt;/code&gt;&lt;/strong&gt;를 누르면 개발자도구가 활성화 됩니다. Figure&lt;a href=&#34;#fig:figs1&#34;&gt;1&lt;/a&gt;의 오른편 처럼 말입니다. 가장 처음 확인해봐야 할 것이 &lt;strong&gt;4번&lt;/strong&gt; 위치의 &lt;strong&gt;네트워크&lt;/strong&gt; 부분입니다. 인터넷을 할 때, 웹 브라우저를 통해 서버와 신호를 주고받는데 &lt;strong&gt;네트워크&lt;/strong&gt; 에는 서버와 브라우저 사이에 오가는 모든 신호정보가 표시됩니다. 즉, 코스피 지수의 과거 시세 정보를 보기 위해 &lt;strong&gt;3&lt;/strong&gt;번의 페이지 숫자를 클릭하여 시세 정보를 갱신하게 되면 그 신호 정보가 &lt;strong&gt;네트워크&lt;/strong&gt;에 표시된다는 이야기 입니다.그럼 다시 코스피 시세정보의 URL을 어떻게 확인할 수 있는지 확인해 보도록 합니다.&lt;/p&gt;
 &lt;p&gt;먼저 &lt;strong&gt;3번&lt;/strong&gt; 에서 숫자 4를 클릭해 봅시다. 그러자 &lt;strong&gt;6번&lt;/strong&gt;에 새롭게 서버에서 내려받는 정보가 하단으로 주르륵 표시되기 시작합니다. 새로 받은 신호정보를 위에서 부터 차근차근 보니 &lt;strong&gt;7번&lt;/strong&gt;의 &lt;code&gt;sise_index_day.nhn?code=KOSPI&amp;amp;page=4&lt;/code&gt;이 눈에 보이네요. 맨 앞에는 &lt;code&gt;sise_index&lt;/code&gt;라고 적혀있고 뒤로는 &lt;code&gt;code=KOSPI&lt;/code&gt;, &lt;code&gt;page=4&lt;/code&gt;라는 단어가 보입니다. 누가 봐도 시세정보를 나타내는게 아닌가 싶을 정도로 명확하게 적혀있네요. 시험삼아 &lt;strong&gt;3번&lt;/strong&gt; 에서 숫자 5부터 7까지 눌러보면서 다시 개발자도구에 올라오는 정보를 확인해봅시다. 차례대로 다음과 인덱스 주소를 확인할 수 있을 것입니다.&lt;/p&gt;
 &lt;ul&gt;
@@ -62,9 +61,10 @@ Figure 1: 웹 페이지 구성
 &lt;li&gt;sise_index_day.nhn?code=KOSPI&amp;amp;page=7&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;뭔가 규칙성을 확인할 수 있지 않습니까? 맞습니다. &lt;code&gt;sise_index_day.nhn?code=KOSPI&amp;amp;&lt;/code&gt; 까지는 동일하고 페이지 숫자를 누를 때마다 &lt;code&gt;page=5&lt;/code&gt; 숫자만 바뀌는 것을 알 수 있습니다. 여기까지 왔다면 사실 거의 다 끝났습니다.&lt;/p&gt;
+&lt;hr /&gt;
 &lt;/div&gt;
-&lt;div id=&#34;그런데-url-주소는-어디서-확인하나&#34; class=&#34;section level3&#34;&gt;
-&lt;h3&gt;그런데 URL 주소는 어디서 확인하나?&lt;/h3&gt;
+&lt;div id=&#34;url은-어디에&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;strong&gt;URL은 어디에???&lt;/strong&gt;&lt;/h2&gt;
 &lt;p&gt;그런데 앞에서 확인한 &lt;code&gt;sise_index_day.nhn?code=KOSPI&amp;amp;page=4&lt;/code&gt;는 인터넷 주소처럼 생기진 않았습니다. 무릇 인터넷 주소라면 &lt;code&gt;https://&lt;/code&gt;나 &lt;code&gt;www&lt;/code&gt;로 시작해야 하는데 이건 그렇진 않죠. 그렇다면 정확한 URL은 어디서 확인해야 하는냐? 그건 Figure&lt;a href=&#34;#fig:figs1&#34;&gt;1&lt;/a&gt;의 &lt;strong&gt;8번&lt;/strong&gt; 항목의 머리글 탭&lt;a href=&#34;#fn3&#34; class=&#34;footnote-ref&#34; id=&#34;fnref3&#34;&gt;&lt;sup&gt;3&lt;/sup&gt;&lt;/a&gt;에서 확인할 수 있습니다.&lt;/p&gt;
 &lt;p&gt;Figure&lt;a href=&#34;#fig:figs1&#34;&gt;1&lt;/a&gt;의 &lt;strong&gt;8번&lt;/strong&gt; 항목을 살펴보먄 &lt;strong&gt;요청URL&lt;a href=&#34;#fn4&#34; class=&#34;footnote-ref&#34; id=&#34;fnref4&#34;&gt;&lt;sup&gt;4&lt;/sup&gt;&lt;/a&gt;&lt;/strong&gt;이라고 해서 &lt;code&gt;https://finance.naver.com/sise/sise_index_day.nhn?code=KOSPI&amp;amp;page=4&lt;/code&gt;이라는 URL 정보가 나옵니다. 이 주소가 네이버에서 제공하는 KOSPI 일별시세 정보의 4번째 페이지에 해당되는 정보입니다. 바로 그 밑으로 &lt;strong&gt;요청 메서드 : GET&lt;/strong&gt;, &lt;strong&gt;상태 코드 : 200&lt;/strong&gt; 등등의 정보가 있는데 이러한 내용은 다음 번에 설명하겠습니다.&lt;/p&gt;
 &lt;p&gt;각설하고, 해당 URL을 인터넷 주소창에 입력해 보면 다음의 그림처럼 표시될 겁니다.&lt;/p&gt;
@@ -83,10 +83,12 @@ Figure 2: KOSPI 일별시세 정보표시
 &lt;li&gt;&lt;a href=&#34;https://finance.naver.com/sise/sise_index_day.nhn?code=KOSPI&amp;amp;page=5&#34; class=&#34;uri&#34;&gt;https://finance.naver.com/sise/sise_index_day.nhn?code=KOSPI&amp;amp;page=5&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;code&gt;https://finance.naver.com/sise/sise_index_day.nhn?code=KOSPI&amp;amp;&lt;/code&gt; 까지는 동일하고 &lt;code&gt;page=5&lt;/code&gt;의 페이지 번호만 변경되는 것을 확인할 수 있을 것입니다. 이제 네이버에서 제공하는 KOSPI 일별시세 정보의 정확한 주소를 확인했습니다.&lt;/p&gt;
+&lt;hr /&gt;
 &lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&#34;개발자도구-네트워크-탭에-대한-팁-하나-더&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;&lt;strong&gt;개발자도구 네트워크 탭에 대한 팁 하나 더…&lt;/strong&gt;&lt;/h2&gt;
+&lt;div id=&#34;몇가지-추가&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;strong&gt;몇가지 추가&lt;/strong&gt;&lt;/h2&gt;
+&lt;div id=&#34;개발자도구-네트워크-탭에-대한-팁&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;개발자도구 네트워크 탭에 대한 팁…&lt;/h3&gt;
 &lt;p&gt;Figure&lt;a href=&#34;#fig:figs1&#34;&gt;1&lt;/a&gt;의 개발자도구 네트워크 탭에서 &lt;strong&gt;5번&lt;/strong&gt;의 “모두” 항목에 표시되는 정보로 부터 내가 원하는 정확한 신호정보를 찾기란 쉬운게 아닙니다. “모두” 항목은 말 그대로 브라우저에 표시되는 정보의 모든 신호를 표기하기 때문에 웹페이지 하나를 띄울 때마다 엄청난 양의 신호정보가 쌓이기 때문입니다. 좀 더 편하게 확인하려면 &lt;strong&gt;5번&lt;/strong&gt;항목 옆으로 보이는 XHR, CSS,… 등등을 클릭하면서 확인해 보는 것이 좋습니다. 웹페이지 신호를 정보 유형별로 구분해서 보여주기 때문에 내가 찾는 신호를 찾기가 훨씬 수월할 것입니다.&lt;/p&gt;
 &lt;p&gt;이번 포스트에서 다룬 네이버 KOSPI 일별시세의 경우 &lt;strong&gt;5번&lt;/strong&gt;항목의 “문서&lt;a href=&#34;#fn5&#34; class=&#34;footnote-ref&#34; id=&#34;fnref5&#34;&gt;&lt;sup&gt;5&lt;/sup&gt;&lt;/a&gt;”탭에 나타나 있습니다. 아래의 Figure&lt;a href=&#34;#fig:figs3&#34;&gt;3&lt;/a&gt;이 “문서”항목에서 신호정보를 확인한 것인데 Figure&lt;a href=&#34;#fig:figs1&#34;&gt;1&lt;/a&gt;에서 보다 훨씬 간단하게 일별시세에 대한 신호가 식별됩니다.&lt;/p&gt;
 &lt;div class=&#34;figure&#34; style=&#34;text-align: center&#34;&gt;&lt;span id=&#34;fig:figs3&#34;&gt;&lt;/span&gt;
@@ -94,6 +96,10 @@ Figure 2: KOSPI 일별시세 정보표시
 &lt;p class=&#34;caption&#34;&gt;
 Figure 3: 네트워크의 ’문서’항목
 &lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;인터넷-주소의-구성&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;인터넷 주소의 구성&lt;/h3&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;footnotes&#34;&gt;
