@@ -140,13 +140,12 @@ Figure 1: Request와 Response&lt;a href=&#34;#fn1&#34; class=&#34;footnote-ref&#
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;hr /&gt;
-&lt;p&gt;본격적으로 크롤링을 하기 전에 웹브라우저가 하는 역할을 살펴봅시다.&lt;/p&gt;
-&lt;p&gt;IE, 크롬, 파이어폭스 같은 웹브라우저는 &lt;strong&gt;1. 서버에 원하는 정보를 요청&lt;/strong&gt;하고 &lt;strong&gt;2. 서버로 부터 원하는 정보(HTML 형식)를 내려받아&lt;/strong&gt;, &lt;strong&gt;3. HTML 문서를 일반 문서형태로 전환&lt;/strong&gt;해서 보여주는 기능을 수행합니다. 좀 더 풀어서 설명하면 인터넷을 할 때, 브라우저의 주소창에 주소를 입력하고, 엔터를 치거나 마우스를 클릭하는 행위를 통해 서버에 정보를 요청하는 신호를 보내고, 눈에 보이진 않지만 인터넷 연결망의 저편에 있는 서버로 부터 요청한 정보를 내려받으면 브라우저가 알아서 문서로 변환해 보여주는 것입니다. 우리가 인터넷을 하는 대부분의 행위가 이런 방식으로 진행됩니다.&lt;/p&gt;
-&lt;p&gt;이 때, 정보를 서버에 요청하는 것을 Request(요청)라 하고, 서버로 부터 정보를 내려받는 것을 Response(응답)이라고 합니다. 크롤링을 할 때는 웹브라우저 대신에 R과 Rstudio가 이 이 두 가지 기능&lt;a href=&#34;#fn2&#34; class=&#34;footnote-ref&#34; id=&#34;fnref2&#34;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt;을 수행하게 됩니다.&lt;/p&gt;
+&lt;p&gt;IE, 크롬, 파이어폭스 같은 웹브라우저는 &lt;strong&gt;1. 서버에 원하는 정보를 요청&lt;/strong&gt;하고 &lt;strong&gt;2. 서버로 부터 원하는 정보(HTML 형식)를 내려받아&lt;/strong&gt;, &lt;strong&gt;3. HTML 문서를 일반 문서형태로 전환&lt;/strong&gt;해서 보여주는 기능을 수행합니다. 정보를 서버에 요청하는 것을 &lt;strong&gt;Request(요청)&lt;/strong&gt;라 하고, 서버로 부터 정보를 내려받는 것을 &lt;strong&gt;Response(응답)&lt;/strong&gt;라고 합니다. 크롤링에서는 무엇보다도 &lt;strong&gt;“요청 및 응답”&lt;/strong&gt;의 과정이 중요한데&lt;a href=&#34;#fn2&#34; class=&#34;footnote-ref&#34; id=&#34;fnref2&#34;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt; 웹브라우저 대신에 R과 Rstudio를 통해 이 이 두 가지 기능을 수행합니다.&lt;/p&gt;
 &lt;hr /&gt;
 &lt;div id=&#34;request요청&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;&lt;strong&gt;Request(요청)&lt;/strong&gt;&lt;/h2&gt;
-&lt;p&gt;인터넷의 Request(요청)은 HTTP 전송 프로토콜을 따릅니다. 따라서 R에서도 마찬가지로 HTTP 전송 규격에 맞게 요청 신호를 서버에 보내야 합니다. HTTP 요청 메서드는 다음의 Figure&lt;a href=&#34;#fig:figs2&#34;&gt;2&lt;/a&gt;에서와 같이 4~5 가지로 구분할 수 있는데, 우리가 꼭 알아야 할 것은 &lt;strong&gt;GET&lt;/strong&gt;과 &lt;strong&gt;POST&lt;/strong&gt;입니다&lt;a href=&#34;#fn3&#34; class=&#34;footnote-ref&#34; id=&#34;fnref3&#34;&gt;&lt;sup&gt;3&lt;/sup&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;주소창에 주소를 입력하고 엔터를 치거나, 하이퍼 링크를 클릭하는 등의 행위가 발생하면 브라우저는 서버에 &lt;strong&gt;Request(요청)&lt;/strong&gt; 신호를 보냅니다. 이때 인터넷의 &lt;strong&gt;Request(요청)&lt;/strong&gt;는 HTTP 전송규약을 따르며, 그렇지 않을 경우 서버로 부터 &lt;strong&gt;Response(응답)&lt;/strong&gt;에 실패하게 됩니다. 따라서 R과 Rstudio에서 요청신호를 보낼때도 마찬가지로 HTTP 규약을 충족해야만 제대로된 정보를 받을 수 있습니다.&lt;/p&gt;
+&lt;p&gt;HTTP 전송규약에는 4~5 가지의 요청 메서드(Figure&lt;a href=&#34;#fig:figs2&#34;&gt;2&lt;/a&gt;)있으며, 그 중에서 우리가 꼭 알아야 할 것은 &lt;strong&gt;GET&lt;/strong&gt;과 &lt;strong&gt;POST&lt;/strong&gt;입니다&lt;a href=&#34;#fn3&#34; class=&#34;footnote-ref&#34; id=&#34;fnref3&#34;&gt;&lt;sup&gt;3&lt;/sup&gt;&lt;/a&gt;.&lt;/p&gt;
 &lt;div class=&#34;figure&#34; style=&#34;text-align: center&#34;&gt;&lt;span id=&#34;fig:figs2&#34;&gt;&lt;/span&gt;
 &lt;img src=&#34;https://miro.medium.com/max/875/1*xJEUm1hUvxppvcjY14IKQA.jpeg&#34; alt=&#34;HTTP 메서드 종류^[출처 : https://medium.com/@NikiMichaelsonqiv/http-methods-get-vs-post-b3ffb60c7f55]&#34;  /&gt;
 &lt;p class=&#34;caption&#34;&gt;
@@ -194,7 +193,7 @@ Figure 3: HTTP 상태 코드&lt;a href=&#34;#fn5&#34; class=&#34;footnote-ref&#3
 &lt;hr /&gt;
 &lt;ol&gt;
 &lt;li id=&#34;fn1&#34;&gt;&lt;p&gt;출처 : &lt;a href=&#34;https://medium.com/@rohitpatil97/http-request-http-response-context-and-headers-part-iii-5c37bd4cb06b&#34; class=&#34;uri&#34;&gt;https://medium.com/@rohitpatil97/http-request-http-response-context-and-headers-part-iii-5c37bd4cb06b&lt;/a&gt;&lt;a href=&#34;#fnref1&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li id=&#34;fn2&#34;&gt;&lt;p&gt;크롤링에서 HTML문서를 일반문서로 변환하는 과정은 필요치 않습니다. 대신 HTML 문서를 분석(parsing)하여 원하는 정보를 뽑아내는 과정이 필요한데 이 부분은 다음 글에서 설명하겠습니다.&lt;a href=&#34;#fnref2&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn2&#34;&gt;&lt;p&gt;HTML문서를 일반문서로 변환하는 과정은 그다지 중요치 않습니다. 대신 HTML 문서를 분석(parsing)하여 원하는 정보를 뽑아내는 과정이 필요한데 이 부분은 다음 글에서 설명하겠습니다.&lt;a href=&#34;#fnref2&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;li id=&#34;fn3&#34;&gt;&lt;p&gt;경험상 GET과 POST 외의 다른 요청 메서드는 보지 못했습니다.&lt;a href=&#34;#fnref3&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;li id=&#34;fn4&#34;&gt;&lt;p&gt;출처 : &lt;a href=&#34;https://medium.com/@NikiMichaelsonqiv/http-methods-get-vs-post-b3ffb60c7f55&#34; class=&#34;uri&#34;&gt;https://medium.com/@NikiMichaelsonqiv/http-methods-get-vs-post-b3ffb60c7f55&lt;/a&gt;&lt;a href=&#34;#fnref4&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;li id=&#34;fn5&#34;&gt;&lt;p&gt;출처 : &lt;a href=&#34;https://codeteddy.com/2017/06/06/create-api-with-asp-net-core-day-3-working-with-http-status-codes-in-asp-net-core-api/&#34; class=&#34;uri&#34;&gt;https://codeteddy.com/2017/06/06/create-api-with-asp-net-core-day-3-working-with-http-status-codes-in-asp-net-core-api/&lt;/a&gt;&lt;a href=&#34;#fnref5&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;

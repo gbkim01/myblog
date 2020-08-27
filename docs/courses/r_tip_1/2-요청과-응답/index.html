@@ -30,7 +30,7 @@
   
     
   
-  <meta name="description" content="Request(요청) GET 요청 POST 요청 Response(응답) Figure 1: Request와 Response1 본격적으로 크롤링을 하기 전에 웹브라우저가 하는 역할을 살펴봅시다.">
+  <meta name="description" content="Request(요청) GET 요청 POST 요청 Response(응답) Figure 1: Request와 Response1 IE, 크롬, 파이어폭스 같은 웹브라우저는 1. 서버에 원하는 정보를 요청하">
 
   
   <link rel="alternate" hreflang="en-us" href="../../../courses/r_tip_1/2-%EC%9A%94%EC%B2%AD%EA%B3%BC-%EC%9D%91%EB%8B%B5/">
@@ -289,7 +289,7 @@
   <meta property="og:site_name" content="日常茶飯事">
   <meta property="og:url" content="/courses/r_tip_1/2-%EC%9A%94%EC%B2%AD%EA%B3%BC-%EC%9D%91%EB%8B%B5/">
   <meta property="og:title" content="2. 요청과 응답 | 日常茶飯事">
-  <meta property="og:description" content="Request(요청) GET 요청 POST 요청 Response(응답) Figure 1: Request와 Response1 본격적으로 크롤링을 하기 전에 웹브라우저가 하는 역할을 살펴봅시다."><meta property="og:image" content="/media/icon-32.png">
+  <meta property="og:description" content="Request(요청) GET 요청 POST 요청 Response(응답) Figure 1: Request와 Response1 IE, 크롬, 파이어폭스 같은 웹브라우저는 1. 서버에 원하는 정보를 요청하"><meta property="og:image" content="/media/icon-32.png">
   <meta property="twitter:image" content="/media/icon-32.png"><meta property="og:locale" content="en-us">
   
     
@@ -634,13 +634,12 @@ Figure 1: Request와 Response<a href="#fn1" class="footnote-ref" id="fnref1"><su
 </p>
 </div>
 <hr />
-<p>본격적으로 크롤링을 하기 전에 웹브라우저가 하는 역할을 살펴봅시다.</p>
-<p>IE, 크롬, 파이어폭스 같은 웹브라우저는 <strong>1. 서버에 원하는 정보를 요청</strong>하고 <strong>2. 서버로 부터 원하는 정보(HTML 형식)를 내려받아</strong>, <strong>3. HTML 문서를 일반 문서형태로 전환</strong>해서 보여주는 기능을 수행합니다. 좀 더 풀어서 설명하면 인터넷을 할 때, 브라우저의 주소창에 주소를 입력하고, 엔터를 치거나 마우스를 클릭하는 행위를 통해 서버에 정보를 요청하는 신호를 보내고, 눈에 보이진 않지만 인터넷 연결망의 저편에 있는 서버로 부터 요청한 정보를 내려받으면 브라우저가 알아서 문서로 변환해 보여주는 것입니다. 우리가 인터넷을 하는 대부분의 행위가 이런 방식으로 진행됩니다.</p>
-<p>이 때, 정보를 서버에 요청하는 것을 Request(요청)라 하고, 서버로 부터 정보를 내려받는 것을 Response(응답)이라고 합니다. 크롤링을 할 때는 웹브라우저 대신에 R과 Rstudio가 이 이 두 가지 기능<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a>을 수행하게 됩니다.</p>
+<p>IE, 크롬, 파이어폭스 같은 웹브라우저는 <strong>1. 서버에 원하는 정보를 요청</strong>하고 <strong>2. 서버로 부터 원하는 정보(HTML 형식)를 내려받아</strong>, <strong>3. HTML 문서를 일반 문서형태로 전환</strong>해서 보여주는 기능을 수행합니다. 정보를 서버에 요청하는 것을 <strong>Request(요청)</strong>라 하고, 서버로 부터 정보를 내려받는 것을 <strong>Response(응답)</strong>라고 합니다. 크롤링에서는 무엇보다도 <strong>“요청 및 응답”</strong>의 과정이 중요한데<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a> 웹브라우저 대신에 R과 Rstudio를 통해 이 이 두 가지 기능을 수행합니다.</p>
 <hr />
 <div id="request요청" class="section level2">
 <h2><strong>Request(요청)</strong></h2>
-<p>인터넷의 Request(요청)은 HTTP 전송 프로토콜을 따릅니다. 따라서 R에서도 마찬가지로 HTTP 전송 규격에 맞게 요청 신호를 서버에 보내야 합니다. HTTP 요청 메서드는 다음의 Figure<a href="#fig:figs2">2</a>에서와 같이 4~5 가지로 구분할 수 있는데, 우리가 꼭 알아야 할 것은 <strong>GET</strong>과 <strong>POST</strong>입니다<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a>.</p>
+<p>주소창에 주소를 입력하고 엔터를 치거나, 하이퍼 링크를 클릭하는 등의 행위가 발생하면 브라우저는 서버에 <strong>Request(요청)</strong> 신호를 보냅니다. 이때 인터넷의 <strong>Request(요청)</strong>는 HTTP 전송규약을 따르며, 그렇지 않을 경우 서버로 부터 <strong>Response(응답)</strong>에 실패하게 됩니다. 따라서 R과 Rstudio에서 요청신호를 보낼때도 마찬가지로 HTTP 규약을 충족해야만 제대로된 정보를 받을 수 있습니다.</p>
+<p>HTTP 전송규약에는 4~5 가지의 요청 메서드(Figure<a href="#fig:figs2">2</a>)있으며, 그 중에서 우리가 꼭 알아야 할 것은 <strong>GET</strong>과 <strong>POST</strong>입니다<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a>.</p>
 <div class="figure" style="text-align: center"><span id="fig:figs2"></span>
 <img src="https://miro.medium.com/max/875/1*xJEUm1hUvxppvcjY14IKQA.jpeg" alt="HTTP 메서드 종류^[출처 : https://medium.com/@NikiMichaelsonqiv/http-methods-get-vs-post-b3ffb60c7f55]"  />
 <p class="caption">
@@ -688,7 +687,7 @@ Figure 3: HTTP 상태 코드<a href="#fn5" class="footnote-ref" id="fnref5"><sup
 <hr />
 <ol>
 <li id="fn1"><p>출처 : <a href="https://medium.com/@rohitpatil97/http-request-http-response-context-and-headers-part-iii-5c37bd4cb06b" class="uri">https://medium.com/@rohitpatil97/http-request-http-response-context-and-headers-part-iii-5c37bd4cb06b</a><a href="#fnref1" class="footnote-back">↩︎</a></p></li>
-<li id="fn2"><p>크롤링에서 HTML문서를 일반문서로 변환하는 과정은 필요치 않습니다. 대신 HTML 문서를 분석(parsing)하여 원하는 정보를 뽑아내는 과정이 필요한데 이 부분은 다음 글에서 설명하겠습니다.<a href="#fnref2" class="footnote-back">↩︎</a></p></li>
+<li id="fn2"><p>HTML문서를 일반문서로 변환하는 과정은 그다지 중요치 않습니다. 대신 HTML 문서를 분석(parsing)하여 원하는 정보를 뽑아내는 과정이 필요한데 이 부분은 다음 글에서 설명하겠습니다.<a href="#fnref2" class="footnote-back">↩︎</a></p></li>
 <li id="fn3"><p>경험상 GET과 POST 외의 다른 요청 메서드는 보지 못했습니다.<a href="#fnref3" class="footnote-back">↩︎</a></p></li>
 <li id="fn4"><p>출처 : <a href="https://medium.com/@NikiMichaelsonqiv/http-methods-get-vs-post-b3ffb60c7f55" class="uri">https://medium.com/@NikiMichaelsonqiv/http-methods-get-vs-post-b3ffb60c7f55</a><a href="#fnref4" class="footnote-back">↩︎</a></p></li>
 <li id="fn5"><p>출처 : <a href="https://codeteddy.com/2017/06/06/create-api-with-asp-net-core-day-3-working-with-http-status-codes-in-asp-net-core-api/" class="uri">https://codeteddy.com/2017/06/06/create-api-with-asp-net-core-day-3-working-with-http-status-codes-in-asp-net-core-api/</a><a href="#fnref5" class="footnote-back">↩︎</a></p></li>
