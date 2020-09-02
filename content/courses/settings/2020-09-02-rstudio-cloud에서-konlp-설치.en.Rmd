@@ -34,28 +34,19 @@ output:
  `KoNLP`의 설치에러는 기본 언어 로케일이 한국으로 되어있지 않아서 발생한다고 합니다. 당연히 로케일 설정만 잡아주면 문제는 해결되겠지요. R 콘솔창에 다음의 코드를 입력해서 설치를 진행합니다. 
 
 ```
-## 의존 패키지 설치
-> install.packages("rJava")
-> install.packages("usethis")
-> install.packages('devtools')
-> install.packages('RWeka')
+# 의존 패키지 설치
+> install.packages(c("hash", "tau", "Sejong", "RSQLite", "devtools", "bit", "rex", "lazyeval", "htmlwidgets", "crosstalk", "promises", "later", "sessioninfo", "xopen", "bit64", "blob", "DBI", "memoise", "plogr", "covr", "DT", "rcmdcheck", "rversions", "usethis", "RWeka", "multilinguer", "rJava"), type = "binary")
 
-> library(rJava)
-> library(usethis)
-> library(devtools)
-> library(RWeka)
-
-
-## 로케일 설정
+# 로케일 설정
 > Sys.setlocale(locale="ko_KR.utf8")
 > options(java.parameters = c("-Xmx16384m","-Dfile.encoding=UTF-8"))
 
-
-## KoNLP 설치
-> devtools::install_github('haven-jeon/KoNLP')
+# KoNLP 설치
+> install.packages("remotes")
+> remotes::install_github('haven-jeon/KoNLP', upgrade = "never", INSTALL_opts=c("--no-multiarch"))
 > library(KoNLP)
 
-## 로케일 설정 기본값으로 변경
+# 로케일 설정 기본값으로 변경
 > Sys.setlocale("LC_ALL") 
 ```
 
@@ -64,23 +55,23 @@ output:
 만약 위의 방법으로도 설치가 안되면 Rstudio Cloud에 `KoNLP`파일을 직접 내려받아 설치하는 방법도 있습니다. 다음의 코드를 Rstudio 콘솔창이 아닌 Rstudio 터미널에 입력해야 한다는 점을 주의하세요. Rstudio Cloud는 리눅스 환경을 제공하기 때문에 리눅스 코드인 점도 유념하길 바랍니다.
 
 ```
-## 설치폴더 이동. 최종경로가 `/4.0/`으로 끝나는데 R 버전에 따라 달라질 수 있기 때문에 주의해야 합니다. 
+# 설치폴더 이동. 최종경로가 `/4.0/`으로 끝나는데 R 버전에 따라 달라질 수 있기 때문에 주의해야 합니다. 
 $ cd ~/R/x86_64-pc-linux-gnu-library/4.0/
 $ mkdir KoNLP
 $ cd KoNLP
 
-## KoNLP 압축파일 내려받기
+# KoNLP 압축파일 내려받기
 $ wget ./ http://morphys.dothome.co.kr/map/KoNLP.zip
 $ unzip -x KoNLP.zip
 
-## 압축파일 제거
+# 압축파일 제거
 $ rm KoNLP.zip
 ```
 
 파일을 내려받고 압축파일 해제까지 마무리되면 Rstudio 콘솔창에서 다음의 코드를 입력해서 작업을 마무리합니다. 
 
 ```
-update.packages() # 질문사항에는 모두 yes 입력
-devtools::load_all("/~/R/x86_64-pc-linux-gnu-library/4.0/KoNLP")
-library(KoNLP)
+> update.packages() # 질문사항에는 모두 yes 입력
+> devtools::load_all("/~/R/x86_64-pc-linux-gnu-library/4.0/KoNLP")
+> library(KoNLP)
 ```  

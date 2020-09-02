@@ -645,48 +645,39 @@
 <div id="로케일-설정-변경-후-konlp-설치" class="section level2">
 <h2>로케일 설정 변경 후 <code>KoNLP</code> 설치</h2>
 <p><code>KoNLP</code>의 설치에러는 기본 언어 로케일이 한국으로 되어있지 않아서 발생한다고 합니다. 당연히 로케일 설정만 잡아주면 문제는 해결되겠지요. R 콘솔창에 다음의 코드를 입력해서 설치를 진행합니다.</p>
-<pre><code>## 의존 패키지 설치
-&gt; install.packages(&quot;rJava&quot;)
-&gt; install.packages(&quot;usethis&quot;)
-&gt; install.packages(&#39;devtools&#39;)
-&gt; install.packages(&#39;RWeka&#39;)
+<pre><code># 의존 패키지 설치
+&gt; install.packages(c(&quot;hash&quot;, &quot;tau&quot;, &quot;Sejong&quot;, &quot;RSQLite&quot;, &quot;devtools&quot;, &quot;bit&quot;, &quot;rex&quot;, &quot;lazyeval&quot;, &quot;htmlwidgets&quot;, &quot;crosstalk&quot;, &quot;promises&quot;, &quot;later&quot;, &quot;sessioninfo&quot;, &quot;xopen&quot;, &quot;bit64&quot;, &quot;blob&quot;, &quot;DBI&quot;, &quot;memoise&quot;, &quot;plogr&quot;, &quot;covr&quot;, &quot;DT&quot;, &quot;rcmdcheck&quot;, &quot;rversions&quot;, &quot;usethis&quot;, &quot;RWeka&quot;, &quot;multilinguer&quot;, &quot;rJava&quot;), type = &quot;binary&quot;)
 
-&gt; library(rJava)
-&gt; library(usethis)
-&gt; library(devtools)
-&gt; library(RWeka)
-
-
-## 로케일 설정
+# 로케일 설정
 &gt; Sys.setlocale(locale=&quot;ko_KR.utf8&quot;)
 &gt; options(java.parameters = c(&quot;-Xmx16384m&quot;,&quot;-Dfile.encoding=UTF-8&quot;))
 
-
-## KoNLP 설치
-&gt; devtools::install_github(&#39;haven-jeon/KoNLP&#39;)
+# KoNLP 설치
+&gt; install.packages(&quot;remotes&quot;)
+&gt; remotes::install_github(&#39;haven-jeon/KoNLP&#39;, upgrade = &quot;never&quot;, INSTALL_opts=c(&quot;--no-multiarch&quot;))
 &gt; library(KoNLP)
 
-## 로케일 설정 기본값으로 변경
+# 로케일 설정 기본값으로 변경
 &gt; Sys.setlocale(&quot;LC_ALL&quot;) </code></pre>
 </div>
 <div id="konlp-파일-직접-다운로드" class="section level2">
 <h2><code>KoNLP</code> 파일 직접 다운로드</h2>
 <p>만약 위의 방법으로도 설치가 안되면 Rstudio Cloud에 <code>KoNLP</code>파일을 직접 내려받아 설치하는 방법도 있습니다. 다음의 코드를 Rstudio 콘솔창이 아닌 Rstudio 터미널에 입력해야 한다는 점을 주의하세요. Rstudio Cloud는 리눅스 환경을 제공하기 때문에 리눅스 코드인 점도 유념하길 바랍니다.</p>
-<pre><code>## 설치폴더 이동. 최종경로가 `/4.0/`으로 끝나는데 R 버전에 따라 달라질 수 있기 때문에 주의해야 합니다. 
+<pre><code># 설치폴더 이동. 최종경로가 `/4.0/`으로 끝나는데 R 버전에 따라 달라질 수 있기 때문에 주의해야 합니다. 
 $ cd ~/R/x86_64-pc-linux-gnu-library/4.0/
 $ mkdir KoNLP
 $ cd KoNLP
 
-## KoNLP 압축파일 내려받기
+# KoNLP 압축파일 내려받기
 $ wget ./ http://morphys.dothome.co.kr/map/KoNLP.zip
 $ unzip -x KoNLP.zip
 
-## 압축파일 제거
+# 압축파일 제거
 $ rm KoNLP.zip</code></pre>
 <p>파일을 내려받고 압축파일 해제까지 마무리되면 Rstudio 콘솔창에서 다음의 코드를 입력해서 작업을 마무리합니다.</p>
-<pre><code>update.packages() # 질문사항에는 모두 yes 입력
-devtools::load_all(&quot;/~/R/x86_64-pc-linux-gnu-library/4.0/KoNLP&quot;)
-library(KoNLP)</code></pre>
+<pre><code>&gt; update.packages() # 질문사항에는 모두 yes 입력
+&gt; devtools::load_all(&quot;/~/R/x86_64-pc-linux-gnu-library/4.0/KoNLP&quot;)
+&gt; library(KoNLP)</code></pre>
 </div>
 <div class="footnotes">
 <hr />
