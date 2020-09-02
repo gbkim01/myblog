@@ -64,7 +64,7 @@ date_format = "Jan 2006"
 [[item]]
   organization = "오만가지 설정을 다룹니다."
   organization_url = ""
-  title = "[각종 설정 - 컴퓨터 사용시 필요한 설정(페이지 준비중)](/courses/settings/)"
+  title = "[각종 설정 - 컴퓨터 사용시 필요한 설정](/courses/settings/)"
   url = ""
   certificate_url = ""
   date_start = "2020-08-01"

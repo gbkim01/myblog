@@ -13,6 +13,81 @@
     </image>
     
     <item>
+      <title>Rstudio Cloud에서 KoNLP 설치</title>
+      <link>/courses/settings/rstudio-cloud%EC%97%90%EC%84%9C-konlp-%EC%84%A4%EC%B9%98/</link>
+      <pubDate>Wed, 02 Sep 2020 00:00:00 +0000</pubDate>
+      <guid>/courses/settings/rstudio-cloud%EC%97%90%EC%84%9C-konlp-%EC%84%A4%EC%B9%98/</guid>
+      <description>
+
+&lt;div id=&#34;TOC&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#rstudio-cloud에서-konlp를-설치해보자&#34;&gt;Rstudio Cloud에서 KoNLP를 설치해보자&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#로케일-설정-변경-후-konlp-설치&#34;&gt;로케일 설정 변경 후 &lt;code&gt;KoNLP&lt;/code&gt; 설치&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#konlp-파일-직접-다운로드&#34;&gt;&lt;code&gt;KoNLP&lt;/code&gt; 파일 직접 다운로드&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;hr /&gt;
+&lt;div id=&#34;rstudio-cloud에서-konlp를-설치해보자&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Rstudio Cloud에서 KoNLP를 설치해보자&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://gbkim01.github.io/myblog/courses/settings/korean-with-plot-in-rstudio-cloud/&#34;&gt;그래프&lt;/a&gt;를 그릴때도 그랬지만 Rstudio Cloud는 한글과 관련된 부분에서 몇가지 문제가 있습니다. 이번에 맞딱드린 장애물은 한글 형태소 분석기인 &lt;code&gt;KoNLP&lt;/code&gt;&lt;a href=&#34;#fn1&#34; class=&#34;footnote-ref&#34; id=&#34;fnref1&#34;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;입니다. Rstudio Cloud는 기본적으로 &lt;code&gt;JAVA&lt;/code&gt; 환경이 마련되어있기 때문에 &lt;code&gt;KoNLP&lt;/code&gt; 설치에도 별다른 문제 없을거라 생각했는데 예상치 못한 암초에 적잖이 당황했습니다. 다행히도 구글검색을 통해 해법을 확인할 수 있어서 간단히 정리해봅니다.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;로케일-설정-변경-후-konlp-설치&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;로케일 설정 변경 후 &lt;code&gt;KoNLP&lt;/code&gt; 설치&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;KoNLP&lt;/code&gt;의 설치에러는 기본 언어 로케일이 한국으로 되어있지 않아서 발생한다고 합니다. 당연히 로케일 설정만 잡아주면 문제는 해결되겠지요. R 콘솔창에 다음의 코드를 입력해서 설치를 진행합니다.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;## 의존 패키지 설치
+&amp;gt; install.packages(&amp;quot;rJava&amp;quot;)
+&amp;gt; install.packages(&amp;quot;usethis&amp;quot;)
+&amp;gt; install.packages(&amp;#39;devtools&amp;#39;)
+&amp;gt; install.packages(&amp;#39;RWeka&amp;#39;)
+
+&amp;gt; library(rJava)
+&amp;gt; library(usethis)
+&amp;gt; library(devtools)
+&amp;gt; library(RWeka)
+
+
+## 로케일 설정
+&amp;gt; Sys.setlocale(locale=&amp;quot;ko_KR.utf8&amp;quot;)
+&amp;gt; options(java.parameters = c(&amp;quot;-Xmx16384m&amp;quot;,&amp;quot;-Dfile.encoding=UTF-8&amp;quot;))
+
+
+## KoNLP 설치
+&amp;gt; devtools::install_github(&amp;#39;haven-jeon/KoNLP&amp;#39;)
+&amp;gt; library(KoNLP)
+
+## 로케일 설정 기본값으로 변경
+&amp;gt; Sys.setlocale(&amp;quot;LC_ALL&amp;quot;) &lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;konlp-파일-직접-다운로드&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;code&gt;KoNLP&lt;/code&gt; 파일 직접 다운로드&lt;/h2&gt;
+&lt;p&gt;만약 위의 방법으로도 설치가 안되면 Rstudio Cloud에 &lt;code&gt;KoNLP&lt;/code&gt;파일을 직접 내려받아 설치하는 방법도 있습니다. 다음의 코드를 Rstudio 콘솔창이 아닌 Rstudio 터미널에 입력해야 한다는 점을 주의하세요. Rstudio Cloud는 리눅스 환경을 제공하기 때문에 리눅스 코드인 점도 유념하길 바랍니다.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;## 설치폴더 이동. 최종경로가 `/4.0/`으로 끝나는데 R 버전에 따라 달라질 수 있기 때문에 주의해야 합니다. 
+$ cd ~/R/x86_64-pc-linux-gnu-library/4.0/
+$ mkdir KoNLP
+$ cd KoNLP
+
+## KoNLP 압축파일 내려받기
+$ wget ./ http://morphys.dothome.co.kr/map/KoNLP.zip
+$ unzip -x KoNLP.zip
+
+## 압축파일 제거
+$ rm KoNLP.zip&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;파일을 내려받고 압축파일 해제까지 마무리되면 Rstudio 콘솔창에서 다음의 코드를 입력해서 작업을 마무리합니다.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;update.packages() # 질문사항에는 모두 yes 입력
+devtools::load_all(&amp;quot;/~/R/x86_64-pc-linux-gnu-library/4.0/KoNLP&amp;quot;)
+library(KoNLP)&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn1&#34;&gt;&lt;p&gt;&lt;code&gt;KoNLP&lt;/code&gt;는 올 초 R의 cran에서 빠지게 되면서 설치가 안되는 문제가 발생하기도 했었죠. 한동안 한국 유저들 사이에서 이슈가 되었다가 다행히도 지금은 &lt;a href=&#34;https://ko-kr.facebook.com/notes/r-korea-krugkorean-r-user-group/konlp-%EC%84%A4%EC%B9%98-%EC%9D%B4%EC%8A%88-%EA%B3%B5%EC%9C%A0/1847510068715020&#34;&gt;깃헙버전&lt;/a&gt;을 통해 설치할 수 있습니다.&lt;a href=&#34;#fnref1&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Gram17(2018년형) 최신 리눅스 커널 설치</title>
       <link>/courses/settings/gram17-2018-latest-linux-kernel/</link>
       <pubDate>Mon, 10 Aug 2020 00:00:00 +0000</pubDate>

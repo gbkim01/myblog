@@ -1,0 +1,86 @@
+---
+title: Rstudio Cloud에서 KoNLP 설치
+author: 김강배
+date: '2020-09-02'
+slug: rstudio-cloud에서-konlp-설치
+categories: []
+tags: []
+linktitle: 2. Rstudio Cloud에서 KoNLP 설치
+summary: ~
+lastmod: '2020-09-02T04:59:00Z'
+type: docs
+menu:
+  settings:
+    parent: Tip1. R
+    weight: 1
+output:
+  blogdown::html_page:
+    toc: true
+    fig_caption: yes
+    df_print: kable
+    fig_height: 6
+    fig_width: 10
+---
+
+---
+
+## Rstudio Cloud에서 KoNLP를 설치해보자
+
+[그래프](https://gbkim01.github.io/myblog/courses/settings/korean-with-plot-in-rstudio-cloud/)를 그릴때도 그랬지만 Rstudio Cloud는 한글과 관련된 부분에서 몇가지 문제가 있습니다. 이번에 맞딱드린 장애물은 한글 형태소 분석기인 `KoNLP`^[`KoNLP`는 올 초 R의 cran에서 빠지게 되면서 설치가 안되는 문제가 발생하기도 했었죠. 한동안 한국 유저들 사이에서 이슈가 되었다가 다행히도 지금은  [깃헙버전](https://ko-kr.facebook.com/notes/r-korea-krugkorean-r-user-group/konlp-%EC%84%A4%EC%B9%98-%EC%9D%B4%EC%8A%88-%EA%B3%B5%EC%9C%A0/1847510068715020)을 통해 설치할 수 있습니다.]입니다. Rstudio Cloud는 기본적으로 `JAVA` 환경이 마련되어있기 때문에 `KoNLP` 설치에도 별다른 문제 없을거라 생각했는데 예상치 못한 암초에 적잖이 당황했습니다. 다행히도 구글검색을 통해 해법을 확인할 수 있어서 간단히 정리해봅니다.
+
+
+## 로케일 설정 변경 후 `KoNLP` 설치
+
+ `KoNLP`의 설치에러는 기본 언어 로케일이 한국으로 되어있지 않아서 발생한다고 합니다. 당연히 로케일 설정만 잡아주면 문제는 해결되겠지요. R 콘솔창에 다음의 코드를 입력해서 설치를 진행합니다. 
+
+```
+## 의존 패키지 설치
+> install.packages("rJava")
+> install.packages("usethis")
+> install.packages('devtools')
+> install.packages('RWeka')
+
+> library(rJava)
+> library(usethis)
+> library(devtools)
+> library(RWeka)
+
+
+## 로케일 설정
+> Sys.setlocale(locale="ko_KR.utf8")
+> options(java.parameters = c("-Xmx16384m","-Dfile.encoding=UTF-8"))
+
+
+## KoNLP 설치
+> devtools::install_github('haven-jeon/KoNLP')
+> library(KoNLP)
+
+## 로케일 설정 기본값으로 변경
+> Sys.setlocale("LC_ALL") 
+```
+
+## `KoNLP` 파일 직접 다운로드
+
+만약 위의 방법으로도 설치가 안되면 Rstudio Cloud에 `KoNLP`파일을 직접 내려받아 설치하는 방법도 있습니다. 다음의 코드를 Rstudio 콘솔창이 아닌 Rstudio 터미널에 입력해야 한다는 점을 주의하세요. Rstudio Cloud는 리눅스 환경을 제공하기 때문에 리눅스 코드인 점도 유념하길 바랍니다.
+
+```
+## 설치폴더 이동. 최종경로가 `/4.0/`으로 끝나는데 R 버전에 따라 달라질 수 있기 때문에 주의해야 합니다. 
+$ cd ~/R/x86_64-pc-linux-gnu-library/4.0/
+$ mkdir KoNLP
+$ cd KoNLP
+
+## KoNLP 압축파일 내려받기
+$ wget ./ http://morphys.dothome.co.kr/map/KoNLP.zip
+$ unzip -x KoNLP.zip
+
+## 압축파일 제거
+$ rm KoNLP.zip
+```
+
+파일을 내려받고 압축파일 해제까지 마무리되면 Rstudio 콘솔창에서 다음의 코드를 입력해서 작업을 마무리합니다. 
+
+```
+update.packages() # 질문사항에는 모두 yes 입력
+devtools::load_all("/~/R/x86_64-pc-linux-gnu-library/4.0/KoNLP")
+library(KoNLP)
+```  
