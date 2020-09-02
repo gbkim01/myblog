@@ -631,19 +631,19 @@
 
 <div id="TOC">
 <ul>
-<li><a href="#rstudio-cloud에서-konlp를-설치해보자">Rstudio Cloud에서 KoNLP를 설치해보자</a></li>
-<li><a href="#로케일-설정-변경-후-konlp-설치">로케일 설정 변경 후 <code>KoNLP</code> 설치</a></li>
-<li><a href="#konlp-파일-직접-다운로드"><code>KoNLP</code> 파일 직접 다운로드</a></li>
+<li><a href="#rstudio-cloud에서-konlp를-설치해보자"><strong>Rstudio Cloud에서 KoNLP를 설치해보자</strong></a></li>
+<li><a href="#로케일-설정-변경-후-konlp-설치"><strong>로케일 설정 변경 후 <code>KoNLP</code> 설치</strong></a></li>
+<li><a href="#konlp-파일-직접-다운로드"><strong><code>KoNLP</code> 파일 직접 다운로드</strong></a></li>
 </ul>
 </div>
 
 <hr />
 <div id="rstudio-cloud에서-konlp를-설치해보자" class="section level2">
-<h2>Rstudio Cloud에서 KoNLP를 설치해보자</h2>
-<p><a href="https://gbkim01.github.io/myblog/courses/settings/korean-with-plot-in-rstudio-cloud/">그래프</a>를 그릴때도 그랬지만 Rstudio Cloud는 한글과 관련된 부분에서 몇가지 문제가 있습니다. 이번에 맞딱드린 장애물은 한글 형태소 분석기인 <code>KoNLP</code><a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>입니다. Rstudio Cloud는 기본적으로 <code>JAVA</code> 환경이 마련되어있기 때문에 <code>KoNLP</code> 설치에도 별다른 문제 없을거라 생각했는데 예상치 못한 암초에 적잖이 당황했습니다. 다행히도 구글검색을 통해 해법을 확인할 수 있어서 간단히 정리해봅니다.</p>
+<h2><strong>Rstudio Cloud에서 KoNLP를 설치해보자</strong></h2>
+<p><a href="https://gbkim01.github.io/myblog/courses/settings/korean-with-plot-in-rstudio-cloud/">그래프</a>를 그릴때도 그랬지만 Rstudio Cloud는 한글과 관련된 부분에서 몇가지 문제가 있습니다. 이번에 맞딱드린 장애물은 한글 형태소 분석기인 “<code>KoNLP</code><a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>의 설치에러”입니다. Rstudio Cloud는 기본적으로 <code>JAVA</code> 환경이 마련되어있기 때문에 <code>KoNLP</code> 설치에도 별다른 문제 없을거라 생각했는데 예상치 못한 암초에 적잖이 당황했습니다. 다행히도 구글검색을 통해 해법을 확인할 수 있어서 간단히 정리해봅니다.</p>
 </div>
 <div id="로케일-설정-변경-후-konlp-설치" class="section level2">
-<h2>로케일 설정 변경 후 <code>KoNLP</code> 설치</h2>
+<h2><strong>로케일 설정 변경 후 <code>KoNLP</code> 설치</strong></h2>
 <p><code>KoNLP</code>의 설치에러는 기본 언어 로케일이 한국으로 되어있지 않아서 발생한다고 합니다. 당연히 로케일 설정만 잡아주면 문제는 해결되겠지요. R 콘솔창에 다음의 코드를 입력해서 설치를 진행합니다.</p>
 <pre><code># 의존 패키지 설치
 &gt; install.packages(c(&quot;hash&quot;, &quot;tau&quot;, &quot;Sejong&quot;, &quot;RSQLite&quot;, &quot;devtools&quot;, &quot;bit&quot;, &quot;rex&quot;, &quot;lazyeval&quot;, &quot;htmlwidgets&quot;, &quot;crosstalk&quot;, &quot;promises&quot;, &quot;later&quot;, &quot;sessioninfo&quot;, &quot;xopen&quot;, &quot;bit64&quot;, &quot;blob&quot;, &quot;DBI&quot;, &quot;memoise&quot;, &quot;plogr&quot;, &quot;covr&quot;, &quot;DT&quot;, &quot;rcmdcheck&quot;, &quot;rversions&quot;, &quot;usethis&quot;, &quot;RWeka&quot;, &quot;multilinguer&quot;, &quot;rJava&quot;), type = &quot;binary&quot;)
@@ -661,7 +661,7 @@
 &gt; Sys.setlocale(&quot;LC_ALL&quot;) </code></pre>
 </div>
 <div id="konlp-파일-직접-다운로드" class="section level2">
-<h2><code>KoNLP</code> 파일 직접 다운로드</h2>
+<h2><strong><code>KoNLP</code> 파일 직접 다운로드</strong></h2>
 <p>만약 위의 방법으로도 설치가 안되면 Rstudio Cloud에 <code>KoNLP</code>파일을 직접 내려받아 설치하는 방법도 있습니다. 다음의 코드를 Rstudio 콘솔창이 아닌 Rstudio 터미널에 입력해야 한다는 점을 주의하세요. Rstudio Cloud는 리눅스 환경을 제공하기 때문에 리눅스 코드인 점도 유념하길 바랍니다.</p>
 <pre><code># 설치폴더 이동. 최종경로가 `/4.0/`으로 끝나는데 R 버전에 따라 달라질 수 있기 때문에 주의해야 합니다. 
 $ cd ~/R/x86_64-pc-linux-gnu-library/4.0/
