@@ -7,7 +7,7 @@ headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/false
 weight = 50  # Order that this section will appear.
 
-title = "<저잣거리>의 근황"
+title = "<저잣거리> 근황"
 subtitle = ""
 
 [content]
@@ -15,7 +15,7 @@ subtitle = ""
   page_type = "post"
   
   # Choose how much pages you would like to display (0 = all pages)
-  count = 10
+  count = 5
   
   # Choose how many pages you would like to offset by
   offset = 0
@@ -45,7 +45,7 @@ subtitle = ""
   #   Any HTML color name or Hex value is valid.
   
   # Background color.
-  # color = "navy"
+  # color = "grey"
   
   # Background gradient.
   # gradient_start = "DeepSkyBlue"
