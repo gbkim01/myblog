@@ -236,9 +236,11 @@ Figure 3: HTTP 상태 코드&lt;a href=&#34;#fn5&#34; class=&#34;footnote-ref&#3
 &lt;/div&gt;
 
 &lt;hr /&gt;
+&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
 &lt;div id=&#34;rstudio-cloud에서-konlp를-설치해보자&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;&lt;strong&gt;Rstudio Cloud에서 KoNLP를 설치해보자&lt;/strong&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&#34;https://gbkim01.github.io/myblog/courses/settings/korean-with-plot-in-rstudio-cloud/&#34;&gt;그래프&lt;/a&gt;를 그릴때도 그랬지만 Rstudio Cloud는 한글과 관련된 부분에서 몇가지 문제가 있습니다. 이번에 맞딱드린 장애물은 한글 형태소 분석기인 “&lt;code&gt;KoNLP&lt;/code&gt;&lt;a href=&#34;#fn1&#34; class=&#34;footnote-ref&#34; id=&#34;fnref1&#34;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;의 설치에러”입니다. Rstudio Cloud는 기본적으로 &lt;code&gt;JAVA&lt;/code&gt; 환경이 마련되어있기 때문에 &lt;code&gt;KoNLP&lt;/code&gt; 설치에도 별다른 문제 없을거라 생각했는데 예상치 못한 암초에 적잖이 당황했습니다. 다행히도 구글검색을 통해 해법을 확인할 수 있어서 간단히 정리해봅니다.&lt;/p&gt;
+&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;로케일-설정-변경-후-konlp-설치&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;&lt;strong&gt;로케일 설정 변경 후 &lt;code&gt;KoNLP&lt;/code&gt; 설치&lt;/strong&gt;&lt;/h2&gt;
@@ -257,6 +259,7 @@ Figure 3: HTTP 상태 코드&lt;a href=&#34;#fn5&#34; class=&#34;footnote-ref&#3
 
 # 로케일 설정 기본값으로 변경
 &amp;gt; Sys.setlocale(&amp;quot;LC_ALL&amp;quot;) &lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;konlp-파일-직접-다운로드&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;&lt;strong&gt;&lt;code&gt;KoNLP&lt;/code&gt; 파일 직접 다운로드&lt;/strong&gt;&lt;/h2&gt;
