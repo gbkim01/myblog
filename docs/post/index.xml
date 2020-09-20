@@ -5,12 +5,42 @@
     <link>/post/</link>
       <atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     <description>Posts</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 본 블로그에 게시된 모든 컨텐츠의 저작권은 블로그 주인에게 있습니다.</copyright><lastBuildDate>Mon, 24 Aug 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 본 블로그에 게시된 모든 컨텐츠의 저작권은 블로그 주인에게 있습니다.</copyright><lastBuildDate>Sun, 20 Sep 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/media/icon-32.png</url>
       <title>Posts</title>
       <link>/post/</link>
     </image>
+    
+    <item>
+      <title>개인서버 구축과 친구 결혼식 참석</title>
+      <link>/post/%EA%B0%9C%EC%9D%B8%EC%84%9C%EB%B2%84-%EA%B5%AC%EC%B6%95%EA%B3%BC-%EC%B9%9C%EA%B5%AC-%EA%B2%B0%ED%98%BC%EC%8B%9D-%EC%B0%B8%EC%84%9D/</link>
+      <pubDate>Sun, 20 Sep 2020 00:00:00 +0000</pubDate>
+      <guid>/post/%EA%B0%9C%EC%9D%B8%EC%84%9C%EB%B2%84-%EA%B5%AC%EC%B6%95%EA%B3%BC-%EC%B9%9C%EA%B5%AC-%EA%B2%B0%ED%98%BC%EC%8B%9D-%EC%B0%B8%EC%84%9D/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://user-images.githubusercontent.com/30010992/93308151-df854200-f83c-11ea-926d-5e8ad5e75d33.PNG&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;개인서버를-만들었다&#34;&gt;개인서버를 만들었다.&lt;/h1&gt;
+&lt;p&gt;최근에 
+&lt;a href=&#34;https://rstudio.cloud/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Rstudio Cloud&lt;/strong&gt;&lt;/a&gt;를 끼고 살았더니 어느새 무료로 제공되는 월 사용량의 한계에 봉착했다. &lt;strong&gt;Project hours&lt;/strong&gt;의 정확한 의미는 모르겠지만 기본으로 제공되는 15를 훨씬 초과해서 이미 61.3이 되었고 색도 붉게 칠한 무서운 막대그래프로 경고를 날렸다. 9월 말부터는 사용시간에 제약을 줄 것이라는 알림은 덤이고&amp;hellip;&lt;/p&gt;
+&lt;p&gt;새로운 계정을 파서 &lt;strong&gt;Rstudio Cloud&lt;/strong&gt;를 계속 이용할지, 아니면 GCP나 AWS에서 제공하는 무료 서버에 R을 설치해서 사용할지 몇가지 대안 사이에서 고민해봤는데 어느것 하나 만족스럽지 않았다. 무료로 제공되는 서비스인 만큼 만족할만한 성능을 기대하긴 어렵고, 언제라도 사용제한에 걸릴 수 있다는 리스크는 여전했기 때문이다. 며칠 고민하다 차제에 집 데스크탑으로 개인서버를 구축하는 것으로 방향을 돌렸다. 노트북을 구매한 이후로 집에서 놀고 있는 시간이 많아진 데스크탑으로서도 괜찮은 용처가 생겨 다행인 상황이고&amp;hellip;&lt;/p&gt;
+&lt;p&gt;이번에 개인 서버를 구축하면서 생각한 목표는 총 다섯가지 정도다.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;현상태의 시스템을 최대한 유지한다.&lt;/li&gt;
+&lt;li&gt;외부에서도 데스크탑에 연결해서 R과 파이썬 작업을 할 수 있어야 한다.&lt;/li&gt;
+&lt;li&gt;외부에서도 자유롭게 데스크탑에 저장되어 있는 자료에 대한 접근할 수 있어야 한다.&lt;/li&gt;
+&lt;li&gt;개인적으로 데스크탑에 저장하고 있는 미디어파일을 폰, 태블릿, 노트북을 통해 언제 어디서든 재생해서 감상할 수 있어야 한다.&lt;/li&gt;
+&lt;li&gt;외부에서 전원을 켜고 끌 수 있어야 한다.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;먼저 첫번째 &lt;code&gt;최대한 현상태 유지&lt;/code&gt;를 위해서는 데스크탑에 설치된 윈도우10을 그대로 두고 &lt;strong&gt;버추얼박스에 리눅스를 설치&lt;/strong&gt;해서 가상머신으로 서버를 돌려야 하는데 뭔가 컴퓨터 성능을 제한해야 한다는 생각에 아깝다는 생각이 들었다. 또 윈도우10의 &lt;strong&gt;WSL2&lt;/strong&gt;를 이용해볼까 시도도 해봤지만 &lt;code&gt;외부 IP -&amp;gt; 내부 IP(데스크탑) -&amp;gt; WSL2 IP&lt;/code&gt;로 연결되는 포트포워딩이 어려워서 이 방법도 포기.. 결국 윈도우10을 밀고 리눅스를 설치하는 방향으로 가닥을 잡았다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;R&lt;/strong&gt;과 &lt;strong&gt;파이썬&lt;/strong&gt;이야 &lt;strong&gt;Rstudio server, Jupyter&lt;/strong&gt;를 설치해서 외부 포트만 열어주면 되니까 사실 별 문제는 아니고&amp;hellip;파일의 접속 및 공유는 집 내부 네트워크 망에서는 &lt;strong&gt;samba&lt;/strong&gt;를 이용하고 외부방에서는 &lt;strong&gt;FTP&lt;/strong&gt;를 이용하는 것으로 결정했다. 외부 망에서도 &lt;strong&gt;samba&lt;/strong&gt;를 통해 접속하려고도 해봤는데 통신사에서 &lt;strong&gt;samba&lt;/strong&gt; 포트는 막아놨다는 이야기도 있고, 직접 하려고 하니 구현이 안되는 이유도 있고 해서 그냥 &lt;strong&gt;FTP&lt;/strong&gt;를 쓰는 것으로 타협했다. 또 &lt;strong&gt;팟플에이&lt;/strong&gt;나 &lt;strong&gt;VLC 플레이어&lt;/strong&gt; 같이 &lt;strong&gt;FTP&lt;/strong&gt;를 지원하는 플레이어를 쓰면 노트북, 태블릿, 휴대폰 어디에서도 미디어파일을 재생할 수 있어서 그냥 이정도로 마무리 했다.&lt;/p&gt;
+&lt;p&gt;사실 이번 작업에 있어서 가장 고생했던 부분은 외부에서 전원의 &lt;code&gt;on/off&lt;/code&gt;를 조절할 수 있게 하는 거였다. &lt;strong&gt;wake on lan&lt;/strong&gt;기능을 써서 해결하려는데 외부IP가 유동IP이니 &lt;strong&gt;wake on lan&lt;/strong&gt; 기능이 유지가 안되는 거였다. 고정IP 설정이나 DDNS기능을 사용해서 해결하려고 했으나 유플러스에서 제공한 기본 공유기에서는 DDNS 인증이 안되었고, 외부IP를 고정시키면 일정시간이 지난 뒤에 네트워크 오류가 발생하면서 인터넷이 안되는 문제가 발생했다. 결국 집 구석탱이에 짱박혀있던 &lt;strong&gt;구형 IP Time&lt;/strong&gt; 공유기의 DDNS 기능을 써서 해결했다. 인터넷에 뒤져보니까 가끔 DDNS 갱신을 해줘야 한다는 이야기도 있던데 당장은 시스템이 안정적으로 구현되니 일단은 성공이다. 단, 공유기가 구형이라 우리집 내부 무선인터넷 속도가 제대로 확 떨어진다는 단점은 있다.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;친구-결혼식을-다녀왔다&#34;&gt;친구 결혼식을 다녀왔다.&lt;/h1&gt;
+&lt;p&gt;코로나라는 비상시국에 친구녀석이 결혼식을 올렸다. 작년 이맘때 쯤 있었던 지인 아버지의 장례식 이후로 공식적인 행사가 오랜만에 찾아온 터라 제대로된 복장을 갖추는게 고민이었다. 살은 살대로 쪄서 정장바지는 안들어가지, 넥타이는 어디로 갔는지 도무지 찾을수가 없고, 구두는 먼지가 쌓여서 한번 닦아줘야 하는데 결혼식 시간은 다가오고&amp;hellip; 아침부터 허둥지둥 거리다 넥타이도 없이 평일 신는 신발에 셔츠와 마이만 걸치고 뛰어갔다.&lt;/p&gt;
+&lt;p&gt;이렇게 대충대충 차려입고 예식장에 갔는데 식장에 사람이 없었다. 코로나 때문에 초대인원이 50명으로 제한된 터라 대부분 양가의 친인척들이고 신랑신부의 지인들이래야 손으로 꼽을 정도였는데, 그나마 신랑신부 친구들이랑 사진찍는 시간에 단상에서 사진찍는 인원은 부케받는 신부 친구와 나 둘 뿐이었다. 아&amp;hellip; 이럴줄 알았으면 좀 옷이라도 제대로 챙겨입고 올것을&amp;hellip;.양가 부모님 앞에 신랑친구랍시고 너무 예의없이 참석한게 아닌가 싶어서 많이 민망하고 미안했다.&lt;/p&gt;
+&lt;p&gt;그래도 늦장가 가는 친구놈의 표정이, 결혼이 내심 부러울 정도로 밝아 다행이었다. 잘 살아라&amp;hellip; 오늘은 좀 신경 못써서 미안허이. 다음에 여유될 때 한번 보자. 사죄하마.ㅋㅋ&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>글쓰기의 어려움</title>
