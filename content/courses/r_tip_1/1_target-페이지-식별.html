@@ -101,6 +101,16 @@ Figure 3: 네트워크의 ’문서’항목
 </div>
 <div id="인터넷-주소의-구성" class="section level3">
 <h3>인터넷 주소의 구성</h3>
+<div class="figure" style="text-align: center"><span id="fig:figs4"></span>
+<img src="https://user-images.githubusercontent.com/30010992/90947380-59115680-e470-11ea-8ce0-de44cdcf7555.PNG" alt="인터넷 주소의 구성"  />
+<p class="caption">
+Figure 4: 인터넷 주소의 구성
+</p>
+</div>
+<p>앞절에서 파악한 URL은 크게 세 부분으로 나뉘어져 있습니다. Figure <a href="#fig:figs4">4</a>를 보겠습니다.</p>
+<p>먼저 <strong>“<a href="https://" class="uri">https://</a>”</strong> 부터 <strong>“.com”</strong> 까지 이어지는 도메인 주소가 있습니다. 다른 주소로는 <strong>“.kr”</strong>, <strong>“.org”</strong>, <strong>“.net”</strong>으로 끝나는 인터넷 도메인이 여기에 해당됩니다. 도메인 주소 바로 다음으로는 해당 정보가 위치한 경로, 즉 <strong>“/sise/sise_index_day.nhn”</strong>이 표시되어 있습니다. 즉, 최상위 호스트인 <strong>“<a href="https://finance.naver.com" class="uri">https://finance.naver.com</a>”</strong> 안에 KOSPI 시세 정보가 위치한 디렉토리<a href="#fn6" class="footnote-ref" id="fnref6"><sup>6</sup></a>를 표시하고 있는 것입니다. 마지막 부분에는 <strong>“?”</strong> 이후로 해당 경로에 저장되어 있는 여러 정보 중에서 정확히 어떤 내용을 웹에 표시할 것인지 특정하는 검색쿼리가 붙어있습니다. 여기서는 <strong>“code=KOSPI”</strong>와 <strong>“page=1”</strong>이라는 두가지 키워드로 구성되어 있고 각각의 키워드는 <strong>“&amp;”</strong>로 묶여있습니다.</p>
+<p>세 부분의 URL을 종합해서 곱씹어보면 <code>"네이버 증권 서비스(https://finance.naver.com)에서 일별시세(/sise/sise_index_day.nhn)에 관한 자료를 찾는데 KOSPI 지수(code=KOSPI)의 첫번째 페이지(page=1)만 표시하라"</code>는 뜻으로 쉽게 연결이 되네요. 인터넷 주소만 봐도 무슨 내용인지 대충 감이 잡히지 않습니까?</p>
+<p>다만, 이러한 URL 구성이 인터넷 요청 메소드 중에서는 <strong>GET 요청</strong>에 해당되는 것으로, <strong>POST 요청</strong>에서는 조금 다르게 표현된다는 것을 유의해야 합니다. 예컨대 <strong>POST 요청</strong>에서는 쿼리 정보가 겉으로 드러나지 않고 <strong>“body”</strong>의 형태로 숨겨있습니다. 그래서 보안에는 <strong>GET 요청</strong> 보다 <strong>POST 요청</strong>이 더 유리하다고 하는데, 자세한 내용은 <a href="https://gbkim01.github.io/myblog/courses/r_tip_1/2-%EC%9A%94%EC%B2%AD%EA%B3%BC-%EC%9D%91%EB%8B%B5/">다음 페이지</a>에서 다루겠습니다.</p>
 </div>
 </div>
 <div class="footnotes">
@@ -111,5 +121,6 @@ Figure 3: 네트워크의 ’문서’항목
 <li id="fn3"><p>영문판에서는 “header”로 표기되기도 합니다.<a href="#fnref3" class="footnote-back">↩︎</a></p></li>
 <li id="fn4"><p>영문판에서는 “Request URL”로 표시됩니다<a href="#fnref4" class="footnote-back">↩︎</a></p></li>
 <li id="fn5"><p>영문으로는 "DOC" 입니다.<a href="#fnref5" class="footnote-back">↩︎</a></p></li>
+<li id="fn6"><p>단순하게 <strong>“폴더”</strong>라고 이해하면 편하겠습니다.<a href="#fnref6" class="footnote-back">↩︎</a></p></li>
 </ol>
 </div>

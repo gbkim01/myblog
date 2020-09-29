@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>日常茶飯事</title>
-    <link>/</link>
-      <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <link>/myblog/</link>
+      <atom:link href="/myblog/index.xml" rel="self" type="application/rss+xml" />
     <description>日常茶飯事</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 본 블로그에 게시된 모든 컨텐츠의 저작권은 블로그 주인에게 있습니다.</copyright><lastBuildDate>Sat, 01 Jun 2030 13:00:00 +0000</lastBuildDate>
     <image>
-      <url>/media/icon-32.png</url>
+      <url>/myblog/media/icon-32.png</url>
       <title>日常茶飯事</title>
-      <link>/</link>
+      <link>/myblog/</link>
     </image>
     
     <item>
       <title>1. Target 페이지 식별</title>
-      <link>/courses/r_tip_1/1_target-%ED%8E%98%EC%9D%B4%EC%A7%80-%EC%8B%9D%EB%B3%84/</link>
+      <link>/myblog/courses/r_tip_1/1_target-%ED%8E%98%EC%9D%B4%EC%A7%80-%EC%8B%9D%EB%B3%84/</link>
       <pubDate>Sat, 01 Aug 2020 00:00:00 +0000</pubDate>
-      <guid>/courses/r_tip_1/1_target-%ED%8E%98%EC%9D%B4%EC%A7%80-%EC%8B%9D%EB%B3%84/</guid>
+      <guid>/myblog/courses/r_tip_1/1_target-%ED%8E%98%EC%9D%B4%EC%A7%80-%EC%8B%9D%EB%B3%84/</guid>
       <description>
 
 &lt;div id=&#34;TOC&#34;&gt;
@@ -100,6 +100,16 @@ Figure 3: 네트워크의 ’문서’항목
 &lt;/div&gt;
 &lt;div id=&#34;인터넷-주소의-구성&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;인터넷 주소의 구성&lt;/h3&gt;
+&lt;div class=&#34;figure&#34; style=&#34;text-align: center&#34;&gt;&lt;span id=&#34;fig:figs4&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;https://user-images.githubusercontent.com/30010992/90947380-59115680-e470-11ea-8ce0-de44cdcf7555.PNG&#34; alt=&#34;인터넷 주소의 구성&#34;  /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figure 4: 인터넷 주소의 구성
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;앞절에서 파악한 URL은 크게 세 부분으로 나뉘어져 있습니다. Figure &lt;a href=&#34;#fig:figs4&#34;&gt;4&lt;/a&gt;를 보겠습니다.&lt;/p&gt;
+&lt;p&gt;먼저 &lt;strong&gt;“&lt;a href=&#34;https://&#34; class=&#34;uri&#34;&gt;https://&lt;/a&gt;”&lt;/strong&gt; 부터 &lt;strong&gt;“.com”&lt;/strong&gt; 까지 이어지는 도메인 주소가 있습니다. 다른 주소로는 &lt;strong&gt;“.kr”&lt;/strong&gt;, &lt;strong&gt;“.org”&lt;/strong&gt;, &lt;strong&gt;“.net”&lt;/strong&gt;으로 끝나는 인터넷 도메인이 여기에 해당됩니다. 도메인 주소 바로 다음으로는 해당 정보가 위치한 경로, 즉 &lt;strong&gt;“/sise/sise_index_day.nhn”&lt;/strong&gt;이 표시되어 있습니다. 즉, 최상위 호스트인 &lt;strong&gt;“&lt;a href=&#34;https://finance.naver.com&#34; class=&#34;uri&#34;&gt;https://finance.naver.com&lt;/a&gt;”&lt;/strong&gt; 안에 KOSPI 시세 정보가 위치한 디렉토리&lt;a href=&#34;#fn6&#34; class=&#34;footnote-ref&#34; id=&#34;fnref6&#34;&gt;&lt;sup&gt;6&lt;/sup&gt;&lt;/a&gt;를 표시하고 있는 것입니다. 마지막 부분에는 &lt;strong&gt;“?”&lt;/strong&gt; 이후로 해당 경로에 저장되어 있는 여러 정보 중에서 정확히 어떤 내용을 웹에 표시할 것인지 특정하는 검색쿼리가 붙어있습니다. 여기서는 &lt;strong&gt;“code=KOSPI”&lt;/strong&gt;와 &lt;strong&gt;“page=1”&lt;/strong&gt;이라는 두가지 키워드로 구성되어 있고 각각의 키워드는 &lt;strong&gt;“&amp;amp;”&lt;/strong&gt;로 묶여있습니다.&lt;/p&gt;
+&lt;p&gt;세 부분의 URL을 종합해서 곱씹어보면 &lt;code&gt;&#34;네이버 증권 서비스(https://finance.naver.com)에서 일별시세(/sise/sise_index_day.nhn)에 관한 자료를 찾는데 KOSPI 지수(code=KOSPI)의 첫번째 페이지(page=1)만 표시하라&#34;&lt;/code&gt;는 뜻으로 쉽게 연결이 되네요. 인터넷 주소만 봐도 무슨 내용인지 대충 감이 잡히지 않습니까?&lt;/p&gt;
+&lt;p&gt;다만, 이러한 URL 구성이 인터넷 요청 메소드 중에서는 &lt;strong&gt;GET 요청&lt;/strong&gt;에 해당되는 것으로, &lt;strong&gt;POST 요청&lt;/strong&gt;에서는 조금 다르게 표현된다는 것을 유의해야 합니다. 예컨대 &lt;strong&gt;POST 요청&lt;/strong&gt;에서는 쿼리 정보가 겉으로 드러나지 않고 &lt;strong&gt;“body”&lt;/strong&gt;의 형태로 숨겨있습니다. 그래서 보안에는 &lt;strong&gt;GET 요청&lt;/strong&gt; 보다 &lt;strong&gt;POST 요청&lt;/strong&gt;이 더 유리하다고 하는데, 자세한 내용은 &lt;a href=&#34;https://gbkim01.github.io/myblog/courses/r_tip_1/2-%EC%9A%94%EC%B2%AD%EA%B3%BC-%EC%9D%91%EB%8B%B5/&#34;&gt;다음 페이지&lt;/a&gt;에서 다루겠습니다.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;footnotes&#34;&gt;
@@ -110,6 +120,7 @@ Figure 3: 네트워크의 ’문서’항목
 &lt;li id=&#34;fn3&#34;&gt;&lt;p&gt;영문판에서는 “header”로 표기되기도 합니다.&lt;a href=&#34;#fnref3&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;li id=&#34;fn4&#34;&gt;&lt;p&gt;영문판에서는 “Request URL”로 표시됩니다&lt;a href=&#34;#fnref4&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;li id=&#34;fn5&#34;&gt;&lt;p&gt;영문으로는 &#34;DOC&#34; 입니다.&lt;a href=&#34;#fnref5&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn6&#34;&gt;&lt;p&gt;단순하게 &lt;strong&gt;“폴더”&lt;/strong&gt;라고 이해하면 편하겠습니다.&lt;a href=&#34;#fnref6&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
 </description>
@@ -117,9 +128,9 @@ Figure 3: 네트워크의 ’문서’항목
     
     <item>
       <title>2. 요청과 응답</title>
-      <link>/courses/r_tip_1/2-%EC%9A%94%EC%B2%AD%EA%B3%BC-%EC%9D%91%EB%8B%B5/</link>
+      <link>/myblog/courses/r_tip_1/2-%EC%9A%94%EC%B2%AD%EA%B3%BC-%EC%9D%91%EB%8B%B5/</link>
       <pubDate>Mon, 03 Aug 2020 00:00:00 +0000</pubDate>
-      <guid>/courses/r_tip_1/2-%EC%9A%94%EC%B2%AD%EA%B3%BC-%EC%9D%91%EB%8B%B5/</guid>
+      <guid>/myblog/courses/r_tip_1/2-%EC%9A%94%EC%B2%AD%EA%B3%BC-%EC%9D%91%EB%8B%B5/</guid>
       <description>
 
 &lt;div id=&#34;TOC&#34;&gt;
@@ -204,9 +215,9 @@ Figure 3: HTTP 상태 코드&lt;a href=&#34;#fn5&#34; class=&#34;footnote-ref&#3
     
     <item>
       <title>Example Talk</title>
-      <link>/talk/example/</link>
+      <link>/myblog/talk/example/</link>
       <pubDate>Sat, 01 Jun 2030 13:00:00 +0000</pubDate>
-      <guid>/talk/example/</guid>
+      <guid>/myblog/talk/example/</guid>
       <description>&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;Slides can be added in a few ways:&lt;/p&gt;
 &lt;ul&gt;
@@ -222,9 +233,9 @@ Figure 3: HTTP 상태 코드&lt;a href=&#34;#fn5&#34; class=&#34;footnote-ref&#3
     
     <item>
       <title>개인서버 구축과 친구 결혼식 참석</title>
-      <link>/post/%EA%B0%9C%EC%9D%B8%EC%84%9C%EB%B2%84-%EA%B5%AC%EC%B6%95%EA%B3%BC-%EC%B9%9C%EA%B5%AC-%EA%B2%B0%ED%98%BC%EC%8B%9D-%EC%B0%B8%EC%84%9D/</link>
+      <link>/myblog/post/%EA%B0%9C%EC%9D%B8%EC%84%9C%EB%B2%84-%EA%B5%AC%EC%B6%95%EA%B3%BC-%EC%B9%9C%EA%B5%AC-%EA%B2%B0%ED%98%BC%EC%8B%9D-%EC%B0%B8%EC%84%9D/</link>
       <pubDate>Sun, 20 Sep 2020 00:00:00 +0000</pubDate>
-      <guid>/post/%EA%B0%9C%EC%9D%B8%EC%84%9C%EB%B2%84-%EA%B5%AC%EC%B6%95%EA%B3%BC-%EC%B9%9C%EA%B5%AC-%EA%B2%B0%ED%98%BC%EC%8B%9D-%EC%B0%B8%EC%84%9D/</guid>
+      <guid>/myblog/post/%EA%B0%9C%EC%9D%B8%EC%84%9C%EB%B2%84-%EA%B5%AC%EC%B6%95%EA%B3%BC-%EC%B9%9C%EA%B5%AC-%EA%B2%B0%ED%98%BC%EC%8B%9D-%EC%B0%B8%EC%84%9D/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://user-images.githubusercontent.com/30010992/93308151-df854200-f83c-11ea-926d-5e8ad5e75d33.PNG&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h1 id=&#34;개인서버를-만들었다&#34;&gt;개인서버를 만들었다.&lt;/h1&gt;
@@ -252,9 +263,9 @@ Figure 3: HTTP 상태 코드&lt;a href=&#34;#fn5&#34; class=&#34;footnote-ref&#3
     
     <item>
       <title>Rstudio Cloud에서 KoNLP 설치</title>
-      <link>/courses/settings/rstudio-cloud%EC%97%90%EC%84%9C-konlp-%EC%84%A4%EC%B9%98/</link>
+      <link>/myblog/courses/settings/rstudio-cloud%EC%97%90%EC%84%9C-konlp-%EC%84%A4%EC%B9%98/</link>
       <pubDate>Wed, 02 Sep 2020 00:00:00 +0000</pubDate>
-      <guid>/courses/settings/rstudio-cloud%EC%97%90%EC%84%9C-konlp-%EC%84%A4%EC%B9%98/</guid>
+      <guid>/myblog/courses/settings/rstudio-cloud%EC%97%90%EC%84%9C-konlp-%EC%84%A4%EC%B9%98/</guid>
       <description>
 
 &lt;div id=&#34;TOC&#34;&gt;
@@ -321,9 +332,9 @@ $ rm KoNLP.zip&lt;/code&gt;&lt;/pre&gt;
     
     <item>
       <title>글쓰기의 어려움</title>
-      <link>/post/%EA%B8%80%EC%93%B0%EA%B8%B0%EC%9D%98-%EC%96%B4%EB%A0%A4%EC%9B%80/</link>
+      <link>/myblog/post/%EA%B8%80%EC%93%B0%EA%B8%B0%EC%9D%98-%EC%96%B4%EB%A0%A4%EC%9B%80/</link>
       <pubDate>Mon, 24 Aug 2020 00:00:00 +0000</pubDate>
-      <guid>/post/%EA%B8%80%EC%93%B0%EA%B8%B0%EC%9D%98-%EC%96%B4%EB%A0%A4%EC%9B%80/</guid>
+      <guid>/myblog/post/%EA%B8%80%EC%93%B0%EA%B8%B0%EC%9D%98-%EC%96%B4%EB%A0%A4%EC%9B%80/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://get.pxhere.com/photo/writing-work-hand-white-pen-letter-business-writer-paper-page-education-brand-font-art-study-sketch-drawing-design-text-handwriting-message-inspiration-calligraphy-document-author-journalist-1085357.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;글-쓰기의-어려움&#34;&gt;글 쓰기의 어려움&lt;/h2&gt;
 &lt;hr&gt;
@@ -335,9 +346,9 @@ $ rm KoNLP.zip&lt;/code&gt;&lt;/pre&gt;
     
     <item>
       <title>Gram17(2018년형) 최신 리눅스 커널 설치</title>
-      <link>/courses/settings/gram17-2018-latest-linux-kernel/</link>
+      <link>/myblog/courses/settings/gram17-2018-latest-linux-kernel/</link>
       <pubDate>Mon, 10 Aug 2020 00:00:00 +0000</pubDate>
-      <guid>/courses/settings/gram17-2018-latest-linux-kernel/</guid>
+      <guid>/myblog/courses/settings/gram17-2018-latest-linux-kernel/</guid>
       <description>
 
 &lt;div id=&#34;TOC&#34;&gt;
@@ -378,9 +389,9 @@ $ rm KoNLP.zip&lt;/code&gt;&lt;/pre&gt;
     
     <item>
       <title>Rstudio Cloud의 그래프에서 한글폰트의 출력</title>
-      <link>/courses/settings/korean-with-plot-in-rstudio-cloud/</link>
+      <link>/myblog/courses/settings/korean-with-plot-in-rstudio-cloud/</link>
       <pubDate>Mon, 10 Aug 2020 00:00:00 +0000</pubDate>
-      <guid>/courses/settings/korean-with-plot-in-rstudio-cloud/</guid>
+      <guid>/myblog/courses/settings/korean-with-plot-in-rstudio-cloud/</guid>
       <description>
 &lt;script src=&#34;./rmarkdown-libs/htmlwidgets/htmlwidgets.js&#34;&gt;&lt;/script&gt;
 &lt;script src=&#34;./rmarkdown-libs/plotly-binding/plotly.js&#34;&gt;&lt;/script&gt;
@@ -487,9 +498,9 @@ svgPanZoom(
     
     <item>
       <title>블로그에 &#34;유용한 팁&#34; 섹션을 추가했다.</title>
-      <link>/post/%EB%B8%94%EB%A1%9C%EA%B7%B8%EC%97%90-%EC%9C%A0%EC%9A%A9%ED%95%9C-%ED%8C%81-%EC%84%B9%EC%85%98%EC%9D%84-%EC%B6%94%EA%B0%80%ED%96%88%EB%8B%A4/</link>
+      <link>/myblog/post/%EB%B8%94%EB%A1%9C%EA%B7%B8%EC%97%90-%EC%9C%A0%EC%9A%A9%ED%95%9C-%ED%8C%81-%EC%84%B9%EC%85%98%EC%9D%84-%EC%B6%94%EA%B0%80%ED%96%88%EB%8B%A4/</link>
       <pubDate>Sat, 01 Aug 2020 00:00:00 +0000</pubDate>
-      <guid>/post/%EB%B8%94%EB%A1%9C%EA%B7%B8%EC%97%90-%EC%9C%A0%EC%9A%A9%ED%95%9C-%ED%8C%81-%EC%84%B9%EC%85%98%EC%9D%84-%EC%B6%94%EA%B0%80%ED%96%88%EB%8B%A4/</guid>
+      <guid>/myblog/post/%EB%B8%94%EB%A1%9C%EA%B7%B8%EC%97%90-%EC%9C%A0%EC%9A%A9%ED%95%9C-%ED%8C%81-%EC%84%B9%EC%85%98%EC%9D%84-%EC%B6%94%EA%B0%80%ED%96%88%EB%8B%A4/</guid>
       <description>
 
 
@@ -519,9 +530,9 @@ svgPanZoom(
     
     <item>
       <title>Rstudio cloud를 이용한 블로그 포스팅</title>
-      <link>/post/rstudio-cloud%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EB%B8%94%EB%A1%9C%EA%B7%B8-%ED%8F%AC%EC%8A%A4%ED%8C%85/</link>
+      <link>/myblog/post/rstudio-cloud%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EB%B8%94%EB%A1%9C%EA%B7%B8-%ED%8F%AC%EC%8A%A4%ED%8C%85/</link>
       <pubDate>Tue, 28 Jul 2020 00:00:00 +0000</pubDate>
-      <guid>/post/rstudio-cloud%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EB%B8%94%EB%A1%9C%EA%B7%B8-%ED%8F%AC%EC%8A%A4%ED%8C%85/</guid>
+      <guid>/myblog/post/rstudio-cloud%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EB%B8%94%EB%A1%9C%EA%B7%B8-%ED%8F%AC%EC%8A%A4%ED%8C%85/</guid>
       <description>
 
 
@@ -543,9 +554,9 @@ svgPanZoom(
     
     <item>
       <title>WSl을 이용해 R 사용하기</title>
-      <link>/post/wsl%EC%9D%84-%EC%9D%B4%EC%9A%A9%ED%95%B4-r-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</link>
+      <link>/myblog/post/wsl%EC%9D%84-%EC%9D%B4%EC%9A%A9%ED%95%B4-r-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</link>
       <pubDate>Sat, 12 Oct 2019 00:00:00 +0000</pubDate>
-      <guid>/post/wsl%EC%9D%84-%EC%9D%B4%EC%9A%A9%ED%95%B4-r-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</guid>
+      <guid>/myblog/post/wsl%EC%9D%84-%EC%9D%B4%EC%9A%A9%ED%95%B4-r-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</guid>
       <description>&lt;h2 id=&#34;using-r-on-wslwindows-subsystem-for-linux&#34;&gt;&lt;strong&gt;Using R on WSL(Windows Subsystem for Linux)&lt;/strong&gt;&lt;/h2&gt;
 &lt;p&gt;WSL에 &lt;strong&gt;Rstudio-server&lt;/strong&gt;를 설치하면 윈도우 브라우저를 통해 리눅스 버전의 R을 사용할 수 있는데, 이를 위한 기본적인 설정 방법과 의존성 문제 해결방법 등을 정리해서 올린다. WSL은 우분투 18.04 LTS 버전을 기준으로 한다.&lt;/p&gt;
 &lt;h3 id=&#34;1-microsoft-r-open-설치&#34;&gt;1. Microsoft R Open 설치&lt;/h3&gt;
@@ -619,9 +630,9 @@ sudo apt install gfortran curl
     
     <item>
       <title>데이터 프레임에서 짝수행과 홀수행 선별하는 다른 방법</title>
-      <link>/post/%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%94%84%EB%A0%88%EC%9E%84%EC%97%90%EC%84%9C-%EC%A7%9D%EC%88%98%ED%96%89%EA%B3%BC-%ED%99%80%EC%88%98%ED%96%89-%EC%84%A0%EB%B3%84%ED%95%98%EB%8A%94-%EB%8B%A4%EB%A5%B8-%EB%B0%A9%EB%B2%95/</link>
+      <link>/myblog/post/%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%94%84%EB%A0%88%EC%9E%84%EC%97%90%EC%84%9C-%EC%A7%9D%EC%88%98%ED%96%89%EA%B3%BC-%ED%99%80%EC%88%98%ED%96%89-%EC%84%A0%EB%B3%84%ED%95%98%EB%8A%94-%EB%8B%A4%EB%A5%B8-%EB%B0%A9%EB%B2%95/</link>
       <pubDate>Fri, 04 Oct 2019 00:00:00 +0000</pubDate>
-      <guid>/post/%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%94%84%EB%A0%88%EC%9E%84%EC%97%90%EC%84%9C-%EC%A7%9D%EC%88%98%ED%96%89%EA%B3%BC-%ED%99%80%EC%88%98%ED%96%89-%EC%84%A0%EB%B3%84%ED%95%98%EB%8A%94-%EB%8B%A4%EB%A5%B8-%EB%B0%A9%EB%B2%95/</guid>
+      <guid>/myblog/post/%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%94%84%EB%A0%88%EC%9E%84%EC%97%90%EC%84%9C-%EC%A7%9D%EC%88%98%ED%96%89%EA%B3%BC-%ED%99%80%EC%88%98%ED%96%89-%EC%84%A0%EB%B3%84%ED%95%98%EB%8A%94-%EB%8B%A4%EB%A5%B8-%EB%B0%A9%EB%B2%95/</guid>
       <description>
 
 
@@ -662,9 +673,9 @@ df %&amp;gt;% filter(row_number() %% 3 == 1)&lt;/code&gt;&lt;/pre&gt;
     
     <item>
       <title>데이터셋의 짝수행과 홀수행 구분</title>
-      <link>/post/%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%94%84%EB%A0%88%EC%9E%84%EC%97%90%EC%84%9C-%EC%A7%9D%EC%88%98%ED%96%89%EA%B3%BC-%ED%99%80%EC%88%98%ED%96%89-%EC%84%A0%EB%B3%84%ED%95%98%EA%B8%B0/</link>
+      <link>/myblog/post/%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%94%84%EB%A0%88%EC%9E%84%EC%97%90%EC%84%9C-%EC%A7%9D%EC%88%98%ED%96%89%EA%B3%BC-%ED%99%80%EC%88%98%ED%96%89-%EC%84%A0%EB%B3%84%ED%95%98%EA%B8%B0/</link>
       <pubDate>Tue, 01 Oct 2019 00:00:00 +0000</pubDate>
-      <guid>/post/%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%94%84%EB%A0%88%EC%9E%84%EC%97%90%EC%84%9C-%EC%A7%9D%EC%88%98%ED%96%89%EA%B3%BC-%ED%99%80%EC%88%98%ED%96%89-%EC%84%A0%EB%B3%84%ED%95%98%EA%B8%B0/</guid>
+      <guid>/myblog/post/%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%94%84%EB%A0%88%EC%9E%84%EC%97%90%EC%84%9C-%EC%A7%9D%EC%88%98%ED%96%89%EA%B3%BC-%ED%99%80%EC%88%98%ED%96%89-%EC%84%A0%EB%B3%84%ED%95%98%EA%B8%B0/</guid>
       <description>
 
 
@@ -685,9 +696,9 @@ data_odd &amp;lt;- filter(data, seq_len(nrow(data))%% 2==1) # 홀수행&lt;/code
     
     <item>
       <title>URL 리스트 취합</title>
-      <link>/post/web-scraping-with-r-www-climatewatchdata-org/</link>
+      <link>/myblog/post/web-scraping-with-r-www-climatewatchdata-org/</link>
       <pubDate>Sun, 29 Sep 2019 00:00:00 +0000</pubDate>
-      <guid>/post/web-scraping-with-r-www-climatewatchdata-org/</guid>
+      <guid>/myblog/post/web-scraping-with-r-www-climatewatchdata-org/</guid>
       <description>
 
 
@@ -785,9 +796,9 @@ section_sector &amp;lt;- cbind(section_sector, link_pool)&lt;/code&gt;&lt;/pre&g
     
     <item>
       <title>블로그에 첫 글을 남긴다.</title>
-      <link>/post/%EB%B8%94%EB%A1%9C%EA%B7%B8%EC%97%90-%EC%B2%AB-%EA%B8%80%EC%9D%84-%EB%82%A8%EA%B8%B4%EB%8B%A4/</link>
+      <link>/myblog/post/%EB%B8%94%EB%A1%9C%EA%B7%B8%EC%97%90-%EC%B2%AB-%EA%B8%80%EC%9D%84-%EB%82%A8%EA%B8%B4%EB%8B%A4/</link>
       <pubDate>Sat, 28 Sep 2019 00:00:00 +0000</pubDate>
-      <guid>/post/%EB%B8%94%EB%A1%9C%EA%B7%B8%EC%97%90-%EC%B2%AB-%EA%B8%80%EC%9D%84-%EB%82%A8%EA%B8%B4%EB%8B%A4/</guid>
+      <guid>/myblog/post/%EB%B8%94%EB%A1%9C%EA%B7%B8%EC%97%90-%EC%B2%AB-%EA%B8%80%EC%9D%84-%EB%82%A8%EA%B8%B4%EB%8B%A4/</guid>
       <description>&lt;p&gt;spss나 stata 정도 돌려서 회귀분석이나 해본게 전부인 문과생인데 최근 몇달 동안 R과 파이썬을 들여다보고 있다. 사실은 다른 할 일들은 좀체 하기 싫어서 그냥 외도하는 것이지만&amp;hellip; 이제는 더는 미룰수 없는 일 때문에 마음은 죄여 오는데, 그러면 그럴수록 한 눈 팔게된다.&lt;/p&gt;
 &lt;p&gt;주변에 물어볼 사람도 없이 유투브 동영상 보며 흉내내기에 그친 결과물이지만 다른 사람들한테 점검 받고 수정받으면 재밌겠다 싶어 &lt;strong&gt;Github&lt;/strong&gt;과 &lt;strong&gt;blogdown&lt;/strong&gt;으로 블로그를 만들었다. blogdown의 설치 및 운용은 &lt;strong&gt;mrchypark&lt;/strong&gt;님의 유투브 강좌인 
 &lt;a href=&#34;https://www.youtube.com/watch?v=zeYn0maX1nQ&amp;amp;t=2723s&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;R코홀릭1&lt;/strong&gt;&lt;/a&gt;과  
@@ -802,9 +813,9 @@ section_sector &amp;lt;- cbind(section_sector, link_pool)&lt;/code&gt;&lt;/pre&g
     
     <item>
       <title>An example preprint / working paper</title>
-      <link>/publication/preprint/</link>
+      <link>/myblog/publication/preprint/</link>
       <pubDate>Sun, 07 Apr 2019 00:00:00 +0000</pubDate>
-      <guid>/publication/preprint/</guid>
+      <guid>/myblog/publication/preprint/</guid>
       <description>&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;Supplementary notes can be added here, including 
 &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;code and math&lt;/a&gt;.&lt;/p&gt;
@@ -813,9 +824,9 @@ section_sector &amp;lt;- cbind(section_sector, link_pool)&lt;/code&gt;&lt;/pre&g
     
     <item>
       <title>Slides</title>
-      <link>/slides/example/</link>
+      <link>/myblog/slides/example/</link>
       <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
-      <guid>/slides/example/</guid>
+      <guid>/myblog/slides/example/</guid>
       <description>&lt;h1 id=&#34;welcome-to-slides&#34;&gt;Welcome to Slides&lt;/h1&gt;
 &lt;p&gt;
 &lt;a href=&#34;https://sourcethemes.com/academic/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Academic&lt;/a&gt;&lt;/p&gt;
@@ -941,27 +952,27 @@ Three
     
     <item>
       <title>Privacy Policy</title>
-      <link>/privacy/</link>
+      <link>/myblog/privacy/</link>
       <pubDate>Thu, 28 Jun 2018 00:00:00 +0100</pubDate>
-      <guid>/privacy/</guid>
+      <guid>/myblog/privacy/</guid>
       <description>&lt;p&gt;&amp;hellip;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Terms</title>
-      <link>/terms/</link>
+      <link>/myblog/terms/</link>
       <pubDate>Thu, 28 Jun 2018 00:00:00 +0100</pubDate>
-      <guid>/terms/</guid>
+      <guid>/myblog/terms/</guid>
       <description>&lt;p&gt;&amp;hellip;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>About</title>
-      <link>/about/</link>
+      <link>/myblog/about/</link>
       <pubDate>Thu, 05 May 2016 21:48:51 -0700</pubDate>
-      <guid>/about/</guid>
+      <guid>/myblog/about/</guid>
       <description>&lt;p&gt;This is a &amp;ldquo;hello world&amp;rdquo; example website for the 
 &lt;a href=&#34;https://github.com/rstudio/blogdown&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;blogdown&lt;/strong&gt;&lt;/a&gt; package. The theme was forked from 
 &lt;a href=&#34;https://github.com/jrutheiser/hugo-lithium-theme&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;@jrutheiser/hugo-lithium-theme&lt;/a&gt; and modified by 
@@ -971,17 +982,17 @@ Three
     
     <item>
       <title>External Project</title>
-      <link>/project/external-project/</link>
+      <link>/myblog/project/external-project/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>/project/external-project/</guid>
+      <guid>/myblog/project/external-project/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Internal Project</title>
-      <link>/project/internal-project/</link>
+      <link>/myblog/project/internal-project/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>/project/internal-project/</guid>
+      <guid>/myblog/project/internal-project/</guid>
       <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
 &lt;p&gt;Nullam vel molestie justo. Curabitur vitae efficitur leo. In hac habitasse platea dictumst. Sed pulvinar mauris dui, eget varius purus congue ac. Nulla euismod, lorem vel elementum dapibus, nunc justo porta mi, sed tempus est est vel tellus. Nam et enim eleifend, laoreet sem sit amet, elementum sem. Morbi ut leo congue, maximus velit ut, finibus arcu. In et libero cursus, rutrum risus non, molestie leo. Nullam congue quam et volutpat malesuada. Sed risus tortor, pulvinar et dictum nec, sodales non mi. Phasellus lacinia commodo laoreet. Nam mollis, erat in feugiat consectetur, purus eros egestas tellus, in auctor urna odio at nibh. Mauris imperdiet nisi ac magna convallis, at rhoncus ligula cursus.&lt;/p&gt;
 &lt;p&gt;Cras aliquam rhoncus ipsum, in hendrerit nunc mattis vitae. Duis vitae efficitur metus, ac tempus leo. Cras nec fringilla lacus. Quisque sit amet risus at ipsum pharetra commodo. Sed aliquam mauris at consequat eleifend. Praesent porta, augue sed viverra bibendum, neque ante euismod ante, in vehicula justo lorem ac eros. Suspendisse augue libero, venenatis eget tincidunt ut, malesuada at lorem. Donec vitae bibendum arcu. Aenean maximus nulla non pretium iaculis. Quisque imperdiet, nulla in pulvinar aliquet, velit quam ultrices quam, sit amet fringilla leo sem vel nunc. Mauris in lacinia lacus.&lt;/p&gt;
@@ -992,9 +1003,9 @@ Three
     
     <item>
       <title>An example journal article</title>
-      <link>/publication/journal-article/</link>
+      <link>/myblog/publication/journal-article/</link>
       <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
-      <guid>/publication/journal-article/</guid>
+      <guid>/myblog/publication/journal-article/</guid>
       <description>&lt;!-- raw HTML omitted --&gt;
 &lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;Supplementary notes can be added here, including 
@@ -1004,9 +1015,9 @@ Three
     
     <item>
       <title>An example conference paper</title>
-      <link>/publication/conference-paper/</link>
+      <link>/myblog/publication/conference-paper/</link>
       <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
-      <guid>/publication/conference-paper/</guid>
+      <guid>/myblog/publication/conference-paper/</guid>
       <description>&lt;!-- raw HTML omitted --&gt;
 &lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;Supplementary notes can be added here, including 

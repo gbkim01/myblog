@@ -32,7 +32,7 @@ ignoreFiles = ["\\.ipynb$", ".ipynb_checkpoints$", "\\.Rmd$", "\\.Rmarkdown$", "
 publishDir = "docs"
 disqusShortname = "gbkim01"
 canonifyURLs = true
-relativeurls = true
+# relativeurls = true
 
 [outputs]
   home = [ "HTML", "RSS", "JSON", "WebAppManifest" ]

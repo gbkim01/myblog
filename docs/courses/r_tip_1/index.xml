@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>개요 | 日常茶飯事</title>
-    <link>/courses/r_tip_1/</link>
-      <atom:link href="/courses/r_tip_1/index.xml" rel="self" type="application/rss+xml" />
+    <link>/myblog/courses/r_tip_1/</link>
+      <atom:link href="/myblog/courses/r_tip_1/index.xml" rel="self" type="application/rss+xml" />
     <description>개요</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 본 블로그에 게시된 모든 컨텐츠의 저작권은 블로그 주인에게 있습니다.</copyright><lastBuildDate>Sat, 01 Aug 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/media/icon-32.png</url>
+      <url>/myblog/media/icon-32.png</url>
       <title>개요</title>
-      <link>/courses/r_tip_1/</link>
+      <link>/myblog/courses/r_tip_1/</link>
     </image>
     
     <item>
       <title>1. Target 페이지 식별</title>
-      <link>/courses/r_tip_1/1_target-%ED%8E%98%EC%9D%B4%EC%A7%80-%EC%8B%9D%EB%B3%84/</link>
+      <link>/myblog/courses/r_tip_1/1_target-%ED%8E%98%EC%9D%B4%EC%A7%80-%EC%8B%9D%EB%B3%84/</link>
       <pubDate>Sat, 01 Aug 2020 00:00:00 +0000</pubDate>
-      <guid>/courses/r_tip_1/1_target-%ED%8E%98%EC%9D%B4%EC%A7%80-%EC%8B%9D%EB%B3%84/</guid>
+      <guid>/myblog/courses/r_tip_1/1_target-%ED%8E%98%EC%9D%B4%EC%A7%80-%EC%8B%9D%EB%B3%84/</guid>
       <description>
 
 &lt;div id=&#34;TOC&#34;&gt;
@@ -100,6 +100,16 @@ Figure 3: 네트워크의 ’문서’항목
 &lt;/div&gt;
 &lt;div id=&#34;인터넷-주소의-구성&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;인터넷 주소의 구성&lt;/h3&gt;
+&lt;div class=&#34;figure&#34; style=&#34;text-align: center&#34;&gt;&lt;span id=&#34;fig:figs4&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;https://user-images.githubusercontent.com/30010992/90947380-59115680-e470-11ea-8ce0-de44cdcf7555.PNG&#34; alt=&#34;인터넷 주소의 구성&#34;  /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figure 4: 인터넷 주소의 구성
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;앞절에서 파악한 URL은 크게 세 부분으로 나뉘어져 있습니다. Figure &lt;a href=&#34;#fig:figs4&#34;&gt;4&lt;/a&gt;를 보겠습니다.&lt;/p&gt;
+&lt;p&gt;먼저 &lt;strong&gt;“&lt;a href=&#34;https://&#34; class=&#34;uri&#34;&gt;https://&lt;/a&gt;”&lt;/strong&gt; 부터 &lt;strong&gt;“.com”&lt;/strong&gt; 까지 이어지는 도메인 주소가 있습니다. 다른 주소로는 &lt;strong&gt;“.kr”&lt;/strong&gt;, &lt;strong&gt;“.org”&lt;/strong&gt;, &lt;strong&gt;“.net”&lt;/strong&gt;으로 끝나는 인터넷 도메인이 여기에 해당됩니다. 도메인 주소 바로 다음으로는 해당 정보가 위치한 경로, 즉 &lt;strong&gt;“/sise/sise_index_day.nhn”&lt;/strong&gt;이 표시되어 있습니다. 즉, 최상위 호스트인 &lt;strong&gt;“&lt;a href=&#34;https://finance.naver.com&#34; class=&#34;uri&#34;&gt;https://finance.naver.com&lt;/a&gt;”&lt;/strong&gt; 안에 KOSPI 시세 정보가 위치한 디렉토리&lt;a href=&#34;#fn6&#34; class=&#34;footnote-ref&#34; id=&#34;fnref6&#34;&gt;&lt;sup&gt;6&lt;/sup&gt;&lt;/a&gt;를 표시하고 있는 것입니다. 마지막 부분에는 &lt;strong&gt;“?”&lt;/strong&gt; 이후로 해당 경로에 저장되어 있는 여러 정보 중에서 정확히 어떤 내용을 웹에 표시할 것인지 특정하는 검색쿼리가 붙어있습니다. 여기서는 &lt;strong&gt;“code=KOSPI”&lt;/strong&gt;와 &lt;strong&gt;“page=1”&lt;/strong&gt;이라는 두가지 키워드로 구성되어 있고 각각의 키워드는 &lt;strong&gt;“&amp;amp;”&lt;/strong&gt;로 묶여있습니다.&lt;/p&gt;
+&lt;p&gt;세 부분의 URL을 종합해서 곱씹어보면 &lt;code&gt;&#34;네이버 증권 서비스(https://finance.naver.com)에서 일별시세(/sise/sise_index_day.nhn)에 관한 자료를 찾는데 KOSPI 지수(code=KOSPI)의 첫번째 페이지(page=1)만 표시하라&#34;&lt;/code&gt;는 뜻으로 쉽게 연결이 되네요. 인터넷 주소만 봐도 무슨 내용인지 대충 감이 잡히지 않습니까?&lt;/p&gt;
+&lt;p&gt;다만, 이러한 URL 구성이 인터넷 요청 메소드 중에서는 &lt;strong&gt;GET 요청&lt;/strong&gt;에 해당되는 것으로, &lt;strong&gt;POST 요청&lt;/strong&gt;에서는 조금 다르게 표현된다는 것을 유의해야 합니다. 예컨대 &lt;strong&gt;POST 요청&lt;/strong&gt;에서는 쿼리 정보가 겉으로 드러나지 않고 &lt;strong&gt;“body”&lt;/strong&gt;의 형태로 숨겨있습니다. 그래서 보안에는 &lt;strong&gt;GET 요청&lt;/strong&gt; 보다 &lt;strong&gt;POST 요청&lt;/strong&gt;이 더 유리하다고 하는데, 자세한 내용은 &lt;a href=&#34;https://gbkim01.github.io/myblog/courses/r_tip_1/2-%EC%9A%94%EC%B2%AD%EA%B3%BC-%EC%9D%91%EB%8B%B5/&#34;&gt;다음 페이지&lt;/a&gt;에서 다루겠습니다.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;footnotes&#34;&gt;
@@ -110,6 +120,7 @@ Figure 3: 네트워크의 ’문서’항목
 &lt;li id=&#34;fn3&#34;&gt;&lt;p&gt;영문판에서는 “header”로 표기되기도 합니다.&lt;a href=&#34;#fnref3&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;li id=&#34;fn4&#34;&gt;&lt;p&gt;영문판에서는 “Request URL”로 표시됩니다&lt;a href=&#34;#fnref4&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;li id=&#34;fn5&#34;&gt;&lt;p&gt;영문으로는 &#34;DOC&#34; 입니다.&lt;a href=&#34;#fnref5&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn6&#34;&gt;&lt;p&gt;단순하게 &lt;strong&gt;“폴더”&lt;/strong&gt;라고 이해하면 편하겠습니다.&lt;a href=&#34;#fnref6&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
 </description>
@@ -117,9 +128,9 @@ Figure 3: 네트워크의 ’문서’항목
     
     <item>
       <title>2. 요청과 응답</title>
-      <link>/courses/r_tip_1/2-%EC%9A%94%EC%B2%AD%EA%B3%BC-%EC%9D%91%EB%8B%B5/</link>
+      <link>/myblog/courses/r_tip_1/2-%EC%9A%94%EC%B2%AD%EA%B3%BC-%EC%9D%91%EB%8B%B5/</link>
       <pubDate>Mon, 03 Aug 2020 00:00:00 +0000</pubDate>
-      <guid>/courses/r_tip_1/2-%EC%9A%94%EC%B2%AD%EA%B3%BC-%EC%9D%91%EB%8B%B5/</guid>
+      <guid>/myblog/courses/r_tip_1/2-%EC%9A%94%EC%B2%AD%EA%B3%BC-%EC%9D%91%EB%8B%B5/</guid>
       <description>
 
 &lt;div id=&#34;TOC&#34;&gt;

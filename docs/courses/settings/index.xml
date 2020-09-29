@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>개요 | 日常茶飯事</title>
-    <link>/courses/settings/</link>
-      <atom:link href="/courses/settings/index.xml" rel="self" type="application/rss+xml" />
+    <link>/myblog/courses/settings/</link>
+      <atom:link href="/myblog/courses/settings/index.xml" rel="self" type="application/rss+xml" />
     <description>개요</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 본 블로그에 게시된 모든 컨텐츠의 저작권은 블로그 주인에게 있습니다.</copyright><lastBuildDate>Sat, 01 Aug 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/media/icon-32.png</url>
+      <url>/myblog/media/icon-32.png</url>
       <title>개요</title>
-      <link>/courses/settings/</link>
+      <link>/myblog/courses/settings/</link>
     </image>
     
     <item>
       <title>Rstudio Cloud에서 KoNLP 설치</title>
-      <link>/courses/settings/rstudio-cloud%EC%97%90%EC%84%9C-konlp-%EC%84%A4%EC%B9%98/</link>
+      <link>/myblog/courses/settings/rstudio-cloud%EC%97%90%EC%84%9C-konlp-%EC%84%A4%EC%B9%98/</link>
       <pubDate>Wed, 02 Sep 2020 00:00:00 +0000</pubDate>
-      <guid>/courses/settings/rstudio-cloud%EC%97%90%EC%84%9C-konlp-%EC%84%A4%EC%B9%98/</guid>
+      <guid>/myblog/courses/settings/rstudio-cloud%EC%97%90%EC%84%9C-konlp-%EC%84%A4%EC%B9%98/</guid>
       <description>
 
 &lt;div id=&#34;TOC&#34;&gt;
@@ -83,9 +83,9 @@ $ rm KoNLP.zip&lt;/code&gt;&lt;/pre&gt;
     
     <item>
       <title>Gram17(2018년형) 최신 리눅스 커널 설치</title>
-      <link>/courses/settings/gram17-2018-latest-linux-kernel/</link>
+      <link>/myblog/courses/settings/gram17-2018-latest-linux-kernel/</link>
       <pubDate>Mon, 10 Aug 2020 00:00:00 +0000</pubDate>
-      <guid>/courses/settings/gram17-2018-latest-linux-kernel/</guid>
+      <guid>/myblog/courses/settings/gram17-2018-latest-linux-kernel/</guid>
       <description>
 
 &lt;div id=&#34;TOC&#34;&gt;
@@ -126,9 +126,9 @@ $ rm KoNLP.zip&lt;/code&gt;&lt;/pre&gt;
     
     <item>
       <title>Rstudio Cloud의 그래프에서 한글폰트의 출력</title>
-      <link>/courses/settings/korean-with-plot-in-rstudio-cloud/</link>
+      <link>/myblog/courses/settings/korean-with-plot-in-rstudio-cloud/</link>
       <pubDate>Mon, 10 Aug 2020 00:00:00 +0000</pubDate>
-      <guid>/courses/settings/korean-with-plot-in-rstudio-cloud/</guid>
+      <guid>/myblog/courses/settings/korean-with-plot-in-rstudio-cloud/</guid>
       <description>
 &lt;script src=&#34;../../rmarkdown-libs/htmlwidgets/htmlwidgets.js&#34;&gt;&lt;/script&gt;
 &lt;script src=&#34;../../rmarkdown-libs/plotly-binding/plotly.js&#34;&gt;&lt;/script&gt;

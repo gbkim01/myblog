@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>R활용 | 日常茶飯事</title>
-    <link>/tags/r%ED%99%9C%EC%9A%A9/</link>
-      <atom:link href="/tags/r%ED%99%9C%EC%9A%A9/index.xml" rel="self" type="application/rss+xml" />
+    <link>/myblog/tags/r%ED%99%9C%EC%9A%A9/</link>
+      <atom:link href="/myblog/tags/r%ED%99%9C%EC%9A%A9/index.xml" rel="self" type="application/rss+xml" />
     <description>R활용</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 본 블로그에 게시된 모든 컨텐츠의 저작권은 블로그 주인에게 있습니다.</copyright><lastBuildDate>Sat, 12 Oct 2019 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/media/icon-32.png</url>
+      <url>/myblog/media/icon-32.png</url>
       <title>R활용</title>
-      <link>/tags/r%ED%99%9C%EC%9A%A9/</link>
+      <link>/myblog/tags/r%ED%99%9C%EC%9A%A9/</link>
     </image>
     
     <item>
       <title>WSl을 이용해 R 사용하기</title>
-      <link>/post/wsl%EC%9D%84-%EC%9D%B4%EC%9A%A9%ED%95%B4-r-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</link>
+      <link>/myblog/post/wsl%EC%9D%84-%EC%9D%B4%EC%9A%A9%ED%95%B4-r-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</link>
       <pubDate>Sat, 12 Oct 2019 00:00:00 +0000</pubDate>
-      <guid>/post/wsl%EC%9D%84-%EC%9D%B4%EC%9A%A9%ED%95%B4-r-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</guid>
+      <guid>/myblog/post/wsl%EC%9D%84-%EC%9D%B4%EC%9A%A9%ED%95%B4-r-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</guid>
       <description>&lt;h2 id=&#34;using-r-on-wslwindows-subsystem-for-linux&#34;&gt;&lt;strong&gt;Using R on WSL(Windows Subsystem for Linux)&lt;/strong&gt;&lt;/h2&gt;
 &lt;p&gt;WSL에 &lt;strong&gt;Rstudio-server&lt;/strong&gt;를 설치하면 윈도우 브라우저를 통해 리눅스 버전의 R을 사용할 수 있는데, 이를 위한 기본적인 설정 방법과 의존성 문제 해결방법 등을 정리해서 올린다. WSL은 우분투 18.04 LTS 버전을 기준으로 한다.&lt;/p&gt;
 &lt;h3 id=&#34;1-microsoft-r-open-설치&#34;&gt;1. Microsoft R Open 설치&lt;/h3&gt;

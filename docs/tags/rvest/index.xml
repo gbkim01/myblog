@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>rvest | 日常茶飯事</title>
-    <link>/tags/rvest/</link>
-      <atom:link href="/tags/rvest/index.xml" rel="self" type="application/rss+xml" />
+    <link>/myblog/tags/rvest/</link>
+      <atom:link href="/myblog/tags/rvest/index.xml" rel="self" type="application/rss+xml" />
     <description>rvest</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 본 블로그에 게시된 모든 컨텐츠의 저작권은 블로그 주인에게 있습니다.</copyright><lastBuildDate>Sun, 29 Sep 2019 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/media/icon-32.png</url>
+      <url>/myblog/media/icon-32.png</url>
       <title>rvest</title>
-      <link>/tags/rvest/</link>
+      <link>/myblog/tags/rvest/</link>
     </image>
     
     <item>
       <title>URL 리스트 취합</title>
-      <link>/post/web-scraping-with-r-www-climatewatchdata-org/</link>
+      <link>/myblog/post/web-scraping-with-r-www-climatewatchdata-org/</link>
       <pubDate>Sun, 29 Sep 2019 00:00:00 +0000</pubDate>
-      <guid>/post/web-scraping-with-r-www-climatewatchdata-org/</guid>
+      <guid>/myblog/post/web-scraping-with-r-www-climatewatchdata-org/</guid>
       <description>
 
 
